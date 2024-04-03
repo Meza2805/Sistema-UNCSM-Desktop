@@ -17,6 +17,7 @@ namespace Ginmasio
         campus bd = new campus();
         bool bandera = false;
         Frm_Mensaje_Advertencia mensaje;
+        int rol = 0;
 
         public Frm_Login()
         {
@@ -190,8 +191,9 @@ namespace Ginmasio
                     cedula = acceso.verficar_login(usser, contra).cedula;
                     nombre = acceso.verficar_login(usser, contra).nombre;
                     apellido = acceso.verficar_login(usser, contra).apellido;
+                    rol = acceso.verficar_login(usser, contra).rol;
                     mensaje.ShowDialog();
-                    inicio = new Frm_Inicio(cedula, nombre, apellido);
+                    inicio = new Frm_Inicio(cedula, nombre, apellido, rol);
                     inicio.Show();
                     this.Hide();
                     break;

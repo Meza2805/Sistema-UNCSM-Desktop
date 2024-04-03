@@ -24,6 +24,7 @@ namespace Capa_Negocio
             public string cedula;
             public String nombre;
             public String apellido;
+            public int rol;
             //public int rol;
         }
 
@@ -47,6 +48,7 @@ namespace Capa_Negocio
                     l.cedula = (Convert.ToString(row["PEOPLE_ID"]));
                     l.nombre = (Convert.ToString(row["PRIMER_NOMBRE"]));
                     l.apellido = (Convert.ToString(row["PRIMER_APELLIDO"]));
+                    l.rol = (Convert.ToInt32(row["ID_ROL"]));
                     l.validacion = 3;
                   //  l.rol = (Convert.ToInt32(row["PRIMER_APELLIDO"]));
                 }

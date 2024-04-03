@@ -30,6 +30,8 @@ namespace Ginmasio
         public static bool band_Vistas = false;
         public static bool band_Reportes = false;
         public static bool band_Lateral = false;
+        int rol_usuario = 0;
+
 
         DataTable llenar()
         {
@@ -40,7 +42,7 @@ namespace Ginmasio
         }
 
 
-        public Frm_Inicio(string cedula,string nombre, string apellido)
+        public Frm_Inicio(string cedula,string nombre, string apellido, int rol)
         {
             InitializeComponent();
             //Se reubica los paneles del menu
@@ -52,10 +54,12 @@ namespace Ginmasio
             a = apellido;
             mostrar_usuario_activo();
             codigo_user = cedula;
+            rol_usuario = rol;
             //Estas lineas eliminan los parpadeos del formulario o controles en la interfaz grafica (Pero no en un 100%)
             this.SetStyle(ControlStyles.ResizeRedraw, true);
             this.DoubleBuffered = true;
             abrirFormHijo(new Frm_LogoReloj());
+            permisos_usuarios();
         }
 
 
@@ -66,6 +70,33 @@ namespace Ginmasio
              LbUsuario.Text = n.ToUpper() + " " + a;
          }
 
+        void permisos_usuarios()
+        {
+            switch (rol_usuario)
+            {
+                case 37: //Usuario Administrador
+                    panelCalificaciones.Enabled = true;
+                    PanelUsuario.Enabled = true;
+                    PanelOpciones.Enabled = true;
+                    PanelGrupo.Enabled = true;
+                    PanelVista.Enabled = true;
+                    PanelReporte.Enabled = true;
+                    break;
+                case 39: //Usuario Registro Academico
+                    panelCalificaciones.Enabled = false;
+                    PanelUsuario.Enabled = false;
+                    PanelOpciones.Enabled = false;
+                    PanelGrupo.Enabled = false;
+                    PanelVista.Enabled = false;
+                    PanelReporte.Enabled = true;
+                    btnRectoria.Enabled = false;
+                    btnSecretrariaAcademica.Enabled = false;
+
+                    //.Enabled = false;
+                    break;
+                
+            }
+        }
 
         private void abrirFormHijo(object frmhijo) //Metodo para cargar los formularios hijos dentro del panel contenedor
         {
