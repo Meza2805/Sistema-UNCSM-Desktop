@@ -559,7 +559,6 @@
             this.dgvCerificado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvCerificado.Size = new System.Drawing.Size(1210, 195);
             this.dgvCerificado.TabIndex = 55;
-          //  this.dgvCerificado.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvCerificado_CellFormatting);
             this.dgvCerificado.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.dgvCerificado_RowsRemoved);
             this.dgvCerificado.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dgvCerificado_KeyDown);
             // 
@@ -572,8 +571,8 @@
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmCertificado";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CERTIFICADO UNCSM";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmCertificado_FormClosed);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

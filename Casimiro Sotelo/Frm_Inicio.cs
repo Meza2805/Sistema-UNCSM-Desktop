@@ -85,7 +85,9 @@ namespace Ginmasio
                 case 39: //Usuario Registro Academico
                     panelCalificaciones.Enabled = false;
                     PanelUsuario.Enabled = false;
-                    PanelOpciones.Enabled = false;
+                    PanelOpciones.Enabled = true;
+                    btnBajaMatricula.Enabled = true;
+                    btnCambiarTurnoCarrera.Enabled = false;
                     PanelGrupo.Enabled = false;
                     PanelVista.Enabled = false;
                     PanelReporte.Enabled = true;
@@ -635,7 +637,7 @@ namespace Ginmasio
             PanelRegistroUsuario.Size = new Size(166, 135);
 
             PanelRegistroOpciones.Location = new Point(21, 264);
-            PanelRegistroOpciones.Size = new Size(168, 71);
+            PanelRegistroOpciones.Size = new Size(168, 100);
 
             PanelRegistroGrupos.Location = new Point(21, 316);
             PanelRegistroGrupos.Size = new Size(171, 96);
@@ -719,6 +721,11 @@ namespace Ginmasio
         private void Panel_Contenedor_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            abrirFormHijo(new FrmRegistroAcademico(codigo_user));
         }
 
 
