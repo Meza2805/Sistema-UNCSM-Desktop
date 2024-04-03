@@ -1,0 +1,700 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C9EA55A3-6B12-4F70-A9FF-99CF750792B2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>UNCSM</RootNamespace>
+    <AssemblyName>UNCSM</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\Users\Sami\Documents\Publicaciones de Prueba\Prueba 02\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>25</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>9916D0E167600D4416DAEECF3AEF324B42C297D3</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Capa Presentacion_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icono_CSM.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="ClosedXML, Version=0.102.2.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL">
+      <HintPath>packages\ClosedXML.0.102.2\lib\netstandard2.0\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v22.2, Version=22.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v22.2, Version=22.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Drawing.v22.2, Version=22.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v22.2.Core, Version=22.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v22.2.Core, Version=22.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v22.2, Version=22.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v22.2, Version=22.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DocumentFormat.OpenXml, Version=2.16.0.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>packages\DocumentFormat.OpenXml.2.16.0\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelNumberFormat, Version=1.1.0.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
+      <HintPath>packages\ExcelNumberFormat.1.1.0\lib\net20\ExcelNumberFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="Irony, Version=1.0.11.0, Culture=neutral, PublicKeyToken=ca48ace7223ead47, processorArchitecture=MSIL">
+      <HintPath>packages\Irony.NetCore.1.0.11\lib\net461\Irony.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="SixLabors.Fonts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d998eea7b14cab13, processorArchitecture=MSIL">
+      <HintPath>packages\SixLabors.Fonts.1.0.0\lib\netstandard2.0\SixLabors.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.IO.Packaging, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.IO.Packaging.6.0.0\lib\net461\System.IO.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Net.Http, Version=4.1.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Net.Http.4.3.4\lib\net46\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.7.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="XLParser, Version=1.5.2.0, Culture=neutral, PublicKeyToken=63397e1e46bb91b4, processorArchitecture=MSIL">
+      <HintPath>packages\XLParser.1.5.2\lib\net461\XLParser.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actualizar_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actualizar_Usuario.Designer.cs">
+      <DependentUpon>Actualizar_Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bienvenida_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bienvenida_Login.Designer.cs">
+      <DependentUpon>Bienvenida_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estudiante.cs" />
+    <Compile Include="FrmActualizar_Turno_Estudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmActualizar_Turno_Estudiante.Designer.cs">
+      <DependentUpon>FrmActualizar_Turno_Estudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCertificado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCertificado.Designer.cs">
+      <DependentUpon>FrmCertificado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMatriculaGrupo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMatriculaGrupo.Designer.cs">
+      <DependentUpon>FrmMatriculaGrupo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMatriculaTurnoSexo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMatriculaTurnoSexo.Designer.cs">
+      <DependentUpon>FrmMatriculaTurnoSexo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPlanEstudios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPlanEstudios.Designer.cs">
+      <DependentUpon>FrmPlanEstudios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSalida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSalida.Designer.cs">
+      <DependentUpon>FrmSalida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Actualizar_Doc_Grupo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Actualizar_Doc_Grupo.Designer.cs">
+      <DependentUpon>Frm_Actualizar_Doc_Grupo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Alerta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Alerta.Designer.cs">
+      <DependentUpon>Frm_Alerta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Calificaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Calificaciones.Designer.cs">
+      <DependentUpon>Frm_Calificaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Docente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Docente.Designer.cs">
+      <DependentUpon>Frm_Docente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_GrupDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_GrupDoc.Designer.cs">
+      <DependentUpon>Frm_GrupDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Login.Designer.cs">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_LogoReloj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_LogoReloj.Designer.cs">
+      <DependentUpon>Frm_LogoReloj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Cliente.Designer.cs">
+      <DependentUpon>Frm_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Matricula_Global.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Matricula_Global.Designer.cs">
+      <DependentUpon>Frm_Matricula_Global.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Mensaje_Advertencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Mensaje_Advertencia.Designer.cs">
+      <DependentUpon>Frm_Mensaje_Advertencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Mensaje_Carne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Mensaje_Carne.Designer.cs">
+      <DependentUpon>Frm_Mensaje_Carne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_PlanAcademico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_PlanAcademico.Designer.cs">
+      <DependentUpon>Frm_PlanAcademico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Registro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Registro.Designer.cs">
+      <DependentUpon>Frm_Registro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Reportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Reportes.Designer.cs">
+      <DependentUpon>Frm_Reportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matricula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Matricula.Designer.cs">
+      <DependentUpon>Matricula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mensaje_Suscripcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mensaje_Suscripcion.Designer.cs">
+      <DependentUpon>Mensaje_Suscripcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Frm_Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Inicio.Designer.cs">
+      <DependentUpon>Frm_Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Rpt_Boleta_Matricula.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_Boleta_Matricula.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmBoletaMatricula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmBoletaMatricula.Designer.cs">
+      <DependentUpon>FrmBoletaMatricula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilerias.cs" />
+    <EmbeddedResource Include="Actualizar_Usuario.resx">
+      <DependentUpon>Actualizar_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bienvenida_Login.resx">
+      <DependentUpon>Bienvenida_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmActualizar_Turno_Estudiante.resx">
+      <DependentUpon>FrmActualizar_Turno_Estudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCertificado.resx">
+      <DependentUpon>FrmCertificado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMatriculaGrupo.resx">
+      <DependentUpon>FrmMatriculaGrupo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMatriculaTurnoSexo.resx">
+      <DependentUpon>FrmMatriculaTurnoSexo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPlanEstudios.resx">
+      <DependentUpon>FrmPlanEstudios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSalida.resx">
+      <DependentUpon>FrmSalida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Actualizar_Doc_Grupo.resx">
+      <DependentUpon>Frm_Actualizar_Doc_Grupo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Alerta.resx">
+      <DependentUpon>Frm_Alerta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Calificaciones.resx">
+      <DependentUpon>Frm_Calificaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Docente.resx">
+      <DependentUpon>Frm_Docente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_GrupDoc.resx">
+      <DependentUpon>Frm_GrupDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Login.resx">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_LogoReloj.resx">
+      <DependentUpon>Frm_LogoReloj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Cliente.resx">
+      <DependentUpon>Frm_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Matricula_Global.resx">
+      <DependentUpon>Frm_Matricula_Global.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Mensaje_Advertencia.resx">
+      <DependentUpon>Frm_Mensaje_Advertencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Mensaje_Carne.resx">
+      <DependentUpon>Frm_Mensaje_Carne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_PlanAcademico.resx">
+      <DependentUpon>Frm_PlanAcademico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Registro.resx">
+      <DependentUpon>Frm_Registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Reportes.resx">
+      <DependentUpon>Frm_Reportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Matricula.resx">
+      <DependentUpon>Matricula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mensaje_Suscripcion.resx">
+      <DependentUpon>Mensaje_Suscripcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Frm_Inicio.resx">
+      <DependentUpon>Frm_Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Rpt_Boleta_Matricula.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_Boleta_Matricula.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmBoletaMatricula.resx">
+      <DependentUpon>FrmBoletaMatricula.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Capa Negocio\Capa Negocio.csproj">
+      <Project>{f2f85c75-5970-45e8-868f-73bd1422b519}</Project>
+      <Name>Capa Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cliente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User_Group-80_icon-icons.com_57247.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users_people_workers_customers_icon_124243.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\effective_employees_users_team_group_icon_152042.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\productapplication_producto_3010.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4105931-add-to-cart-buy-cart-sell-shop-shopping-cart_113919.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thefreeforty_register_icon-icons.com_66338.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4115235-exit-logout-sign-out_114030.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zona_Fitr-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\registro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_button_close_delete_icon_124197.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_121846.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\068minimize_100011.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contact_96967.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contact_96967 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4213411-cancel-circle-close-delete-remove-trash_115399.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic-cancel_97589.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize_filled_icon_199783.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize_filled_icon_1997831.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window_minimize_icon_198334.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize_filled_icon_199783 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resize_minimize_maximize_expand_screen_icon_190602.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resize_minimize_maximize_expand_screen_icon_190600.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pagos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\producto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recurso 1producto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recurso 4producto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\venta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empleados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reportes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\productividad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\productividad %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ventas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suscripcion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\costo-de-envio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empresario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sitio-web.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\repartidor %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paquetes %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\configuraciones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lista-de-verificacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lista-de-verificacion1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subcarpeta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acceso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar-sesion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Marvin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\la-busqueda-de-empleo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barra-de-busqueda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iniciar-sesion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\candado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perfil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perfil %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cambiar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\documento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salida.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salida %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salida %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo software_Logo UNCSM, Version Colores.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo software_Logo UNCSM, Version Colores1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo software_Logo UNCSM, Version Colores2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icono_CSM.ico" />
+    <None Include="Resources\ingenieria.png" />
+    <None Include="Resources\proceso.png" />
+    <None Include="Resources\procedimiento1.png" />
+    <None Include="Resources\procedimiento.png" />
+    <None Include="Resources\boleta-de-calificaciones.png" />
+    <None Include="Resources\reporte %284%29.png" />
+    <None Include="Resources\grupos1.png" />
+    <None Include="Resources\calificaciones1.png" />
+    <None Include="Resources\cv.png" />
+    <None Include="Resources\buscar %281%29.png" />
+    <None Include="Resources\disquete.png" />
+    <None Include="Resources\intercambio.png" />
+    <None Include="Resources\ver1.png" />
+    <None Include="Resources\ver.png" />
+    <None Include="Resources\actualizar.png" />
+    <None Include="Resources\papel.png" />
+    <None Include="Resources\buscar1.png" />
+    <None Include="Resources\buscar.png" />
+    <None Include="Resources\archivo-excel.png" />
+    <None Include="Resources\sobresalir.png" />
+    <None Include="Resources\documento-registrado.png" />
+    <None Include="Resources\reporte %283%29.png" />
+    <None Include="Resources\reporte %282%29.png" />
+    <None Include="Resources\reporte.png" />
+    <None Include="Resources\app_attention_22046.png" />
+    <None Include="Resources\persona-clave.png" />
+    <None Include="Resources\trabajando.png" />
+    <None Include="Resources\controlar.png" />
+    <None Include="Resources\crisis.png" />
+    <None Include="Resources\UNCSM _Logo UNCSM, Version Colores.png" />
+    <None Include="Resources\sitio-web %281%29.png" />
+    <None Include="Resources\sitio-web1.png" />
+    <None Include="Resources\programa.png" />
+    <None Include="Resources\business_application_addmale_useradd_insert_add_user_client_23121.png" />
+    <None Include="Resources\business_application_addmale_useradd_insert_add_user_client_2312.png" />
+    <None Include="Resources\multitud.png" />
+    <None Include="Resources\maestro.png" />
+    <None Include="Resources\notas.png" />
+    <None Include="Resources\menu-three-outlined-rounded-lines-symbol_icon-icons.com_732151.png" />
+    <None Include="Resources\menu-three-outlined-rounded-lines-symbol_icon-icons.com_73215.png" />
+    <None Include="Resources\usuario1.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

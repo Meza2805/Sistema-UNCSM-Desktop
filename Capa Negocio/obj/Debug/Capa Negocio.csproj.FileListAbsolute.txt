@@ -1,0 +1,144 @@
+C:\BD\Repositorio para Base de Datos Sql Server\Gimnasio\Base-de-Datos-Gimnasio\Proyecto de Visual Studio C#\Capa Negocio\bin\Debug\Capa Negocio.dll
+C:\BD\Repositorio para Base de Datos Sql Server\Gimnasio\Base-de-Datos-Gimnasio\Proyecto de Visual Studio C#\Capa Negocio\bin\Debug\Capa Negocio.pdb
+C:\BD\Repositorio para Base de Datos Sql Server\Gimnasio\Base-de-Datos-Gimnasio\Proyecto de Visual Studio C#\Capa Negocio\bin\Debug\Capa Datos.dll
+C:\BD\Repositorio para Base de Datos Sql Server\Gimnasio\Base-de-Datos-Gimnasio\Proyecto de Visual Studio C#\Capa Negocio\bin\Debug\Capa Datos.pdb
+C:\BD\Repositorio para Base de Datos Sql Server\Gimnasio\Base-de-Datos-Gimnasio\Proyecto de Visual Studio C#\Capa Negocio\obj\Debug\Capa Negocio.csproj.AssemblyReference.cache
+C:\BD\Repositorio para Base de Datos Sql Server\Gimnasio\Base-de-Datos-Gimnasio\Proyecto de Visual Studio C#\Capa Negocio\obj\Debug\Capa Negocio.csproj.CoreCompileInputs.cache
+C:\BD\Repositorio para Base de Datos Sql Server\Gimnasio\Base-de-Datos-Gimnasio\Proyecto de Visual Studio C#\Capa Negocio\obj\Debug\Capa Negocio.csproj.CopyComplete
+C:\BD\Repositorio para Base de Datos Sql Server\Gimnasio\Base-de-Datos-Gimnasio\Proyecto de Visual Studio C#\Capa Negocio\obj\Debug\Capa Negocio.dll
+C:\BD\Repositorio para Base de Datos Sql Server\Gimnasio\Base-de-Datos-Gimnasio\Proyecto de Visual Studio C#\Capa Negocio\obj\Debug\Capa Negocio.pdb
+C:\BD\Repositorio para Visual C# Gimnasio\Proyecto-Gimnasio-Visual-C-\Capa Negocio\bin\Debug\Capa Negocio.dll
+C:\BD\Repositorio para Visual C# Gimnasio\Proyecto-Gimnasio-Visual-C-\Capa Negocio\bin\Debug\Capa Negocio.pdb
+C:\BD\Repositorio para Visual C# Gimnasio\Proyecto-Gimnasio-Visual-C-\Capa Negocio\bin\Debug\Capa Datos.dll
+C:\BD\Repositorio para Visual C# Gimnasio\Proyecto-Gimnasio-Visual-C-\Capa Negocio\bin\Debug\Capa Datos.pdb
+C:\BD\Repositorio para Visual C# Gimnasio\Proyecto-Gimnasio-Visual-C-\Capa Negocio\obj\Debug\Capa Negocio.csproj.AssemblyReference.cache
+C:\BD\Repositorio para Visual C# Gimnasio\Proyecto-Gimnasio-Visual-C-\Capa Negocio\obj\Debug\Capa Negocio.csproj.CoreCompileInputs.cache
+C:\BD\Repositorio para Visual C# Gimnasio\Proyecto-Gimnasio-Visual-C-\Capa Negocio\obj\Debug\Capa Negocio.csproj.CopyComplete
+C:\BD\Repositorio para Visual C# Gimnasio\Proyecto-Gimnasio-Visual-C-\Capa Negocio\obj\Debug\Capa Negocio.dll
+C:\BD\Repositorio para Visual C# Gimnasio\Proyecto-Gimnasio-Visual-C-\Capa Negocio\obj\Debug\Capa Negocio.pdb
+C:\Users\Sami\Desktop\CSM\Proyecto-Gimnasio-Visual-C--main\Capa Negocio\bin\Debug\Capa Negocio.dll
+C:\Users\Sami\Desktop\CSM\Proyecto-Gimnasio-Visual-C--main\Capa Negocio\bin\Debug\Capa Negocio.pdb
+C:\Users\Sami\Desktop\CSM\Proyecto-Gimnasio-Visual-C--main\Capa Negocio\bin\Debug\Capa Datos.dll
+C:\Users\Sami\Desktop\CSM\Proyecto-Gimnasio-Visual-C--main\Capa Negocio\bin\Debug\Capa Datos.pdb
+C:\Users\Sami\Desktop\CSM\Proyecto-Gimnasio-Visual-C--main\Capa Negocio\obj\Debug\Capa Negocio.csprojAssemblyReference.cache
+C:\Users\Sami\Desktop\CSM\Proyecto-Gimnasio-Visual-C--main\Capa Negocio\obj\Debug\Capa Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Sami\Desktop\CSM\Proyecto-Gimnasio-Visual-C--main\Capa Negocio\obj\Debug\Capa Negocio.csproj.CopyComplete
+C:\Users\Sami\Desktop\CSM\Proyecto-Gimnasio-Visual-C--main\Capa Negocio\obj\Debug\Capa Negocio.dll
+C:\Users\Sami\Desktop\CSM\Proyecto-Gimnasio-Visual-C--main\Capa Negocio\obj\Debug\Capa Negocio.pdb
+C:\Users\Sami\Desktop\CSM\Sistema Desktop CSM\Capa Negocio\bin\Debug\Capa Negocio.dll
+C:\Users\Sami\Desktop\CSM\Sistema Desktop CSM\Capa Negocio\bin\Debug\Capa Negocio.pdb
+C:\Users\Sami\Desktop\CSM\Sistema Desktop CSM\Capa Negocio\bin\Debug\Capa Datos.dll
+C:\Users\Sami\Desktop\CSM\Sistema Desktop CSM\Capa Negocio\bin\Debug\Capa Datos.pdb
+C:\Users\Sami\Desktop\CSM\Sistema Desktop CSM\Capa Negocio\obj\Debug\Capa Negocio.csprojAssemblyReference.cache
+C:\Users\Sami\Desktop\CSM\Sistema Desktop CSM\Capa Negocio\obj\Debug\Capa Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Sami\Desktop\CSM\Sistema Desktop CSM\Capa Negocio\obj\Debug\Capa Negocio.csproj.CopyComplete
+C:\Users\Sami\Desktop\CSM\Sistema Desktop CSM\Capa Negocio\obj\Debug\Capa Negocio.dll
+C:\Users\Sami\Desktop\CSM\Sistema Desktop CSM\Capa Negocio\obj\Debug\Capa Negocio.pdb
+C:\Users\lionm\Desktop\Sistema Desktop CSM\Capa Negocio\bin\Debug\Capa Negocio.dll
+C:\Users\lionm\Desktop\Sistema Desktop CSM\Capa Negocio\bin\Debug\Capa Negocio.pdb
+C:\Users\lionm\Desktop\Sistema Desktop CSM\Capa Negocio\bin\Debug\Capa Datos.dll
+C:\Users\lionm\Desktop\Sistema Desktop CSM\Capa Negocio\bin\Debug\Capa Datos.pdb
+C:\Users\lionm\Desktop\Sistema Desktop CSM\Capa Negocio\obj\Debug\Capa Negocio.csproj.AssemblyReference.cache
+C:\Users\lionm\Desktop\Sistema Desktop CSM\Capa Negocio\obj\Debug\Capa Negocio.csproj.CoreCompileInputs.cache
+C:\Users\lionm\Desktop\Sistema Desktop CSM\Capa Negocio\obj\Debug\Capa Negocio.csproj.CopyComplete
+C:\Users\lionm\Desktop\Sistema Desktop CSM\Capa Negocio\obj\Debug\Capa Negocio.dll
+C:\Users\lionm\Desktop\Sistema Desktop CSM\Capa Negocio\obj\Debug\Capa Negocio.pdb
+C:\Users\Apoyo Logistico\Desktop\Sistema Desktop CSM\Capa Negocio\obj\Debug\Capa Negocio.csprojAssemblyReference.cache
+C:\Users\Apoyo Logistico\Desktop\Sistema Desktop CSM\Capa Negocio\obj\Debug\Capa Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Apoyo Logistico\Desktop\Sistema Desktop CSM\Capa Negocio\obj\Debug\Capa Negocio.dll
+C:\Users\Apoyo Logistico\Desktop\Sistema Desktop CSM\Capa Negocio\obj\Debug\Capa Negocio.pdb
+C:\Users\Apoyo Logistico\Desktop\Sistema Desktop CSM\Capa Negocio\bin\Debug\Capa Negocio.dll
+C:\Users\Apoyo Logistico\Desktop\Sistema Desktop CSM\Capa Negocio\bin\Debug\Capa Negocio.pdb
+C:\Users\Apoyo Logistico\Desktop\Sistema Desktop CSM\Capa Negocio\bin\Debug\Capa Datos.dll
+C:\Users\Apoyo Logistico\Desktop\Sistema Desktop CSM\Capa Negocio\bin\Debug\Capa Datos.pdb
+C:\Users\Apoyo Logistico\Desktop\Sistema Desktop CSM\Capa Negocio\obj\Debug\Capa Negocio.csproj.CopyComplete
+C:\Users\Sami\Desktop\Sistema Desktop CSM\Capa Negocio\bin\Debug\Capa Negocio.dll
+C:\Users\Sami\Desktop\Sistema Desktop CSM\Capa Negocio\bin\Debug\Capa Negocio.pdb
+C:\Users\Sami\Desktop\Sistema Desktop CSM\Capa Negocio\bin\Debug\Capa Datos.dll
+C:\Users\Sami\Desktop\Sistema Desktop CSM\Capa Negocio\bin\Debug\Capa Datos.pdb
+C:\Users\Sami\Desktop\Sistema Desktop CSM\Capa Negocio\obj\Debug\Capa Negocio.csprojAssemblyReference.cache
+C:\Users\Sami\Desktop\Sistema Desktop CSM\Capa Negocio\obj\Debug\Capa Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Sami\Desktop\Sistema Desktop CSM\Capa Negocio\obj\Debug\Capa Negocio.csproj.CopyComplete
+C:\Users\Sami\Desktop\Sistema Desktop CSM\Capa Negocio\obj\Debug\Capa Negocio.dll
+C:\Users\Sami\Desktop\Sistema Desktop CSM\Capa Negocio\obj\Debug\Capa Negocio.pdb
+C:\Users\leonel\Desktop\Sistema Desktop CSM\Capa Negocio\bin\Debug\Capa Negocio.dll
+C:\Users\leonel\Desktop\Sistema Desktop CSM\Capa Negocio\bin\Debug\Capa Negocio.pdb
+C:\Users\leonel\Desktop\Sistema Desktop CSM\Capa Negocio\bin\Debug\Capa Datos.dll
+C:\Users\leonel\Desktop\Sistema Desktop CSM\Capa Negocio\bin\Debug\Capa Datos.pdb
+C:\Users\leonel\Desktop\Sistema Desktop CSM\Capa Negocio\obj\Debug\Capa Negocio.csprojAssemblyReference.cache
+C:\Users\leonel\Desktop\Sistema Desktop CSM\Capa Negocio\obj\Debug\Capa Negocio.csproj.CoreCompileInputs.cache
+C:\Users\leonel\Desktop\Sistema Desktop CSM\Capa Negocio\obj\Debug\Capa Negocio.csproj.CopyComplete
+C:\Users\leonel\Desktop\Sistema Desktop CSM\Capa Negocio\obj\Debug\Capa Negocio.dll
+C:\Users\leonel\Desktop\Sistema Desktop CSM\Capa Negocio\obj\Debug\Capa Negocio.pdb
+D:\Sistema Desktop CSM\Capa Negocio\bin\Debug\Capa Negocio.dll
+D:\Sistema Desktop CSM\Capa Negocio\bin\Debug\Capa Negocio.pdb
+D:\Sistema Desktop CSM\Capa Negocio\bin\Debug\Capa Datos.dll
+D:\Sistema Desktop CSM\Capa Negocio\bin\Debug\Capa Datos.pdb
+D:\Sistema Desktop CSM\Capa Negocio\obj\Debug\Capa Negocio.csprojAssemblyReference.cache
+D:\Sistema Desktop CSM\Capa Negocio\obj\Debug\Capa Negocio.csproj.CoreCompileInputs.cache
+D:\Sistema Desktop CSM\Capa Negocio\obj\Debug\Capa Negocio.csproj.CopyComplete
+D:\Sistema Desktop CSM\Capa Negocio\obj\Debug\Capa Negocio.dll
+D:\Sistema Desktop CSM\Capa Negocio\obj\Debug\Capa Negocio.pdb
+C:\Users\Sami\Documents\Sistemas Meza\Sistema Desktop UNCSM Repositorio\Sistema-Desktop-CSM\Capa Negocio\bin\Debug\Capa Negocio.dll
+C:\Users\Sami\Documents\Sistemas Meza\Sistema Desktop UNCSM Repositorio\Sistema-Desktop-CSM\Capa Negocio\bin\Debug\Capa Negocio.pdb
+C:\Users\Sami\Documents\Sistemas Meza\Sistema Desktop UNCSM Repositorio\Sistema-Desktop-CSM\Capa Negocio\bin\Debug\Capa Datos.dll
+C:\Users\Sami\Documents\Sistemas Meza\Sistema Desktop UNCSM Repositorio\Sistema-Desktop-CSM\Capa Negocio\bin\Debug\Capa Datos.pdb
+C:\Users\Sami\Documents\Sistemas Meza\Sistema Desktop UNCSM Repositorio\Sistema-Desktop-CSM\Capa Negocio\obj\Debug\Capa Negocio.csproj.AssemblyReference.cache
+C:\Users\Sami\Documents\Sistemas Meza\Sistema Desktop UNCSM Repositorio\Sistema-Desktop-CSM\Capa Negocio\obj\Debug\Capa Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Sami\Documents\Sistemas Meza\Sistema Desktop UNCSM Repositorio\Sistema-Desktop-CSM\Capa Negocio\obj\Debug\Capa Negocio.csproj.CopyComplete
+C:\Users\Sami\Documents\Sistemas Meza\Sistema Desktop UNCSM Repositorio\Sistema-Desktop-CSM\Capa Negocio\obj\Debug\Capa Negocio.dll
+C:\Users\Sami\Documents\Sistemas Meza\Sistema Desktop UNCSM Repositorio\Sistema-Desktop-CSM\Capa Negocio\obj\Debug\Capa Negocio.pdb
+C:\Users\Sami\Documents\Sistemas Meza\Sistema Desktop UNCSM Repositorio\Desktop-UNCSM-2.0\Capa Negocio\bin\Debug\Capa Negocio.dll
+C:\Users\Sami\Documents\Sistemas Meza\Sistema Desktop UNCSM Repositorio\Desktop-UNCSM-2.0\Capa Negocio\bin\Debug\Capa Negocio.pdb
+C:\Users\Sami\Documents\Sistemas Meza\Sistema Desktop UNCSM Repositorio\Desktop-UNCSM-2.0\Capa Negocio\bin\Debug\Capa Datos.dll
+C:\Users\Sami\Documents\Sistemas Meza\Sistema Desktop UNCSM Repositorio\Desktop-UNCSM-2.0\Capa Negocio\bin\Debug\Capa Datos.pdb
+C:\Users\Sami\Documents\Sistemas Meza\Sistema Desktop UNCSM Repositorio\Desktop-UNCSM-2.0\Capa Negocio\obj\Debug\Capa Negocio.csprojAssemblyReference.cache
+C:\Users\Sami\Documents\Sistemas Meza\Sistema Desktop UNCSM Repositorio\Desktop-UNCSM-2.0\Capa Negocio\obj\Debug\Capa Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Sami\Documents\Sistemas Meza\Sistema Desktop UNCSM Repositorio\Desktop-UNCSM-2.0\Capa Negocio\obj\Debug\Capa Negocio.csproj.CopyComplete
+C:\Users\Sami\Documents\Sistemas Meza\Sistema Desktop UNCSM Repositorio\Desktop-UNCSM-2.0\Capa Negocio\obj\Debug\Capa Negocio.dll
+C:\Users\Sami\Documents\Sistemas Meza\Sistema Desktop UNCSM Repositorio\Desktop-UNCSM-2.0\Capa Negocio\obj\Debug\Capa Negocio.pdb
+C:\Repositorio\Sistem-Desktop-3.0\Capa Negocio\bin\Debug\Capa Negocio.dll
+C:\Repositorio\Sistem-Desktop-3.0\Capa Negocio\bin\Debug\Capa Negocio.pdb
+C:\Repositorio\Sistem-Desktop-3.0\Capa Negocio\bin\Debug\Capa Datos.dll
+C:\Repositorio\Sistem-Desktop-3.0\Capa Negocio\bin\Debug\Capa Datos.pdb
+C:\Repositorio\Sistem-Desktop-3.0\Capa Negocio\obj\Debug\Capa Negocio.csprojAssemblyReference.cache
+C:\Repositorio\Sistem-Desktop-3.0\Capa Negocio\obj\Debug\Capa Negocio.csproj.CoreCompileInputs.cache
+C:\Repositorio\Sistem-Desktop-3.0\Capa Negocio\obj\Debug\Capa Negocio.csproj.CopyComplete
+C:\Repositorio\Sistem-Desktop-3.0\Capa Negocio\obj\Debug\Capa Negocio.dll
+C:\Repositorio\Sistem-Desktop-3.0\Capa Negocio\obj\Debug\Capa Negocio.pdb
+C:\Users\Sami\Documents\Desktop-UNCSM--3.0\Capa Negocio\bin\Debug\Capa Negocio.dll
+C:\Users\Sami\Documents\Desktop-UNCSM--3.0\Capa Negocio\bin\Debug\Capa Negocio.pdb
+C:\Users\Sami\Documents\Desktop-UNCSM--3.0\Capa Negocio\bin\Debug\Capa Datos.dll
+C:\Users\Sami\Documents\Desktop-UNCSM--3.0\Capa Negocio\bin\Debug\Capa Datos.pdb
+C:\Users\Sami\Documents\Desktop-UNCSM--3.0\Capa Negocio\obj\Debug\Capa Negocio.csprojAssemblyReference.cache
+C:\Users\Sami\Documents\Desktop-UNCSM--3.0\Capa Negocio\obj\Debug\Capa Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Sami\Documents\Desktop-UNCSM--3.0\Capa Negocio\obj\Debug\Capa Negocio.csproj.CopyComplete
+C:\Users\Sami\Documents\Desktop-UNCSM--3.0\Capa Negocio\obj\Debug\Capa Negocio.dll
+C:\Users\Sami\Documents\Desktop-UNCSM--3.0\Capa Negocio\obj\Debug\Capa Negocio.pdb
+D:\Desktop-UNCSM--3.0\Capa Negocio\bin\Debug\Capa Negocio.dll
+D:\Desktop-UNCSM--3.0\Capa Negocio\bin\Debug\Capa Negocio.pdb
+D:\Desktop-UNCSM--3.0\Capa Negocio\bin\Debug\Capa Datos.dll
+D:\Desktop-UNCSM--3.0\Capa Negocio\bin\Debug\Capa Datos.pdb
+D:\Desktop-UNCSM--3.0\Capa Negocio\obj\Debug\Capa Negocio.csprojAssemblyReference.cache
+D:\Desktop-UNCSM--3.0\Capa Negocio\obj\Debug\Capa Negocio.csproj.CoreCompileInputs.cache
+D:\Desktop-UNCSM--3.0\Capa Negocio\obj\Debug\Capa Negocio.csproj.CopyComplete
+D:\Desktop-UNCSM--3.0\Capa Negocio\obj\Debug\Capa Negocio.dll
+D:\Desktop-UNCSM--3.0\Capa Negocio\obj\Debug\Capa Negocio.pdb
+C:\Users\Sami\Desktop\Desktop-UNCSM-Full\Capa Negocio\bin\Debug\Capa Negocio.dll
+C:\Users\Sami\Desktop\Desktop-UNCSM-Full\Capa Negocio\bin\Debug\Capa Negocio.pdb
+C:\Users\Sami\Desktop\Desktop-UNCSM-Full\Capa Negocio\bin\Debug\Capa Datos.dll
+C:\Users\Sami\Desktop\Desktop-UNCSM-Full\Capa Negocio\bin\Debug\Capa Datos.pdb
+C:\Users\Sami\Desktop\Desktop-UNCSM-Full\Capa Negocio\obj\Debug\Capa Negocio.csprojAssemblyReference.cache
+C:\Users\Sami\Desktop\Desktop-UNCSM-Full\Capa Negocio\obj\Debug\Capa Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Sami\Desktop\Desktop-UNCSM-Full\Capa Negocio\obj\Debug\Capa Negocio.csproj.CopyComplete
+C:\Users\Sami\Desktop\Desktop-UNCSM-Full\Capa Negocio\obj\Debug\Capa Negocio.dll
+C:\Users\Sami\Desktop\Desktop-UNCSM-Full\Capa Negocio\obj\Debug\Capa Negocio.pdb
+C:\Users\UNCSM-SISTEMAS\Desktop\Respaldo Meza\Desktop-UNCSM-Full\Capa Negocio\bin\Debug\Capa Negocio.dll
+C:\Users\UNCSM-SISTEMAS\Desktop\Respaldo Meza\Desktop-UNCSM-Full\Capa Negocio\bin\Debug\Capa Negocio.pdb
+C:\Users\UNCSM-SISTEMAS\Desktop\Respaldo Meza\Desktop-UNCSM-Full\Capa Negocio\bin\Debug\Capa Datos.dll
+C:\Users\UNCSM-SISTEMAS\Desktop\Respaldo Meza\Desktop-UNCSM-Full\Capa Negocio\bin\Debug\Capa Datos.pdb
+C:\Users\UNCSM-SISTEMAS\Desktop\Respaldo Meza\Desktop-UNCSM-Full\Capa Negocio\obj\Debug\Capa Negocio.csprojAssemblyReference.cache
+C:\Users\UNCSM-SISTEMAS\Desktop\Respaldo Meza\Desktop-UNCSM-Full\Capa Negocio\obj\Debug\Capa Negocio.csproj.CoreCompileInputs.cache
+C:\Users\UNCSM-SISTEMAS\Desktop\Respaldo Meza\Desktop-UNCSM-Full\Capa Negocio\obj\Debug\Capa Negocio.csproj.CopyComplete
+C:\Users\UNCSM-SISTEMAS\Desktop\Respaldo Meza\Desktop-UNCSM-Full\Capa Negocio\obj\Debug\Capa Negocio.dll
+C:\Users\UNCSM-SISTEMAS\Desktop\Respaldo Meza\Desktop-UNCSM-Full\Capa Negocio\obj\Debug\Capa Negocio.pdb

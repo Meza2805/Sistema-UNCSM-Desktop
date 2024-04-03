@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Ginmasio.exe" version="1.0.0.3" publicKeyToken="604d8550a4e32c0a" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="icono_CSM.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Ginmasio" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Ginmasio.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opciones del manifiesto de UAC
+          Si desea cambiar el nivel de Control de cuentas de usuario de Windows, reemplace el 
+          nodo requestedExecutionLevel por uno de los siguientes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Si desea usar Virtualización de archivos y Registro para compatibilidad con 
+         versiones anteriores, elimine el nodo requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Capa Datos.dll" size="4608">
+      <assemblyIdentity name="Capa Datos" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>p4X17N1hTXZlQ6KCE0bb2rAblWMNQJaQStQrPISCt1o=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Capa Negocio.dll" size="11264">
+      <assemblyIdentity name="Capa Negocio" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>8dqVVH3jKs6KR1y8jqzvS/Jr6ZXD0hL0rhcSwRAaS34=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Ginmasio.exe" size="2357208">
+      <assemblyIdentity name="Ginmasio" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>dZjLSNcHs/yu7OE9c7mQrVk6D/s3RFAA27265yXPtWY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Ginmasio.exe.config" size="186">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1NgAxCSw4ibTXzWVy7D6Rw60Qih4Dn37KvGhG5Ora/s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="icono_CSM.ico" size="67646">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qmaMdmZICSwkHYpoUIqs38FwfzcFTfUSal0cJQL5QTw=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-AE7Q4HD\Sami" issuerKeyHash="e1d3feb39f250e359cd9e911254e1bfadb76ddb6" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>QzjV2TK152hLrQ9xXOjVRWLLKiVgp/xRYivePQ6aPX8=</DigestValue></Reference></SignedInfo><SignatureValue>hprTluiTkqLSr7xqcYc5DqRo2y7agLHmdRdmiSyDR06Q5cwfJakz0jzWjotx/3EASiGLdsPV4rYKW7SW4Kk6m4P9XOVlhBLQK3sGHyLIAyzK+y/+wXnv/CIGUkXb2B0QRWXBEuwuMwtR/yu6rlVTHAluwnsEMjQo8qSC8vyRbrs=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>4SonHYSZ8eykZzVM+ewU0YIJszsOuI6Nq043YotqRiIxjigA7//mQuCmL51Hz1A7kYWxu649X0/35CE8FLJ7IqNQz2pDFgtIKKTrQxTl6NJtoYPMi0OzAcNQdb9HiMAxY/gOiNp017f/oACp6iIVwO0pcjHD5QTFUwA5my1O/U0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="7f3d9a0e3dde2b6251fca760252acb6245d5e85c710fad4b68e7b532d9d53843" Description="" Url=""><as:assemblyIdentity name="Ginmasio.exe" version="1.0.0.3" publicKeyToken="604d8550a4e32c0a" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-AE7Q4HD\Sami</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>k1ZSMnwlV1bapCUc1/O9gaZftpFFaczwDkq3Ekavlks=</DigestValue></Reference></SignedInfo><SignatureValue>J2cnThmSH1ixhhzdWZxxitqioSNvahjY7zeQMPMr36IIicgBmVdlLj+NFKYETqCzww5t0/EgHZmfY+5lMHQopp0HzxHXPfqRyrrAxRCyLruN0EUsr+yp5kUvTCz1/1+wI57eHDgPEjrUktiQ7KWgggg37Mty/U1iQhkxiBIlNFQ=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>4SonHYSZ8eykZzVM+ewU0YIJszsOuI6Nq043YotqRiIxjigA7//mQuCmL51Hz1A7kYWxu649X0/35CE8FLJ7IqNQz2pDFgtIKKTrQxTl6NJtoYPMi0OzAcNQdb9HiMAxY/gOiNp017f/oACp6iIVwO0pcjHD5QTFUwA5my1O/U0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQNuYfQQ5pj75Hh/i5TWd5jzANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigARABFAFMASwBUAE8AUAAtAEEARQA3AFEANABIAEQAXABTAGEAbQBpMB4XDTI0MDEwODEzMjAxNVoXDTI1MDEwNzE5MjAxNVowMzExMC8GA1UEAx4oAEQARQBTAEsAVABPAFAALQBBAEUANwBRADQASABEAFwAUwBhAG0AaTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA4SonHYSZ8eykZzVM+ewU0YIJszsOuI6Nq043YotqRiIxjigA7//mQuCmL51Hz1A7kYWxu649X0/35CE8FLJ7IqNQz2pDFgtIKKTrQxTl6NJtoYPMi0OzAcNQdb9HiMAxY/gOiNp017f/oACp6iIVwO0pcjHD5QTFUwA5my1O/U0CAwEAATANBgkqhkiG9w0BAQsFAAOBgQBThv1jLNB9jrLX9fy8H5BGrG5JvzW4pdknfB3M3rCdkzyERXOfUNJGy+0Gv089TesEB9XBNNAC7Q6XI67rGyAnSib+7Yt1MNkmChpWoE+Vzl1s0l8IwUtD/fhA8ApuwuWzNOuy2yn3VDxKj1HUIpLX+BD7gx4OQoFwcA5UsM5xMA==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
