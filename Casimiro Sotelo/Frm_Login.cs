@@ -91,7 +91,7 @@ namespace Ginmasio
         {
             if (txtpass.Text == "")
             {
-                txtpass.Text = "Contraseña";
+                txtpass.Text = "";
             }
         }
 
@@ -119,12 +119,25 @@ namespace Ginmasio
 
         private void txtUsuario_Click(object sender, EventArgs e)
         {
-            txtUsuario.Clear();
+            txtUsuario.Clear(); 
         }
 
         private void txtpass_Click(object sender, EventArgs e)
         {
             txtpass.Clear();
+        }
+
+        private void ChkMostrarContraseña_CheckedChanged(object sender, EventArgs e)
+        {
+
+            if ( txtpass.UseSystemPasswordChar == false)
+            {
+                txtpass.UseSystemPasswordChar = true;
+            }
+            else
+            {
+                txtpass.UseSystemPasswordChar = false;
+            }
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)

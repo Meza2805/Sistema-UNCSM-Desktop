@@ -40,22 +40,22 @@
             // 
             this.lbHora.AutoSize = true;
             this.lbHora.BackColor = System.Drawing.Color.Transparent;
-            this.lbHora.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbHora.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbHora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
             this.lbHora.Location = new System.Drawing.Point(413, 446);
             this.lbHora.Name = "lbHora";
-            this.lbHora.Size = new System.Drawing.Size(0, 45);
+            this.lbHora.Size = new System.Drawing.Size(0, 42);
             this.lbHora.TabIndex = 1;
             // 
             // lbFecha
             // 
             this.lbFecha.AutoSize = true;
             this.lbFecha.BackColor = System.Drawing.Color.Transparent;
-            this.lbFecha.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFecha.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbFecha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
             this.lbFecha.Location = new System.Drawing.Point(202, 507);
             this.lbFecha.Name = "lbFecha";
-            this.lbFecha.Size = new System.Drawing.Size(0, 45);
+            this.lbFecha.Size = new System.Drawing.Size(0, 42);
             this.lbFecha.TabIndex = 2;
             // 
             // hora_fecha

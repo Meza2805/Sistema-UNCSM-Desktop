@@ -728,6 +728,11 @@ namespace Ginmasio
             abrirFormHijo(new FrmRegistroAcademico(codigo_user));
         }
 
+        private void pcLogo_Click(object sender, EventArgs e)
+        {
+            abrirFormHijo(new Frm_LogoReloj());
+        }
+
 
         //----------------COLOR Y GRIP DE RECTANGULO INFERIOR
         protected override void OnPaint(PaintEventArgs e)

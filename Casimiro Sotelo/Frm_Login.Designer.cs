@@ -40,6 +40,7 @@
             this.btnIngresar = new System.Windows.Forms.Button();
             this.txtpass = new System.Windows.Forms.TextBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.ChkMostrarContraseña = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -71,6 +72,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
+            this.panel2.Controls.Add(this.ChkMostrarContraseña);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label18);
             this.panel2.Controls.Add(this.picUsuario);
@@ -91,11 +93,11 @@
             // 
             this.label1.AutoEllipsis = true;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(210, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 18);
+            this.label1.Size = new System.Drawing.Size(86, 24);
             this.label1.TabIndex = 44;
             this.label1.Text = "UNCSM";
             // 
@@ -103,13 +105,13 @@
             // 
             this.label18.AutoEllipsis = true;
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(26, 10);
+            this.label18.Location = new System.Drawing.Point(74, 9);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(441, 18);
+            this.label18.Size = new System.Drawing.Size(378, 24);
             this.label18.TabIndex = 43;
-            this.label18.Text = "SISTEMA DE CONTROL ACADÉMICO Y REGISTRO";
+            this.label18.Text = "Sistema de Control Académico y Registro";
             // 
             // picUsuario
             // 
@@ -124,6 +126,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Image = global::UNCSM.Properties.Resources.window_minimize_icon_198334;
             this.pictureBox3.Location = new System.Drawing.Point(500, 3);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(24, 25);
@@ -135,6 +138,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = global::UNCSM.Properties.Resources.ic_cancel_97589;
             this.pictureBox2.Location = new System.Drawing.Point(530, 3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(24, 25);
@@ -149,12 +153,13 @@
             this.btnIngresar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnIngresar.FlatAppearance.BorderSize = 0;
             this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIngresar.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIngresar.Location = new System.Drawing.Point(99, 200);
+            this.btnIngresar.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIngresar.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btnIngresar.Location = new System.Drawing.Point(99, 223);
             this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(299, 27);
+            this.btnIngresar.Size = new System.Drawing.Size(299, 35);
             this.btnIngresar.TabIndex = 0;
-            this.btnIngresar.Text = "INGRESAR";
+            this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.UseVisualStyleBackColor = false;
             this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
@@ -162,15 +167,14 @@
             // 
             this.txtpass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
             this.txtpass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtpass.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpass.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.txtpass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(219)))), ((int)(((byte)(221)))));
             this.txtpass.Location = new System.Drawing.Point(99, 146);
             this.txtpass.Name = "txtpass";
-            this.txtpass.PasswordChar = '*';
-            this.txtpass.Size = new System.Drawing.Size(299, 27);
+            this.txtpass.Size = new System.Drawing.Size(299, 26);
             this.txtpass.TabIndex = 1;
-            this.txtpass.Text = "Contraseña";
             this.txtpass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtpass.UseSystemPasswordChar = true;
             this.txtpass.Click += new System.EventHandler(this.txtpass_Click);
             this.txtpass.Enter += new System.EventHandler(this.txtpass_Enter);
             this.txtpass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtpass_KeyPress);
@@ -180,17 +184,30 @@
             // 
             this.txtUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
             this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUsuario.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuario.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(219)))), ((int)(((byte)(221)))));
             this.txtUsuario.Location = new System.Drawing.Point(99, 86);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(299, 27);
+            this.txtUsuario.Size = new System.Drawing.Size(299, 26);
             this.txtUsuario.TabIndex = 0;
             this.txtUsuario.Text = "USUARIO";
             this.txtUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtUsuario.Click += new System.EventHandler(this.txtUsuario_Click);
             this.txtUsuario.Enter += new System.EventHandler(this.txtUsuario_Enter);
             this.txtUsuario.Leave += new System.EventHandler(this.txtUsuario_Leave);
+            // 
+            // ChkMostrarContraseña
+            // 
+            this.ChkMostrarContraseña.AutoSize = true;
+            this.ChkMostrarContraseña.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
+            this.ChkMostrarContraseña.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ChkMostrarContraseña.Location = new System.Drawing.Point(183, 184);
+            this.ChkMostrarContraseña.Name = "ChkMostrarContraseña";
+            this.ChkMostrarContraseña.Size = new System.Drawing.Size(160, 21);
+            this.ChkMostrarContraseña.TabIndex = 45;
+            this.ChkMostrarContraseña.Text = "Mostrar Contraseña";
+            this.ChkMostrarContraseña.UseVisualStyleBackColor = true;
+            this.ChkMostrarContraseña.CheckedChanged += new System.EventHandler(this.ChkMostrarContraseña_CheckedChanged);
             // 
             // Frm_Login
             // 
@@ -229,5 +246,6 @@
         private System.Windows.Forms.PictureBox picUsuario;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.CheckBox ChkMostrarContraseña;
     }
 }
