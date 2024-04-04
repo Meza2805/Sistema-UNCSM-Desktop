@@ -275,7 +275,6 @@
             // 
             this.btnMatricular_Final.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMatricular_Final.BackColor = System.Drawing.Color.Transparent;
-           // this.btnMatricular_Final.BackgroundImage = global::UNCSM.Properties.Resources.disquete;
             this.btnMatricular_Final.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMatricular_Final.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnMatricular_Final.Enabled = false;
@@ -419,7 +418,7 @@
             // btnBuscar
             // 
             this.btnBuscar.BackColor = System.Drawing.Color.Transparent;
-          //  this.btnBuscar.BackgroundImage = global::UNCSM.Properties.Resources.cv;
+            this.btnBuscar.BackgroundImage = global::UNCSM.Properties.Resources.cv;
             this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnBuscar.Location = new System.Drawing.Point(232, 31);
             this.btnBuscar.Name = "btnBuscar";

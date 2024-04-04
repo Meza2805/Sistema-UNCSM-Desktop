@@ -733,6 +733,11 @@ namespace Ginmasio
             abrirFormHijo(new Frm_LogoReloj());
         }
 
+        private void btnBajaMatricula_Click(object sender, EventArgs e)
+        {
+            abrirFormHijo(new FrmBajaMatricula());
+        }
+
 
         //----------------COLOR Y GRIP DE RECTANGULO INFERIOR
         protected override void OnPaint(PaintEventArgs e)

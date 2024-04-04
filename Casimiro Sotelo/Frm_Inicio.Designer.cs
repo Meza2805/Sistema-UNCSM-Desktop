@@ -32,12 +32,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Inicio));
             this.Panel_superior = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.btn_normalizar_todo = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btn_Minimizar_Todo = new System.Windows.Forms.PictureBox();
             this.bnt_Cerrar_todo = new System.Windows.Forms.PictureBox();
             this.LbUsuario = new System.Windows.Forms.Label();
             this.btn_maximizar_todo = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Panel_Menu = new System.Windows.Forms.Panel();
             this.PanelRegistroOpciones = new System.Windows.Forms.Panel();
@@ -104,15 +105,13 @@
             this.pcLogo = new System.Windows.Forms.PictureBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.Panel_Contenedor = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.Panel_superior.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_normalizar_todo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Minimizar_Todo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bnt_Cerrar_todo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_maximizar_todo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.Panel_Menu.SuspendLayout();
             this.PanelRegistroOpciones.SuspendLayout();
             this.PanelRegistroUsuario.SuspendLayout();
@@ -130,7 +129,6 @@
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
-            this.Panel_Contenedor.SuspendLayout();
             this.SuspendLayout();
             // 
             // Panel_superior
@@ -161,6 +159,17 @@
             this.panel1.Size = new System.Drawing.Size(439, 28);
             this.panel1.TabIndex = 0;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
+            this.label3.Location = new System.Drawing.Point(34, 4);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(125, 17);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Usuario en Linea:";
+            // 
             // btn_normalizar_todo
             // 
             this.btn_normalizar_todo.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -173,6 +182,17 @@
             this.btn_normalizar_todo.TabStop = false;
             this.btn_normalizar_todo.Visible = false;
             this.btn_normalizar_todo.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox2.Image = global::UNCSM.Properties.Resources.perfil;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(25, 28);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
             // 
             // btn_Minimizar_Todo
             // 
@@ -222,17 +242,6 @@
             this.btn_maximizar_todo.TabStop = false;
             this.btn_maximizar_todo.Click += new System.EventHandler(this.btn_maximizar_todo_Click);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox2.Image = global::UNCSM.Properties.Resources.perfil;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(25, 28);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -249,10 +258,10 @@
             this.Panel_Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(127)))), ((int)(((byte)(180)))));
             this.Panel_Menu.Controls.Add(this.PanelRegistroOpciones);
             this.Panel_Menu.Controls.Add(this.PanelRegistroUsuario);
+            this.Panel_Menu.Controls.Add(this.PanelRegistroCalificaciones);
             this.Panel_Menu.Controls.Add(this.PanelReportes);
             this.Panel_Menu.Controls.Add(this.PanelRegistroVistas);
             this.Panel_Menu.Controls.Add(this.PanelRegistroGrupos);
-            this.Panel_Menu.Controls.Add(this.PanelRegistroCalificaciones);
             this.Panel_Menu.Controls.Add(this.PanelReporte);
             this.Panel_Menu.Controls.Add(this.PanelVista);
             this.Panel_Menu.Controls.Add(this.PanelGrupo);
@@ -281,7 +290,7 @@
             this.PanelRegistroOpciones.Controls.Add(this.btnCambiarTurnoCarrera);
             this.PanelRegistroOpciones.Controls.Add(this.panel18);
             this.PanelRegistroOpciones.ForeColor = System.Drawing.Color.Blue;
-            this.PanelRegistroOpciones.Location = new System.Drawing.Point(11, 482);
+            this.PanelRegistroOpciones.Location = new System.Drawing.Point(11, 453);
             this.PanelRegistroOpciones.Name = "PanelRegistroOpciones";
             this.PanelRegistroOpciones.Size = new System.Drawing.Size(168, 12);
             this.PanelRegistroOpciones.TabIndex = 26;
@@ -313,6 +322,7 @@
             this.btnBajaMatricula.Text = "Baja de Matrícula";
             this.btnBajaMatricula.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBajaMatricula.UseVisualStyleBackColor = false;
+            this.btnBajaMatricula.Click += new System.EventHandler(this.btnBajaMatricula_Click);
             // 
             // btnCambiarTurnoCarrera
             // 
@@ -352,9 +362,9 @@
             this.PanelRegistroUsuario.Controls.Add(this.btnRegistroUsuario);
             this.PanelRegistroUsuario.Controls.Add(this.panel12);
             this.PanelRegistroUsuario.ForeColor = System.Drawing.Color.Blue;
-            this.PanelRegistroUsuario.Location = new System.Drawing.Point(11, 453);
+            this.PanelRegistroUsuario.Location = new System.Drawing.Point(4, 437);
             this.PanelRegistroUsuario.Name = "PanelRegistroUsuario";
-            this.PanelRegistroUsuario.Size = new System.Drawing.Size(166, 13);
+            this.PanelRegistroUsuario.Size = new System.Drawing.Size(166, 10);
             this.PanelRegistroUsuario.TabIndex = 25;
             this.PanelRegistroUsuario.Visible = false;
             // 
@@ -718,9 +728,9 @@
             this.PanelRegistroCalificaciones.Controls.Add(this.panel5);
             this.PanelRegistroCalificaciones.Controls.Add(this.btnRegistroCalificaciones);
             this.PanelRegistroCalificaciones.ForeColor = System.Drawing.Color.Blue;
-            this.PanelRegistroCalificaciones.Location = new System.Drawing.Point(11, 421);
+            this.PanelRegistroCalificaciones.Location = new System.Drawing.Point(5, 421);
             this.PanelRegistroCalificaciones.Name = "PanelRegistroCalificaciones";
-            this.PanelRegistroCalificaciones.Size = new System.Drawing.Size(165, 19);
+            this.PanelRegistroCalificaciones.Size = new System.Drawing.Size(165, 10);
             this.PanelRegistroCalificaciones.TabIndex = 24;
             this.PanelRegistroCalificaciones.Visible = false;
             // 
@@ -794,7 +804,7 @@
             this.btnReportes.FlatAppearance.BorderSize = 0;
             this.btnReportes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
             this.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReportes.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnReportes.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReportes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(160)))), ((int)(((byte)(35)))));
             this.btnReportes.Image = global::UNCSM.Properties.Resources.reporte__5_;
             this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -830,7 +840,7 @@
             this.btnVistas.FlatAppearance.BorderSize = 0;
             this.btnVistas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
             this.btnVistas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVistas.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnVistas.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVistas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(160)))), ((int)(((byte)(35)))));
             this.btnVistas.Image = global::UNCSM.Properties.Resources.informes;
             this.btnVistas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -866,7 +876,7 @@
             this.btnGrupos.FlatAppearance.BorderSize = 0;
             this.btnGrupos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
             this.btnGrupos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGrupos.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnGrupos.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGrupos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(160)))), ((int)(((byte)(35)))));
             this.btnGrupos.Image = global::UNCSM.Properties.Resources.choose_2_1023471;
             this.btnGrupos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -902,7 +912,7 @@
             this.btnOpciones.FlatAppearance.BorderSize = 0;
             this.btnOpciones.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
             this.btnOpciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOpciones.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnOpciones.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOpciones.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(160)))), ((int)(((byte)(35)))));
             this.btnOpciones.Image = global::UNCSM.Properties.Resources.reporte__3_;
             this.btnOpciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -938,7 +948,7 @@
             this.btnCalificaciones.FlatAppearance.BorderSize = 0;
             this.btnCalificaciones.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
             this.btnCalificaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCalificaciones.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnCalificaciones.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalificaciones.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(160)))), ((int)(((byte)(35)))));
             this.btnCalificaciones.Image = global::UNCSM.Properties.Resources.notas;
             this.btnCalificaciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -982,7 +992,7 @@
             this.btnUsuario.FlatAppearance.BorderSize = 0;
             this.btnUsuario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
             this.btnUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUsuario.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsuario.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(160)))), ((int)(((byte)(35)))));
             this.btnUsuario.Image = global::UNCSM.Properties.Resources.programador__1_;
             this.btnUsuario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1114,35 +1124,12 @@
             // Panel_Contenedor
             // 
             this.Panel_Contenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(219)))), ((int)(((byte)(219)))));
-            this.Panel_Contenedor.Controls.Add(this.label2);
             this.Panel_Contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Panel_Contenedor.Location = new System.Drawing.Point(194, 28);
             this.Panel_Contenedor.Name = "Panel_Contenedor";
             this.Panel_Contenedor.Size = new System.Drawing.Size(1004, 641);
             this.Panel_Contenedor.TabIndex = 5;
             this.Panel_Contenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Contenedor_Paint);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
-            this.label2.Location = new System.Drawing.Point(467, 312);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 17);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "ldUsuario";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
-            this.label3.Location = new System.Drawing.Point(34, 4);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 17);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Usuario en Linea:";
             // 
             // Frm_Inicio
             // 
@@ -1165,10 +1152,10 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_normalizar_todo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Minimizar_Todo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bnt_Cerrar_todo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_maximizar_todo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.Panel_Menu.ResumeLayout(false);
             this.PanelRegistroOpciones.ResumeLayout(false);
             this.PanelRegistroUsuario.ResumeLayout(false);
@@ -1187,8 +1174,6 @@
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
-            this.Panel_Contenedor.ResumeLayout(false);
-            this.Panel_Contenedor.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1270,6 +1255,5 @@
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Button btnBajaMatricula;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
     }
 }
