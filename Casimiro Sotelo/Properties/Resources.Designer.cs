@@ -253,6 +253,136 @@ namespace UNCSM.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btnActualizarDatos {
+            get {
+                object obj = ResourceManager.GetObject("btnActualizarDatos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnAgregarAsignatura {
+            get {
+                object obj = ResourceManager.GetObject("btnAgregarAsignatura", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnBuscarEstudiante {
+            get {
+                object obj = ResourceManager.GetObject("btnBuscarEstudiante", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnCertificadoCalificaciones {
+            get {
+                object obj = ResourceManager.GetObject("btnCertificadoCalificaciones", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnCertificadoCalificaciones__2_ {
+            get {
+                object obj = ResourceManager.GetObject("btnCertificadoCalificaciones (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnCertificadoSiucap {
+            get {
+                object obj = ResourceManager.GetObject("btnCertificadoSiucap", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnDardeBaja {
+            get {
+                object obj = ResourceManager.GetObject("btnDardeBaja", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BtnGenerarCertificado {
+            get {
+                object obj = ResourceManager.GetObject("BtnGenerarCertificado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnGenerarExcel {
+            get {
+                object obj = ResourceManager.GetObject("btnGenerarExcel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnGenerarPDF {
+            get {
+                object obj = ResourceManager.GetObject("btnGenerarPDF", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnHistorialBajaMatricula {
+            get {
+                object obj = ResourceManager.GetObject("btnHistorialBajaMatricula", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnHistorialCertificados {
+            get {
+                object obj = ResourceManager.GetObject("btnHistorialCertificados", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnHistorialCertificadosGenerados {
+            get {
+                object obj = ResourceManager.GetObject("btnHistorialCertificadosGenerados", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap buscar {
             get {
                 object obj = ResourceManager.GetObject("buscar", resourceCulture);
@@ -1173,6 +1303,16 @@ namespace UNCSM.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Reportes_Registro_Academico {
+            get {
+                object obj = ResourceManager.GetObject("Reportes Registro Academico", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap resize_minimize_maximize_expand_screen_icon_190600 {
             get {
                 object obj = ResourceManager.GetObject("resize_minimize_maximize_expand_screen_icon_190600", resourceCulture);
@@ -1376,6 +1516,26 @@ namespace UNCSM.Properties {
         internal static System.Drawing.Bitmap usuario1 {
             get {
                 object obj = ResourceManager.GetObject("usuario1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vcsconflicting_93497 {
+            get {
+                object obj = ResourceManager.GetObject("vcsconflicting_93497", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vcsconflicting_934971 {
+            get {
+                object obj = ResourceManager.GetObject("vcsconflicting_934971", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

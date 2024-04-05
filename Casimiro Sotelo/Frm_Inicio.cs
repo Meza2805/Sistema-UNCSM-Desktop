@@ -85,8 +85,18 @@ namespace Ginmasio
                 case 39: //Usuario Registro Academico
                     panelCalificaciones.Enabled = false;
                     PanelUsuario.Enabled = false;
-                    PanelOpciones.Enabled = true;
-                    btnBajaMatricula.Enabled = true;
+                    
+                    if (codigo_user == "000043615") //Por Orientaciones de Secretaria Academica solo el Usuario de Bertha puede hacer baja de matricula
+                    {
+                        PanelOpciones.Enabled = true;
+                        btnBajaMatricula.Enabled = true;
+                    }
+                    else
+                    {
+                        PanelOpciones.Enabled = false;
+                        btnBajaMatricula.Enabled = false;
+                    }
+                    
                     btnCambiarTurnoCarrera.Enabled = false;
                     PanelGrupo.Enabled = false;
                     PanelVista.Enabled = false;
