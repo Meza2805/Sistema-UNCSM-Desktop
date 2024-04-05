@@ -47,16 +47,18 @@
             this.txtGrupoR = new System.Windows.Forms.TextBox();
             this.txtAreaR = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnBaja = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox3
@@ -76,7 +78,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(70, 34);
+            this.label2.Location = new System.Drawing.Point(13, 28);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(78, 19);
             this.label2.TabIndex = 61;
@@ -86,7 +88,7 @@
             // 
             this.txtCarne.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtCarne.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCarne.Location = new System.Drawing.Point(154, 31);
+            this.txtCarne.Location = new System.Drawing.Point(97, 25);
             this.txtCarne.Name = "txtCarne";
             this.txtCarne.Size = new System.Drawing.Size(100, 26);
             this.txtCarne.TabIndex = 36;
@@ -94,7 +96,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btnBaja);
             this.groupBox1.Controls.Add(this.txtCodigoR);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label6);
@@ -122,7 +123,7 @@
             // 
             this.txtCodigoR.Enabled = false;
             this.txtCodigoR.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigoR.Location = new System.Drawing.Point(229, 40);
+            this.txtCodigoR.Location = new System.Drawing.Point(170, 34);
             this.txtCodigoR.Name = "txtCodigoR";
             this.txtCodigoR.Size = new System.Drawing.Size(104, 22);
             this.txtCodigoR.TabIndex = 72;
@@ -132,7 +133,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(72, 40);
+            this.label8.Location = new System.Drawing.Point(13, 34);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(118, 19);
             this.label8.TabIndex = 71;
@@ -142,7 +143,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(70, 84);
+            this.label6.Location = new System.Drawing.Point(11, 78);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(131, 19);
             this.label6.TabIndex = 67;
@@ -152,7 +153,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(72, 166);
+            this.label7.Location = new System.Drawing.Point(13, 160);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(62, 19);
             this.label7.TabIndex = 68;
@@ -162,7 +163,7 @@
             // 
             this.txtNombreCompleto.Enabled = false;
             this.txtNombreCompleto.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreCompleto.Location = new System.Drawing.Point(229, 81);
+            this.txtNombreCompleto.Location = new System.Drawing.Point(170, 75);
             this.txtNombreCompleto.Name = "txtNombreCompleto";
             this.txtNombreCompleto.Size = new System.Drawing.Size(374, 22);
             this.txtNombreCompleto.TabIndex = 69;
@@ -172,7 +173,7 @@
             // 
             this.txtCarreraR.Enabled = false;
             this.txtCarreraR.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCarreraR.Location = new System.Drawing.Point(229, 163);
+            this.txtCarreraR.Location = new System.Drawing.Point(170, 157);
             this.txtCarreraR.Name = "txtCarreraR";
             this.txtCarreraR.Size = new System.Drawing.Size(466, 22);
             this.txtCarreraR.TabIndex = 70;
@@ -182,7 +183,7 @@
             // 
             this.label37.AutoSize = true;
             this.label37.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(70, 126);
+            this.label37.Location = new System.Drawing.Point(11, 120);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(153, 19);
             this.label37.TabIndex = 59;
@@ -192,7 +193,7 @@
             // 
             this.txtCaneR.Enabled = false;
             this.txtCaneR.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCaneR.Location = new System.Drawing.Point(472, 40);
+            this.txtCaneR.Location = new System.Drawing.Point(413, 34);
             this.txtCaneR.Name = "txtCaneR";
             this.txtCaneR.Size = new System.Drawing.Size(131, 22);
             this.txtCaneR.TabIndex = 66;
@@ -202,7 +203,7 @@
             // 
             this.label38.AutoSize = true;
             this.label38.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(388, 43);
+            this.label38.Location = new System.Drawing.Point(329, 37);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(78, 19);
             this.label38.TabIndex = 60;
@@ -211,28 +212,28 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(715, 171);
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(654, 161);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 16);
+            this.label1.Size = new System.Drawing.Size(51, 19);
             this.label1.TabIndex = 65;
-            this.label1.Text = "GRUPO";
+            this.label1.Text = "Grupo";
             // 
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(715, 122);
+            this.label43.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.label43.Location = new System.Drawing.Point(656, 116);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(49, 16);
+            this.label43.Size = new System.Drawing.Size(48, 19);
             this.label43.TabIndex = 61;
-            this.label43.Text = "TURNO";
+            this.label43.Text = "Turno";
             // 
             // txtTurnoR
             // 
             this.txtTurnoR.Enabled = false;
             this.txtTurnoR.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTurnoR.Location = new System.Drawing.Point(770, 119);
+            this.txtTurnoR.Location = new System.Drawing.Point(711, 113);
             this.txtTurnoR.Name = "txtTurnoR";
             this.txtTurnoR.Size = new System.Drawing.Size(172, 22);
             this.txtTurnoR.TabIndex = 64;
@@ -242,7 +243,7 @@
             // 
             this.txtGrupoR.Enabled = false;
             this.txtGrupoR.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGrupoR.Location = new System.Drawing.Point(770, 164);
+            this.txtGrupoR.Location = new System.Drawing.Point(711, 158);
             this.txtGrupoR.Name = "txtGrupoR";
             this.txtGrupoR.Size = new System.Drawing.Size(172, 22);
             this.txtGrupoR.TabIndex = 62;
@@ -252,7 +253,7 @@
             // 
             this.txtAreaR.Enabled = false;
             this.txtAreaR.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAreaR.Location = new System.Drawing.Point(229, 119);
+            this.txtAreaR.Location = new System.Drawing.Point(170, 113);
             this.txtAreaR.Name = "txtAreaR";
             this.txtAreaR.Size = new System.Drawing.Size(466, 22);
             this.txtAreaR.TabIndex = 63;
@@ -267,6 +268,19 @@
             this.panel1.Size = new System.Drawing.Size(1002, 94);
             this.panel1.TabIndex = 73;
             // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(289, 24);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(515, 43);
+            this.label3.TabIndex = 62;
+            this.label3.Text = "Baja de Matrícula para Estudiantes";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label3.UseCompatibleTextRendering = true;
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.groupBox3);
@@ -278,6 +292,7 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.groupBox2);
             this.panel3.Controls.Add(this.groupBox1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 171);
@@ -287,38 +302,38 @@
             // 
             // btnBaja
             // 
+            this.btnBaja.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnBaja.BackColor = System.Drawing.Color.Transparent;
-            //this.btnBaja.BackgroundImage = global::UNCSM.Properties.Resources.btnDardeBaja;
+            this.btnBaja.BackgroundImage = global::UNCSM.Properties.Resources.btnDardeBaja;
             this.btnBaja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBaja.Location = new System.Drawing.Point(74, 208);
+            this.btnBaja.Location = new System.Drawing.Point(817, 19);
             this.btnBaja.Name = "btnBaja";
             this.btnBaja.Size = new System.Drawing.Size(173, 59);
             this.btnBaja.TabIndex = 73;
             this.btnBaja.UseVisualStyleBackColor = false;
+            this.btnBaja.Click += new System.EventHandler(this.btnBaja_Click);
             // 
             // btnBuscar
             // 
             this.btnBuscar.BackColor = System.Drawing.Color.Transparent;
-            //this.btnBuscar.BackgroundImage = global::UNCSM.Properties.Resources.btnBuscarEstudiante;
+            this.btnBuscar.BackgroundImage = global::UNCSM.Properties.Resources.btnBuscarEstudiante;
             this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBuscar.Location = new System.Drawing.Point(295, 12);
+            this.btnBuscar.Location = new System.Drawing.Point(238, 6);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(228, 59);
             this.btnBuscar.TabIndex = 39;
             this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // label3
+            // groupBox2
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(189, 27);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(506, 36);
-            this.label3.TabIndex = 62;
-            this.label3.Text = "Baja de Matrícula para Estudiantes";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.groupBox2.Controls.Add(this.btnBaja);
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.groupBox2.Location = new System.Drawing.Point(0, 192);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(1002, 87);
+            this.groupBox2.TabIndex = 74;
+            this.groupBox2.TabStop = false;
             // 
             // FrmBajaMatricula
             // 
@@ -340,6 +355,7 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -370,5 +386,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }

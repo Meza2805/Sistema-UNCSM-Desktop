@@ -30,5 +30,11 @@ namespace UNCSM
             FrmRegistroCertificado frm = new FrmRegistroCertificado();
             frm.Show();
         }
+
+        private void btnBajaMatricula_Click(object sender, EventArgs e)
+        {
+            FrmRegistroBaja frmbaja = new FrmRegistroBaja();
+            frmbaja.Show();
+        }
     }
 }

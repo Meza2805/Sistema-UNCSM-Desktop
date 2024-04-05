@@ -695,6 +695,44 @@ namespace Capa_Negocio
             Comando.ExecuteNonQuery();
             conexion.conexion_datos.Close(); // se cierra la conexion
         }
+        public int BajaEstudiante(string usuario, string carne)
+        {
+            int salida = 0;
+            DataTable Tabla_Estudiante = new DataTable(); //Instancia de un ojeto de tipo DataTable para recibir la tabla que devuelde el objeto SqlDataAdapter
+            conexion.conexion_datos.Open(); //se abre la conexion para el comando
+            Comando = new SqlCommand(); //instancia del objeto de tipo sqlcommando
+            Comando.CommandText = "SP_BAJA_MATRICULA"; //se pasa el procedimiento almancenado
+            Comando.CommandType = System.Data.CommandType.StoredProcedure;
+            Comando.Parameters.Add(new SqlParameter("@CODE_USER", System.Data.SqlDbType.NVarChar)).Value = usuario;
+            Comando.Parameters.Add(new SqlParameter("@CARNE", System.Data.SqlDbType.NVarChar)).Value = carne;
+            //Comando.Parameters.Add(new SqlParameter("@ID_CURRICULUM_P", System.Data.SqlDbType.Int)).Value = ID_CURRICULUM_P;
+            //Comando.Parameters.Add(new SqlParameter("@ACA_SESSION_P", System.Data.SqlDbType.NVarChar)).Value = ACA_SESSION_P;
+            Comando.Parameters.Add("@salida", SqlDbType.Int).Direction = ParameterDirection.Output;
+            Comando.Connection = conexion.conexion_datos; // se abre la conexion para el comando
+            Comando.ExecuteNonQuery();
+            salida = Convert.ToInt32(Comando.Parameters["@SALIDA"].Value);
+            //Adaptador = new SqlDataAdapter(Comando); //se reciebe la tabla producto de la ejecucion del procedimiento
+            //Adaptador.Fill(Tabla_Estudiante); // con el SqlDataAdapter se llena la tabla
+            conexion.conexion_datos.Close(); // se cierra la conexion
+                                             //return Tabla_Estudiante; // retorno de la tabla
+            return salida;
+        }
+
+        public DataTable Historial_BajaMatricula()
+        {
+            DataTable tabla_registro = new DataTable(); //instancia de un ojeto de tipo datatable para recibir la tabla que devuelde el objeto sqldataadapter
+            conexion.conexion_datos.Open(); //se abre la conexion para el comando
+            Comando = new SqlCommand(); //instancia del objeto de tipo sqlcommando
+            Comando.CommandText = "SP_MOSTRA_REGISTRO_BAJA"; //se pasa el procedimiento almancenado
+            Comando.CommandType = System.Data.CommandType.StoredProcedure;
+            //Comando.Parameters.Add(new SqlParameter("@PEOPLE", System.Data.SqlDbType.Int)).Value = usuario;
+            //Comando.Parameters.Add(new SqlParameter("@CURRICULUM", System.Data.SqlDbType.NVarChar)).Value = curriculum;
+            Comando.Connection = conexion.conexion_datos; // se abre la conexion para el comando
+            Adaptador = new SqlDataAdapter(Comando); //se reciebe la tabla producto de la ejecucion del procedimiento
+            Adaptador.Fill(tabla_registro); // con el sqldataadapter se llena la tabla
+            conexion.conexion_datos.Close(); // se cierra la conexion
+            return tabla_registro; // retorno de la tabla 
+        }
     }
     public class Est_Recudiante_Campus
     {

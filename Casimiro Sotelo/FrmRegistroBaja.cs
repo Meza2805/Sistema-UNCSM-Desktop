@@ -11,35 +11,25 @@ using Capa_Negocio;
 
 namespace UNCSM
 {
-   
-    public partial class FrmRegistroCertificado : Form
+    public partial class FrmRegistroBaja : Form
     {
         campus bd = new campus();
         DataTable table = new DataTable();
-        public FrmRegistroCertificado()
+        public FrmRegistroBaja()
         {
             InitializeComponent();
             cargar();
         }
 
-
         void cargar()
         {
-            table = bd.Historial_Certificado();
+            table = bd.Historial_BajaMatricula();
             dgvRegistro.DataSource = table;
         }
 
         private void btnCarga_Click(object sender, EventArgs e)
         {
             cargar();
-        }
-
-        private void txtBusqueda_TextChanged(object sender, EventArgs e)
-        {
-            String filtro = txtBusqueda.Text;
-            DataView dv = new DataView(table);
-            dv.RowFilter = $"CARNE_ESTUDIANTE LIKE '%{filtro}%'";
-            dgvRegistro.DataSource = dv;
         }
     }
 }

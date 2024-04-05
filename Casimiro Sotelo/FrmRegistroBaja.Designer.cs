@@ -1,6 +1,6 @@
 ﻿namespace UNCSM
 {
-    partial class FrmRegistroCertificado
+    partial class FrmRegistroBaja
     {
         /// <summary>
         /// Required designer variable.
@@ -32,18 +32,24 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistroCertificado));
-            this.dgvRegistro = new System.Windows.Forms.DataGridView();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistroBaja));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dgvRegistro = new System.Windows.Forms.DataGridView();
             this.btnCarga = new System.Windows.Forms.Button();
-            this.txtCreditos02 = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtBusqueda = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRegistro)).BeginInit();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRegistro)).BeginInit();
             this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.btnCarga);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(800, 93);
+            this.panel1.TabIndex = 87;
             // 
             // dgvRegistro
             // 
@@ -52,14 +58,14 @@
             this.dgvRegistro.AllowUserToDeleteRows = false;
             this.dgvRegistro.AllowUserToResizeColumns = false;
             this.dgvRegistro.AllowUserToResizeRows = false;
-            this.dgvRegistro.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvRegistro.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgvRegistro.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvRegistro.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(219)))), ((int)(((byte)(219)))));
             this.dgvRegistro.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.dgvRegistro.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
@@ -68,7 +74,7 @@
             this.dgvRegistro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
@@ -77,13 +83,13 @@
             this.dgvRegistro.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvRegistro.EnableHeadersVisualStyles = false;
             this.dgvRegistro.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
-            this.dgvRegistro.Location = new System.Drawing.Point(0, 0);
+            this.dgvRegistro.Location = new System.Drawing.Point(0, 93);
             this.dgvRegistro.MultiSelect = false;
             this.dgvRegistro.Name = "dgvRegistro";
             this.dgvRegistro.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -99,103 +105,42 @@
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
             this.dgvRegistro.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvRegistro.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvRegistro.Size = new System.Drawing.Size(852, 323);
-            this.dgvRegistro.TabIndex = 84;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.txtBusqueda);
-            this.panel1.Controls.Add(this.btnCarga);
-            this.panel1.Controls.Add(this.txtCreditos02);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(852, 93);
-            this.panel1.TabIndex = 85;
+            this.dgvRegistro.Size = new System.Drawing.Size(800, 357);
+            this.dgvRegistro.TabIndex = 88;
             // 
             // btnCarga
             // 
             this.btnCarga.BackgroundImage = global::UNCSM.Properties.Resources.btnActualizarDatos;
             this.btnCarga.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCarga.Location = new System.Drawing.Point(513, 12);
+            this.btnCarga.Location = new System.Drawing.Point(13, 13);
             this.btnCarga.Name = "btnCarga";
-            this.btnCarga.Size = new System.Drawing.Size(199, 57);
+            this.btnCarga.Size = new System.Drawing.Size(230, 66);
             this.btnCarga.TabIndex = 117;
             this.btnCarga.UseVisualStyleBackColor = true;
             this.btnCarga.Click += new System.EventHandler(this.btnCarga_Click);
             // 
-            // txtCreditos02
-            // 
-            this.txtCreditos02.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtCreditos02.Cursor = System.Windows.Forms.Cursors.Default;
-            this.txtCreditos02.Enabled = false;
-            this.txtCreditos02.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCreditos02.Location = new System.Drawing.Point(863, 66);
-            this.txtCreditos02.MaxLength = 500;
-            this.txtCreditos02.Name = "txtCreditos02";
-            this.txtCreditos02.Size = new System.Drawing.Size(114, 26);
-            this.txtCreditos02.TabIndex = 116;
-            this.txtCreditos02.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtCreditos02.Visible = false;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.dgvRegistro);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 93);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(852, 323);
-            this.panel2.TabIndex = 86;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(24, 30);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(300, 19);
-            this.label8.TabIndex = 121;
-            this.label8.Text = "Buscar Certificado por Carné de Estudiante";
-            // 
-            // txtBusqueda
-            // 
-            this.txtBusqueda.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBusqueda.Location = new System.Drawing.Point(330, 30);
-            this.txtBusqueda.Name = "txtBusqueda";
-            this.txtBusqueda.Size = new System.Drawing.Size(144, 22);
-            this.txtBusqueda.TabIndex = 120;
-            this.txtBusqueda.TextChanged += new System.EventHandler(this.txtBusqueda_TextChanged);
-            // 
-            // FrmRegistroCertificado
+            // FrmRegistroBaja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(852, 416);
-            this.Controls.Add(this.panel2);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dgvRegistro);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FrmRegistroCertificado";
+            this.Name = "FrmRegistroBaja";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Historial de Registro de Certificados";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRegistro)).EndInit();
+            this.Text = "Historial de Baja de Matricula";
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRegistro)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        public System.Windows.Forms.DataGridView dgvRegistro;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txtCreditos02;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnCarga;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtBusqueda;
+        public System.Windows.Forms.DataGridView dgvRegistro;
     }
 }

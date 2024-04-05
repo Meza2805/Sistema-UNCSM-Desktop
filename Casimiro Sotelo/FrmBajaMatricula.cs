@@ -8,18 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Capa_Negocio;
+using Ginmasio;
 
 namespace UNCSM
 {
     public partial class FrmBajaMatricula : Form
     {
-        public FrmBajaMatricula()
+        string usuario = "";
+        int opcion = 0;
+        public FrmBajaMatricula(string codigo_usurio)
         {
             InitializeComponent();
+            usuario = codigo_usurio;
         }
         Frm_Mensaje_Advertencia cuadro;
         campus bd = new campus();
         DataTable tabla = new DataTable();
+
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             if (txtCarne.Text == string.Empty)
@@ -61,5 +66,39 @@ namespace UNCSM
 
             }
         }
+
+        private void btnBaja_Click(object sender, EventArgs e)
+        {
+
+            if (txtCaneR.Text == string.Empty)
+            {
+                MessageBox.Show("No se ha cargado ningun Estudiante");
+            }
+            else
+            {
+                DialogResult result = MessageBox.Show($"Estimado usuario, ¿Esta seguro que desea dar de baja la matricula de {txtNombreCompleto.Text}?", "Consulta de Exportación", MessageBoxButtons.YesNo);
+
+                if (result == DialogResult.Yes)
+                {
+
+                    opcion = bd.BajaEstudiante(usuario, txtCarne.Text);
+
+                    if (opcion == 1)
+                    {
+                        MessageBox.Show("No se realizo la operacion!");
+                    }
+                    else
+                    {
+                        Mensaje_Suscripcion mensaje = new Mensaje_Suscripcion();
+                        mensaje.ShowDialog();
+                    }
+
+                }
+            }
+
+
+
+        }
     }
 }
+

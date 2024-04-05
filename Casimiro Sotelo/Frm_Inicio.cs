@@ -735,7 +735,7 @@ namespace Ginmasio
 
         private void btnBajaMatricula_Click(object sender, EventArgs e)
         {
-            abrirFormHijo(new FrmBajaMatricula());
+            abrirFormHijo(new FrmBajaMatricula(codigo_user));
         }
 
 

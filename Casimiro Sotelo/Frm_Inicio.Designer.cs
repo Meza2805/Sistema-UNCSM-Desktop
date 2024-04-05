@@ -33,91 +33,86 @@
             this.Panel_superior = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.LbUsuario = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Panel_Menu = new System.Windows.Forms.Panel();
+            this.PanelRegistroUsuario = new System.Windows.Forms.Panel();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.PanelRegistroCalificaciones = new System.Windows.Forms.Panel();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.PanelRegistroOpciones = new System.Windows.Forms.Panel();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.PanelReportes = new System.Windows.Forms.Panel();
+            this.panel19 = new System.Windows.Forms.Panel();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.PanelRegistroVistas = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.PanelRegistroGrupos = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.PanelReporte = new System.Windows.Forms.Panel();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.PanelVista = new System.Windows.Forms.Panel();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.PanelGrupo = new System.Windows.Forms.Panel();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.PanelOpciones = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panelCalificaciones = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.PanelUsuario = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.lbCarga = new System.Windows.Forms.Label();
+            this.pgrCarga = new System.Windows.Forms.ProgressBar();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.Panel_Contenedor = new System.Windows.Forms.Panel();
+            this.btnBajaMatricula = new System.Windows.Forms.Button();
+            this.btnCambiarTurnoCarrera = new System.Windows.Forms.Button();
+            this.btnCredencialesUsuario = new System.Windows.Forms.Button();
+            this.btnActualizarUsuario = new System.Windows.Forms.Button();
+            this.btnRegistroUsuario = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnCalificacionesActualizacion = new System.Windows.Forms.Button();
+            this.btnRegistroCalificaciones = new System.Windows.Forms.Button();
+            this.btnRectoria = new System.Windows.Forms.Button();
+            this.btnSecretrariaAcademica = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
+            this.btnMatriculaTurnoSexo = new System.Windows.Forms.Button();
+            this.btnMatriculaGrupo = new System.Windows.Forms.Button();
+            this.btnMatriculaGlobal = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.btnReportes = new System.Windows.Forms.Button();
+            this.btnVistas = new System.Windows.Forms.Button();
+            this.btnGrupos = new System.Windows.Forms.Button();
+            this.btnOpciones = new System.Windows.Forms.Button();
+            this.btnCalificaciones = new System.Windows.Forms.Button();
+            this.btnUsuario = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.bntAsistencia = new System.Windows.Forms.Button();
+            this.btnClientes = new System.Windows.Forms.Button();
+            this.pcLogo = new System.Windows.Forms.PictureBox();
             this.btn_normalizar_todo = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btn_Minimizar_Todo = new System.Windows.Forms.PictureBox();
             this.bnt_Cerrar_todo = new System.Windows.Forms.PictureBox();
-            this.LbUsuario = new System.Windows.Forms.Label();
             this.btn_maximizar_todo = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.Panel_Menu = new System.Windows.Forms.Panel();
-            this.PanelRegistroOpciones = new System.Windows.Forms.Panel();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.btnBajaMatricula = new System.Windows.Forms.Button();
-            this.btnCambiarTurnoCarrera = new System.Windows.Forms.Button();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.PanelRegistroUsuario = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.btnCredencialesUsuario = new System.Windows.Forms.Button();
-            this.btnActualizarUsuario = new System.Windows.Forms.Button();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.btnRegistroUsuario = new System.Windows.Forms.Button();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.PanelRegistroCalificaciones = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.btnCalificacionesActualizacion = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.PanelReportes = new System.Windows.Forms.Panel();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.btnRectoria = new System.Windows.Forms.Button();
-            this.panel22 = new System.Windows.Forms.Panel();
-            this.btnSecretrariaAcademica = new System.Windows.Forms.Button();
-            this.panel23 = new System.Windows.Forms.Panel();
-            this.button19 = new System.Windows.Forms.Button();
-            this.PanelRegistroVistas = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.btnMatriculaTurnoSexo = new System.Windows.Forms.Button();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.btnMatriculaGrupo = new System.Windows.Forms.Button();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.btnMatriculaGlobal = new System.Windows.Forms.Button();
-            this.PanelRegistroGrupos = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.button10 = new System.Windows.Forms.Button();
-            this.PanelReporte = new System.Windows.Forms.Panel();
-            this.btnReportes = new System.Windows.Forms.Button();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.PanelVista = new System.Windows.Forms.Panel();
-            this.btnVistas = new System.Windows.Forms.Button();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.PanelGrupo = new System.Windows.Forms.Panel();
-            this.btnGrupos = new System.Windows.Forms.Button();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.PanelOpciones = new System.Windows.Forms.Panel();
-            this.btnOpciones = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panelCalificaciones = new System.Windows.Forms.Panel();
-            this.btnCalificaciones = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.PanelUsuario = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.btnUsuario = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.lbCarga = new System.Windows.Forms.Label();
-            this.pgrCarga = new System.Windows.Forms.ProgressBar();
-            this.bntAsistencia = new System.Windows.Forms.Button();
-            this.btnClientes = new System.Windows.Forms.Button();
-            this.pcLogo = new System.Windows.Forms.PictureBox();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.Panel_Contenedor = new System.Windows.Forms.Panel();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnRegistroCalificaciones = new System.Windows.Forms.Button();
             this.Panel_superior.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_normalizar_todo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Minimizar_Todo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bnt_Cerrar_todo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_maximizar_todo)).BeginInit();
             this.Panel_Menu.SuspendLayout();
-            this.PanelRegistroOpciones.SuspendLayout();
             this.PanelRegistroUsuario.SuspendLayout();
             this.PanelRegistroCalificaciones.SuspendLayout();
+            this.PanelRegistroOpciones.SuspendLayout();
             this.PanelReportes.SuspendLayout();
             this.PanelRegistroVistas.SuspendLayout();
             this.PanelRegistroGrupos.SuspendLayout();
@@ -127,10 +122,15 @@
             this.PanelOpciones.SuspendLayout();
             this.panelCalificaciones.SuspendLayout();
             this.PanelUsuario.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_normalizar_todo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Minimizar_Todo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bnt_Cerrar_todo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_maximizar_todo)).BeginInit();
             this.SuspendLayout();
             // 
             // Panel_superior
@@ -172,54 +172,6 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Usuario en Linea:";
             // 
-            // btn_normalizar_todo
-            // 
-            this.btn_normalizar_todo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_normalizar_todo.Image = global::UNCSM.Properties.Resources.resize_minimize_maximize_expand_screen_icon_190602;
-            this.btn_normalizar_todo.Location = new System.Drawing.Point(381, 1);
-            this.btn_normalizar_todo.Name = "btn_normalizar_todo";
-            this.btn_normalizar_todo.Size = new System.Drawing.Size(20, 20);
-            this.btn_normalizar_todo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_normalizar_todo.TabIndex = 5;
-            this.btn_normalizar_todo.TabStop = false;
-            this.btn_normalizar_todo.Visible = false;
-            this.btn_normalizar_todo.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox2.Image = global::UNCSM.Properties.Resources.perfil;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(25, 28);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
-            // btn_Minimizar_Todo
-            // 
-            this.btn_Minimizar_Todo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Minimizar_Todo.Image = global::UNCSM.Properties.Resources.window_minimize_icon_198334;
-            this.btn_Minimizar_Todo.Location = new System.Drawing.Point(355, 3);
-            this.btn_Minimizar_Todo.Name = "btn_Minimizar_Todo";
-            this.btn_Minimizar_Todo.Size = new System.Drawing.Size(20, 20);
-            this.btn_Minimizar_Todo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_Minimizar_Todo.TabIndex = 7;
-            this.btn_Minimizar_Todo.TabStop = false;
-            this.btn_Minimizar_Todo.Click += new System.EventHandler(this.btn_Minimizar_Todo_Click);
-            // 
-            // bnt_Cerrar_todo
-            // 
-            this.bnt_Cerrar_todo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bnt_Cerrar_todo.Image = global::UNCSM.Properties.Resources.ic_cancel_97589;
-            this.bnt_Cerrar_todo.Location = new System.Drawing.Point(407, 3);
-            this.bnt_Cerrar_todo.Name = "bnt_Cerrar_todo";
-            this.bnt_Cerrar_todo.Size = new System.Drawing.Size(20, 20);
-            this.bnt_Cerrar_todo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.bnt_Cerrar_todo.TabIndex = 7;
-            this.bnt_Cerrar_todo.TabStop = false;
-            this.bnt_Cerrar_todo.Click += new System.EventHandler(this.bnt_Cerrar_todo_Click);
-            // 
             // LbUsuario
             // 
             this.LbUsuario.AutoSize = true;
@@ -231,18 +183,6 @@
             this.LbUsuario.TabIndex = 1;
             this.LbUsuario.Text = "ldUsuario";
             this.LbUsuario.Click += new System.EventHandler(this.LbUsuario_Click);
-            // 
-            // btn_maximizar_todo
-            // 
-            this.btn_maximizar_todo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_maximizar_todo.Image = global::UNCSM.Properties.Resources.resize_minimize_maximize_expand_screen_icon_190600;
-            this.btn_maximizar_todo.Location = new System.Drawing.Point(381, 3);
-            this.btn_maximizar_todo.Name = "btn_maximizar_todo";
-            this.btn_maximizar_todo.Size = new System.Drawing.Size(20, 20);
-            this.btn_maximizar_todo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_maximizar_todo.TabIndex = 6;
-            this.btn_maximizar_todo.TabStop = false;
-            this.btn_maximizar_todo.Click += new System.EventHandler(this.btn_maximizar_todo_Click);
             // 
             // label1
             // 
@@ -258,9 +198,9 @@
             // Panel_Menu
             // 
             this.Panel_Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(127)))), ((int)(((byte)(180)))));
+            this.Panel_Menu.Controls.Add(this.PanelRegistroOpciones);
             this.Panel_Menu.Controls.Add(this.PanelRegistroUsuario);
             this.Panel_Menu.Controls.Add(this.PanelRegistroCalificaciones);
-            this.Panel_Menu.Controls.Add(this.PanelRegistroOpciones);
             this.Panel_Menu.Controls.Add(this.PanelReportes);
             this.Panel_Menu.Controls.Add(this.PanelRegistroVistas);
             this.Panel_Menu.Controls.Add(this.PanelRegistroGrupos);
@@ -284,6 +224,86 @@
             this.Panel_Menu.TabIndex = 2;
             this.Panel_Menu.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Menu_Paint);
             // 
+            // PanelRegistroUsuario
+            // 
+            this.PanelRegistroUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(148)))), ((int)(((byte)(218)))));
+            this.PanelRegistroUsuario.Controls.Add(this.panel14);
+            this.PanelRegistroUsuario.Controls.Add(this.btnCredencialesUsuario);
+            this.PanelRegistroUsuario.Controls.Add(this.btnActualizarUsuario);
+            this.PanelRegistroUsuario.Controls.Add(this.panel11);
+            this.PanelRegistroUsuario.Controls.Add(this.btnRegistroUsuario);
+            this.PanelRegistroUsuario.Controls.Add(this.panel12);
+            this.PanelRegistroUsuario.ForeColor = System.Drawing.Color.Blue;
+            this.PanelRegistroUsuario.Location = new System.Drawing.Point(15, 421);
+            this.PanelRegistroUsuario.Name = "PanelRegistroUsuario";
+            this.PanelRegistroUsuario.Size = new System.Drawing.Size(166, 15);
+            this.PanelRegistroUsuario.TabIndex = 25;
+            this.PanelRegistroUsuario.Visible = false;
+            // 
+            // panel14
+            // 
+            this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel14.Location = new System.Drawing.Point(3, 91);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(12, 38);
+            this.panel14.TabIndex = 28;
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel11.Location = new System.Drawing.Point(3, 47);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(12, 38);
+            this.panel11.TabIndex = 24;
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel12.Location = new System.Drawing.Point(3, 3);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(12, 38);
+            this.panel12.TabIndex = 9;
+            // 
+            // PanelRegistroCalificaciones
+            // 
+            this.PanelRegistroCalificaciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(148)))), ((int)(((byte)(218)))));
+            this.PanelRegistroCalificaciones.Controls.Add(this.button1);
+            this.PanelRegistroCalificaciones.Controls.Add(this.panel24);
+            this.PanelRegistroCalificaciones.Controls.Add(this.panel7);
+            this.PanelRegistroCalificaciones.Controls.Add(this.btnCalificacionesActualizacion);
+            this.PanelRegistroCalificaciones.Controls.Add(this.panel5);
+            this.PanelRegistroCalificaciones.Controls.Add(this.btnRegistroCalificaciones);
+            this.PanelRegistroCalificaciones.ForeColor = System.Drawing.Color.Blue;
+            this.PanelRegistroCalificaciones.Location = new System.Drawing.Point(3, 495);
+            this.PanelRegistroCalificaciones.Name = "PanelRegistroCalificaciones";
+            this.PanelRegistroCalificaciones.Size = new System.Drawing.Size(191, 11);
+            this.PanelRegistroCalificaciones.TabIndex = 24;
+            this.PanelRegistroCalificaciones.Visible = false;
+            // 
+            // panel24
+            // 
+            this.panel24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel24.Location = new System.Drawing.Point(2, 91);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(12, 38);
+            this.panel24.TabIndex = 27;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel7.Location = new System.Drawing.Point(2, 47);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(12, 38);
+            this.panel7.TabIndex = 26;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel5.Location = new System.Drawing.Point(2, 3);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(12, 38);
+            this.panel5.TabIndex = 24;
+            // 
             // PanelRegistroOpciones
             // 
             this.PanelRegistroOpciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(148)))), ((int)(((byte)(218)))));
@@ -292,9 +312,9 @@
             this.PanelRegistroOpciones.Controls.Add(this.btnCambiarTurnoCarrera);
             this.PanelRegistroOpciones.Controls.Add(this.panel18);
             this.PanelRegistroOpciones.ForeColor = System.Drawing.Color.Blue;
-            this.PanelRegistroOpciones.Location = new System.Drawing.Point(11, 453);
+            this.PanelRegistroOpciones.Location = new System.Drawing.Point(11, 442);
             this.PanelRegistroOpciones.Name = "PanelRegistroOpciones";
-            this.PanelRegistroOpciones.Size = new System.Drawing.Size(168, 12);
+            this.PanelRegistroOpciones.Size = new System.Drawing.Size(168, 31);
             this.PanelRegistroOpciones.TabIndex = 26;
             this.PanelRegistroOpciones.Visible = false;
             // 
@@ -306,6 +326,270 @@
             this.panel15.Size = new System.Drawing.Size(12, 40);
             this.panel15.TabIndex = 27;
             // 
+            // panel18
+            // 
+            this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel18.Location = new System.Drawing.Point(3, 3);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(12, 40);
+            this.panel18.TabIndex = 9;
+            // 
+            // PanelReportes
+            // 
+            this.PanelReportes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(148)))), ((int)(((byte)(218)))));
+            this.PanelReportes.Controls.Add(this.panel19);
+            this.PanelReportes.Controls.Add(this.btnRectoria);
+            this.PanelReportes.Controls.Add(this.panel22);
+            this.PanelReportes.Controls.Add(this.btnSecretrariaAcademica);
+            this.PanelReportes.Controls.Add(this.panel23);
+            this.PanelReportes.Controls.Add(this.button19);
+            this.PanelReportes.ForeColor = System.Drawing.Color.Blue;
+            this.PanelReportes.Location = new System.Drawing.Point(13, 559);
+            this.PanelReportes.Name = "PanelReportes";
+            this.PanelReportes.Size = new System.Drawing.Size(171, 22);
+            this.PanelReportes.TabIndex = 28;
+            this.PanelReportes.Visible = false;
+            // 
+            // panel19
+            // 
+            this.panel19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel19.Location = new System.Drawing.Point(6, 91);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(12, 38);
+            this.panel19.TabIndex = 28;
+            // 
+            // panel22
+            // 
+            this.panel22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel22.Location = new System.Drawing.Point(6, 47);
+            this.panel22.Name = "panel22";
+            this.panel22.Size = new System.Drawing.Size(12, 38);
+            this.panel22.TabIndex = 26;
+            // 
+            // panel23
+            // 
+            this.panel23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel23.Location = new System.Drawing.Point(6, 3);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(12, 38);
+            this.panel23.TabIndex = 24;
+            // 
+            // PanelRegistroVistas
+            // 
+            this.PanelRegistroVistas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(148)))), ((int)(((byte)(218)))));
+            this.PanelRegistroVistas.Controls.Add(this.panel8);
+            this.PanelRegistroVistas.Controls.Add(this.btnMatriculaTurnoSexo);
+            this.PanelRegistroVistas.Controls.Add(this.panel9);
+            this.PanelRegistroVistas.Controls.Add(this.btnMatriculaGrupo);
+            this.PanelRegistroVistas.Controls.Add(this.panel21);
+            this.PanelRegistroVistas.Controls.Add(this.btnMatriculaGlobal);
+            this.PanelRegistroVistas.ForeColor = System.Drawing.Color.Blue;
+            this.PanelRegistroVistas.Location = new System.Drawing.Point(9, 531);
+            this.PanelRegistroVistas.Name = "PanelRegistroVistas";
+            this.PanelRegistroVistas.Size = new System.Drawing.Size(171, 19);
+            this.PanelRegistroVistas.TabIndex = 27;
+            this.PanelRegistroVistas.Visible = false;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel8.Location = new System.Drawing.Point(6, 91);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(12, 38);
+            this.panel8.TabIndex = 28;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel9.Location = new System.Drawing.Point(6, 47);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(12, 38);
+            this.panel9.TabIndex = 26;
+            // 
+            // panel21
+            // 
+            this.panel21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel21.Location = new System.Drawing.Point(6, 3);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(12, 38);
+            this.panel21.TabIndex = 24;
+            // 
+            // PanelRegistroGrupos
+            // 
+            this.PanelRegistroGrupos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(148)))), ((int)(((byte)(218)))));
+            this.PanelRegistroGrupos.Controls.Add(this.panel10);
+            this.PanelRegistroGrupos.Controls.Add(this.button9);
+            this.PanelRegistroGrupos.Controls.Add(this.panel13);
+            this.PanelRegistroGrupos.Controls.Add(this.button10);
+            this.PanelRegistroGrupos.ForeColor = System.Drawing.Color.Blue;
+            this.PanelRegistroGrupos.Location = new System.Drawing.Point(6, 512);
+            this.PanelRegistroGrupos.Name = "PanelRegistroGrupos";
+            this.PanelRegistroGrupos.Size = new System.Drawing.Size(171, 16);
+            this.PanelRegistroGrupos.TabIndex = 25;
+            this.PanelRegistroGrupos.Visible = false;
+            this.PanelRegistroGrupos.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel10.Location = new System.Drawing.Point(6, 47);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(12, 38);
+            this.panel10.TabIndex = 26;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel13.Location = new System.Drawing.Point(6, 3);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(12, 38);
+            this.panel13.TabIndex = 24;
+            // 
+            // PanelReporte
+            // 
+            this.PanelReporte.Controls.Add(this.btnReportes);
+            this.PanelReporte.Controls.Add(this.panel20);
+            this.PanelReporte.Location = new System.Drawing.Point(3, 370);
+            this.PanelReporte.Name = "PanelReporte";
+            this.PanelReporte.Size = new System.Drawing.Size(185, 45);
+            this.PanelReporte.TabIndex = 28;
+            // 
+            // panel20
+            // 
+            this.panel20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel20.Location = new System.Drawing.Point(1, 1);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(12, 42);
+            this.panel20.TabIndex = 23;
+            // 
+            // PanelVista
+            // 
+            this.PanelVista.Controls.Add(this.btnVistas);
+            this.PanelVista.Controls.Add(this.panel17);
+            this.PanelVista.Location = new System.Drawing.Point(3, 319);
+            this.PanelVista.Name = "PanelVista";
+            this.PanelVista.Size = new System.Drawing.Size(185, 45);
+            this.PanelVista.TabIndex = 27;
+            // 
+            // panel17
+            // 
+            this.panel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel17.Location = new System.Drawing.Point(1, 1);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(12, 42);
+            this.panel17.TabIndex = 23;
+            // 
+            // PanelGrupo
+            // 
+            this.PanelGrupo.Controls.Add(this.btnGrupos);
+            this.PanelGrupo.Controls.Add(this.panel16);
+            this.PanelGrupo.Location = new System.Drawing.Point(3, 268);
+            this.PanelGrupo.Name = "PanelGrupo";
+            this.PanelGrupo.Size = new System.Drawing.Size(185, 45);
+            this.PanelGrupo.TabIndex = 26;
+            // 
+            // panel16
+            // 
+            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel16.Location = new System.Drawing.Point(1, 1);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(12, 42);
+            this.panel16.TabIndex = 23;
+            // 
+            // PanelOpciones
+            // 
+            this.PanelOpciones.Controls.Add(this.btnOpciones);
+            this.PanelOpciones.Controls.Add(this.panel6);
+            this.PanelOpciones.Location = new System.Drawing.Point(3, 217);
+            this.PanelOpciones.Name = "PanelOpciones";
+            this.PanelOpciones.Size = new System.Drawing.Size(185, 45);
+            this.PanelOpciones.TabIndex = 0;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel6.Location = new System.Drawing.Point(1, 1);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(12, 42);
+            this.panel6.TabIndex = 23;
+            // 
+            // panelCalificaciones
+            // 
+            this.panelCalificaciones.Controls.Add(this.btnCalificaciones);
+            this.panelCalificaciones.Controls.Add(this.panel2);
+            this.panelCalificaciones.Location = new System.Drawing.Point(3, 109);
+            this.panelCalificaciones.Name = "panelCalificaciones";
+            this.panelCalificaciones.Size = new System.Drawing.Size(185, 45);
+            this.panelCalificaciones.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel2.Location = new System.Drawing.Point(1, 1);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(12, 42);
+            this.panel2.TabIndex = 1;
+            // 
+            // PanelUsuario
+            // 
+            this.PanelUsuario.Controls.Add(this.panel3);
+            this.PanelUsuario.Controls.Add(this.btnUsuario);
+            this.PanelUsuario.Location = new System.Drawing.Point(3, 163);
+            this.PanelUsuario.Name = "PanelUsuario";
+            this.PanelUsuario.Size = new System.Drawing.Size(185, 45);
+            this.PanelUsuario.TabIndex = 22;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel3.Location = new System.Drawing.Point(1, 1);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(12, 47);
+            this.panel3.TabIndex = 2;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.lbCarga);
+            this.panel4.Controls.Add(this.pgrCarga);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel4.Location = new System.Drawing.Point(0, 623);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(194, 18);
+            this.panel4.TabIndex = 0;
+            // 
+            // lbCarga
+            // 
+            this.lbCarga.AutoSize = true;
+            this.lbCarga.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lbCarga.Location = new System.Drawing.Point(0, 7);
+            this.lbCarga.Name = "lbCarga";
+            this.lbCarga.Size = new System.Drawing.Size(130, 16);
+            this.lbCarga.TabIndex = 20;
+            this.lbCarga.Text = "Por favor espere...";
+            this.lbCarga.Visible = false;
+            // 
+            // pgrCarga
+            // 
+            this.pgrCarga.Location = new System.Drawing.Point(3, 27);
+            this.pgrCarga.Name = "pgrCarga";
+            this.pgrCarga.Size = new System.Drawing.Size(161, 23);
+            this.pgrCarga.TabIndex = 19;
+            this.pgrCarga.Visible = false;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // Panel_Contenedor
+            // 
+            this.Panel_Contenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(219)))), ((int)(((byte)(219)))));
+            this.Panel_Contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Panel_Contenedor.Location = new System.Drawing.Point(194, 28);
+            this.Panel_Contenedor.Name = "Panel_Contenedor";
+            this.Panel_Contenedor.Size = new System.Drawing.Size(1004, 641);
+            this.Panel_Contenedor.TabIndex = 5;
+            this.Panel_Contenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Contenedor_Paint);
+            // 
             // btnBajaMatricula
             // 
             this.btnBajaMatricula.BackColor = System.Drawing.Color.Transparent;
@@ -315,6 +599,7 @@
             this.btnBajaMatricula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBajaMatricula.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBajaMatricula.ForeColor = System.Drawing.Color.White;
+            this.btnBajaMatricula.Image = global::UNCSM.Properties.Resources.vcsconflicting_934971;
             this.btnBajaMatricula.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBajaMatricula.Location = new System.Drawing.Point(14, 48);
             this.btnBajaMatricula.Name = "btnBajaMatricula";
@@ -344,38 +629,6 @@
             this.btnCambiarTurnoCarrera.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCambiarTurnoCarrera.UseVisualStyleBackColor = false;
             this.btnCambiarTurnoCarrera.Click += new System.EventHandler(this.btnCambiarTurnoCarrera_Click);
-            // 
-            // panel18
-            // 
-            this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.panel18.Location = new System.Drawing.Point(3, 3);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(12, 40);
-            this.panel18.TabIndex = 9;
-            // 
-            // PanelRegistroUsuario
-            // 
-            this.PanelRegistroUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(148)))), ((int)(((byte)(218)))));
-            this.PanelRegistroUsuario.Controls.Add(this.panel14);
-            this.PanelRegistroUsuario.Controls.Add(this.btnCredencialesUsuario);
-            this.PanelRegistroUsuario.Controls.Add(this.btnActualizarUsuario);
-            this.PanelRegistroUsuario.Controls.Add(this.panel11);
-            this.PanelRegistroUsuario.Controls.Add(this.btnRegistroUsuario);
-            this.PanelRegistroUsuario.Controls.Add(this.panel12);
-            this.PanelRegistroUsuario.ForeColor = System.Drawing.Color.Blue;
-            this.PanelRegistroUsuario.Location = new System.Drawing.Point(18, 421);
-            this.PanelRegistroUsuario.Name = "PanelRegistroUsuario";
-            this.PanelRegistroUsuario.Size = new System.Drawing.Size(166, 10);
-            this.PanelRegistroUsuario.TabIndex = 25;
-            this.PanelRegistroUsuario.Visible = false;
-            // 
-            // panel14
-            // 
-            this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.panel14.Location = new System.Drawing.Point(3, 91);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(12, 38);
-            this.panel14.TabIndex = 28;
             // 
             // btnCredencialesUsuario
             // 
@@ -417,14 +670,6 @@
             this.btnActualizarUsuario.UseVisualStyleBackColor = false;
             this.btnActualizarUsuario.Click += new System.EventHandler(this.button6_Click);
             // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.panel11.Location = new System.Drawing.Point(3, 47);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(12, 38);
-            this.panel11.TabIndex = 24;
-            // 
             // btnRegistroUsuario
             // 
             this.btnRegistroUsuario.BackColor = System.Drawing.Color.Transparent;
@@ -445,37 +690,24 @@
             this.btnRegistroUsuario.UseVisualStyleBackColor = false;
             this.btnRegistroUsuario.Click += new System.EventHandler(this.button8_Click);
             // 
-            // panel12
+            // button1
             // 
-            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.panel12.Location = new System.Drawing.Point(3, 3);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(12, 38);
-            this.panel12.TabIndex = 9;
-            // 
-            // PanelRegistroCalificaciones
-            // 
-            this.PanelRegistroCalificaciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(148)))), ((int)(((byte)(218)))));
-            this.PanelRegistroCalificaciones.Controls.Add(this.button1);
-            this.PanelRegistroCalificaciones.Controls.Add(this.panel24);
-            this.PanelRegistroCalificaciones.Controls.Add(this.panel7);
-            this.PanelRegistroCalificaciones.Controls.Add(this.btnCalificacionesActualizacion);
-            this.PanelRegistroCalificaciones.Controls.Add(this.panel5);
-            this.PanelRegistroCalificaciones.Controls.Add(this.btnRegistroCalificaciones);
-            this.PanelRegistroCalificaciones.ForeColor = System.Drawing.Color.Blue;
-            this.PanelRegistroCalificaciones.Location = new System.Drawing.Point(3, 495);
-            this.PanelRegistroCalificaciones.Name = "PanelRegistroCalificaciones";
-            this.PanelRegistroCalificaciones.Size = new System.Drawing.Size(191, 11);
-            this.PanelRegistroCalificaciones.TabIndex = 24;
-            this.PanelRegistroCalificaciones.Visible = false;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.panel7.Location = new System.Drawing.Point(2, 47);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(12, 38);
-            this.panel7.TabIndex = 26;
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::UNCSM.Properties.Resources.registro_en_linea;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(20, 91);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(138, 38);
+            this.button1.TabIndex = 28;
+            this.button1.Text = "Reingreso";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // btnCalificacionesActualizacion
             // 
@@ -496,37 +728,25 @@
             this.btnCalificacionesActualizacion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCalificacionesActualizacion.UseVisualStyleBackColor = false;
             // 
-            // panel5
+            // btnRegistroCalificaciones
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.panel5.Location = new System.Drawing.Point(2, 3);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(12, 38);
-            this.panel5.TabIndex = 24;
-            // 
-            // PanelReportes
-            // 
-            this.PanelReportes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(148)))), ((int)(((byte)(218)))));
-            this.PanelReportes.Controls.Add(this.panel19);
-            this.PanelReportes.Controls.Add(this.btnRectoria);
-            this.PanelReportes.Controls.Add(this.panel22);
-            this.PanelReportes.Controls.Add(this.btnSecretrariaAcademica);
-            this.PanelReportes.Controls.Add(this.panel23);
-            this.PanelReportes.Controls.Add(this.button19);
-            this.PanelReportes.ForeColor = System.Drawing.Color.Blue;
-            this.PanelReportes.Location = new System.Drawing.Point(13, 559);
-            this.PanelReportes.Name = "PanelReportes";
-            this.PanelReportes.Size = new System.Drawing.Size(171, 22);
-            this.PanelReportes.TabIndex = 28;
-            this.PanelReportes.Visible = false;
-            // 
-            // panel19
-            // 
-            this.panel19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.panel19.Location = new System.Drawing.Point(6, 91);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(12, 38);
-            this.panel19.TabIndex = 28;
+            this.btnRegistroCalificaciones.BackColor = System.Drawing.Color.Transparent;
+            this.btnRegistroCalificaciones.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRegistroCalificaciones.FlatAppearance.BorderSize = 0;
+            this.btnRegistroCalificaciones.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.btnRegistroCalificaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistroCalificaciones.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistroCalificaciones.ForeColor = System.Drawing.Color.White;
+            this.btnRegistroCalificaciones.Image = global::UNCSM.Properties.Resources.registro_en_linea;
+            this.btnRegistroCalificaciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRegistroCalificaciones.Location = new System.Drawing.Point(20, 3);
+            this.btnRegistroCalificaciones.Name = "btnRegistroCalificaciones";
+            this.btnRegistroCalificaciones.Size = new System.Drawing.Size(153, 38);
+            this.btnRegistroCalificaciones.TabIndex = 23;
+            this.btnRegistroCalificaciones.Text = "Nuevo Ingreso";
+            this.btnRegistroCalificaciones.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnRegistroCalificaciones.UseVisualStyleBackColor = false;
+            this.btnRegistroCalificaciones.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // btnRectoria
             // 
@@ -547,14 +767,6 @@
             this.btnRectoria.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnRectoria.UseVisualStyleBackColor = false;
             // 
-            // panel22
-            // 
-            this.panel22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.panel22.Location = new System.Drawing.Point(6, 47);
-            this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(12, 38);
-            this.panel22.TabIndex = 26;
-            // 
             // btnSecretrariaAcademica
             // 
             this.btnSecretrariaAcademica.BackColor = System.Drawing.Color.Transparent;
@@ -573,14 +785,6 @@
             this.btnSecretrariaAcademica.Text = "Secretaría Académica";
             this.btnSecretrariaAcademica.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSecretrariaAcademica.UseVisualStyleBackColor = false;
-            // 
-            // panel23
-            // 
-            this.panel23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.panel23.Location = new System.Drawing.Point(6, 3);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(12, 38);
-            this.panel23.TabIndex = 24;
             // 
             // button19
             // 
@@ -602,30 +806,6 @@
             this.button19.UseVisualStyleBackColor = false;
             this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
-            // PanelRegistroVistas
-            // 
-            this.PanelRegistroVistas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(148)))), ((int)(((byte)(218)))));
-            this.PanelRegistroVistas.Controls.Add(this.panel8);
-            this.PanelRegistroVistas.Controls.Add(this.btnMatriculaTurnoSexo);
-            this.PanelRegistroVistas.Controls.Add(this.panel9);
-            this.PanelRegistroVistas.Controls.Add(this.btnMatriculaGrupo);
-            this.PanelRegistroVistas.Controls.Add(this.panel21);
-            this.PanelRegistroVistas.Controls.Add(this.btnMatriculaGlobal);
-            this.PanelRegistroVistas.ForeColor = System.Drawing.Color.Blue;
-            this.PanelRegistroVistas.Location = new System.Drawing.Point(9, 531);
-            this.PanelRegistroVistas.Name = "PanelRegistroVistas";
-            this.PanelRegistroVistas.Size = new System.Drawing.Size(171, 19);
-            this.PanelRegistroVistas.TabIndex = 27;
-            this.PanelRegistroVistas.Visible = false;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.panel8.Location = new System.Drawing.Point(6, 91);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(12, 38);
-            this.panel8.TabIndex = 28;
-            // 
             // btnMatriculaTurnoSexo
             // 
             this.btnMatriculaTurnoSexo.BackColor = System.Drawing.Color.Transparent;
@@ -645,14 +825,6 @@
             this.btnMatriculaTurnoSexo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMatriculaTurnoSexo.UseVisualStyleBackColor = false;
             this.btnMatriculaTurnoSexo.Click += new System.EventHandler(this.btnMatriculaTurnoSexo_Click);
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.panel9.Location = new System.Drawing.Point(6, 47);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(12, 38);
-            this.panel9.TabIndex = 26;
             // 
             // btnMatriculaGrupo
             // 
@@ -674,14 +846,6 @@
             this.btnMatriculaGrupo.UseVisualStyleBackColor = false;
             this.btnMatriculaGrupo.Click += new System.EventHandler(this.btnMatriculaGrupo_Click);
             // 
-            // panel21
-            // 
-            this.panel21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.panel21.Location = new System.Drawing.Point(6, 3);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(12, 38);
-            this.panel21.TabIndex = 24;
-            // 
             // btnMatriculaGlobal
             // 
             this.btnMatriculaGlobal.BackColor = System.Drawing.Color.Transparent;
@@ -702,29 +866,6 @@
             this.btnMatriculaGlobal.UseVisualStyleBackColor = false;
             this.btnMatriculaGlobal.Click += new System.EventHandler(this.btnMatriculaGlobal_Click);
             // 
-            // PanelRegistroGrupos
-            // 
-            this.PanelRegistroGrupos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(148)))), ((int)(((byte)(218)))));
-            this.PanelRegistroGrupos.Controls.Add(this.panel10);
-            this.PanelRegistroGrupos.Controls.Add(this.button9);
-            this.PanelRegistroGrupos.Controls.Add(this.panel13);
-            this.PanelRegistroGrupos.Controls.Add(this.button10);
-            this.PanelRegistroGrupos.ForeColor = System.Drawing.Color.Blue;
-            this.PanelRegistroGrupos.Location = new System.Drawing.Point(6, 512);
-            this.PanelRegistroGrupos.Name = "PanelRegistroGrupos";
-            this.PanelRegistroGrupos.Size = new System.Drawing.Size(171, 16);
-            this.PanelRegistroGrupos.TabIndex = 25;
-            this.PanelRegistroGrupos.Visible = false;
-            this.PanelRegistroGrupos.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.panel10.Location = new System.Drawing.Point(6, 47);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(12, 38);
-            this.panel10.TabIndex = 26;
-            // 
             // button9
             // 
             this.button9.BackColor = System.Drawing.Color.Transparent;
@@ -743,14 +884,6 @@
             this.button9.Text = "Actualización";
             this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button9.UseVisualStyleBackColor = false;
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.panel13.Location = new System.Drawing.Point(6, 3);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(12, 38);
-            this.panel13.TabIndex = 24;
             // 
             // button10
             // 
@@ -772,15 +905,6 @@
             this.button10.UseVisualStyleBackColor = false;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
-            // PanelReporte
-            // 
-            this.PanelReporte.Controls.Add(this.btnReportes);
-            this.PanelReporte.Controls.Add(this.panel20);
-            this.PanelReporte.Location = new System.Drawing.Point(3, 370);
-            this.PanelReporte.Name = "PanelReporte";
-            this.PanelReporte.Size = new System.Drawing.Size(185, 45);
-            this.PanelReporte.TabIndex = 28;
-            // 
             // btnReportes
             // 
             this.btnReportes.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -799,23 +923,6 @@
             this.btnReportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReportes.UseVisualStyleBackColor = true;
             this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
-            // 
-            // panel20
-            // 
-            this.panel20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.panel20.Location = new System.Drawing.Point(1, 1);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(12, 42);
-            this.panel20.TabIndex = 23;
-            // 
-            // PanelVista
-            // 
-            this.PanelVista.Controls.Add(this.btnVistas);
-            this.PanelVista.Controls.Add(this.panel17);
-            this.PanelVista.Location = new System.Drawing.Point(3, 319);
-            this.PanelVista.Name = "PanelVista";
-            this.PanelVista.Size = new System.Drawing.Size(185, 45);
-            this.PanelVista.TabIndex = 27;
             // 
             // btnVistas
             // 
@@ -836,23 +943,6 @@
             this.btnVistas.UseVisualStyleBackColor = true;
             this.btnVistas.Click += new System.EventHandler(this.btnVistas_Click);
             // 
-            // panel17
-            // 
-            this.panel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.panel17.Location = new System.Drawing.Point(1, 1);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(12, 42);
-            this.panel17.TabIndex = 23;
-            // 
-            // PanelGrupo
-            // 
-            this.PanelGrupo.Controls.Add(this.btnGrupos);
-            this.PanelGrupo.Controls.Add(this.panel16);
-            this.PanelGrupo.Location = new System.Drawing.Point(3, 268);
-            this.PanelGrupo.Name = "PanelGrupo";
-            this.PanelGrupo.Size = new System.Drawing.Size(185, 45);
-            this.PanelGrupo.TabIndex = 26;
-            // 
             // btnGrupos
             // 
             this.btnGrupos.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -871,23 +961,6 @@
             this.btnGrupos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGrupos.UseVisualStyleBackColor = true;
             this.btnGrupos.Click += new System.EventHandler(this.button11_Click);
-            // 
-            // panel16
-            // 
-            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.panel16.Location = new System.Drawing.Point(1, 1);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(12, 42);
-            this.panel16.TabIndex = 23;
-            // 
-            // PanelOpciones
-            // 
-            this.PanelOpciones.Controls.Add(this.btnOpciones);
-            this.PanelOpciones.Controls.Add(this.panel6);
-            this.PanelOpciones.Location = new System.Drawing.Point(3, 217);
-            this.PanelOpciones.Name = "PanelOpciones";
-            this.PanelOpciones.Size = new System.Drawing.Size(185, 45);
-            this.PanelOpciones.TabIndex = 0;
             // 
             // btnOpciones
             // 
@@ -908,23 +981,6 @@
             this.btnOpciones.UseVisualStyleBackColor = true;
             this.btnOpciones.Click += new System.EventHandler(this.button4_Click);
             // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.panel6.Location = new System.Drawing.Point(1, 1);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(12, 42);
-            this.panel6.TabIndex = 23;
-            // 
-            // panelCalificaciones
-            // 
-            this.panelCalificaciones.Controls.Add(this.btnCalificaciones);
-            this.panelCalificaciones.Controls.Add(this.panel2);
-            this.panelCalificaciones.Location = new System.Drawing.Point(3, 109);
-            this.panelCalificaciones.Name = "panelCalificaciones";
-            this.panelCalificaciones.Size = new System.Drawing.Size(185, 45);
-            this.panelCalificaciones.TabIndex = 0;
-            // 
             // btnCalificaciones
             // 
             this.btnCalificaciones.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -943,31 +999,6 @@
             this.btnCalificaciones.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCalificaciones.UseVisualStyleBackColor = true;
             this.btnCalificaciones.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.panel2.Location = new System.Drawing.Point(1, 1);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(12, 42);
-            this.panel2.TabIndex = 1;
-            // 
-            // PanelUsuario
-            // 
-            this.PanelUsuario.Controls.Add(this.panel3);
-            this.PanelUsuario.Controls.Add(this.btnUsuario);
-            this.PanelUsuario.Location = new System.Drawing.Point(3, 163);
-            this.PanelUsuario.Name = "PanelUsuario";
-            this.PanelUsuario.Size = new System.Drawing.Size(185, 45);
-            this.PanelUsuario.TabIndex = 22;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.panel3.Location = new System.Drawing.Point(1, 1);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(12, 47);
-            this.panel3.TabIndex = 2;
             // 
             // btnUsuario
             // 
@@ -1018,35 +1049,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.lbCarga);
-            this.panel4.Controls.Add(this.pgrCarga);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 623);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(194, 18);
-            this.panel4.TabIndex = 0;
-            // 
-            // lbCarga
-            // 
-            this.lbCarga.AutoSize = true;
-            this.lbCarga.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lbCarga.Location = new System.Drawing.Point(0, 7);
-            this.lbCarga.Name = "lbCarga";
-            this.lbCarga.Size = new System.Drawing.Size(130, 16);
-            this.lbCarga.TabIndex = 20;
-            this.lbCarga.Text = "Por favor espere...";
-            this.lbCarga.Visible = false;
-            // 
-            // pgrCarga
-            // 
-            this.pgrCarga.Location = new System.Drawing.Point(3, 27);
-            this.pgrCarga.Name = "pgrCarga";
-            this.pgrCarga.Size = new System.Drawing.Size(161, 23);
-            this.pgrCarga.TabIndex = 19;
-            this.pgrCarga.Visible = false;
             // 
             // bntAsistencia
             // 
@@ -1100,66 +1102,65 @@
             this.pcLogo.TabStop = false;
             this.pcLogo.Click += new System.EventHandler(this.pcLogo_Click);
             // 
-            // errorProvider1
+            // btn_normalizar_todo
             // 
-            this.errorProvider1.ContainerControl = this;
+            this.btn_normalizar_todo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_normalizar_todo.Image = global::UNCSM.Properties.Resources.resize_minimize_maximize_expand_screen_icon_190602;
+            this.btn_normalizar_todo.Location = new System.Drawing.Point(381, 1);
+            this.btn_normalizar_todo.Name = "btn_normalizar_todo";
+            this.btn_normalizar_todo.Size = new System.Drawing.Size(20, 20);
+            this.btn_normalizar_todo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_normalizar_todo.TabIndex = 5;
+            this.btn_normalizar_todo.TabStop = false;
+            this.btn_normalizar_todo.Visible = false;
+            this.btn_normalizar_todo.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // Panel_Contenedor
+            // pictureBox2
             // 
-            this.Panel_Contenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(219)))), ((int)(((byte)(219)))));
-            this.Panel_Contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Panel_Contenedor.Location = new System.Drawing.Point(194, 28);
-            this.Panel_Contenedor.Name = "Panel_Contenedor";
-            this.Panel_Contenedor.Size = new System.Drawing.Size(1004, 641);
-            this.Panel_Contenedor.TabIndex = 5;
-            this.Panel_Contenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Contenedor_Paint);
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox2.Image = global::UNCSM.Properties.Resources.perfil;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(25, 28);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
             // 
-            // panel24
+            // btn_Minimizar_Todo
             // 
-            this.panel24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.panel24.Location = new System.Drawing.Point(2, 91);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(12, 38);
-            this.panel24.TabIndex = 27;
+            this.btn_Minimizar_Todo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Minimizar_Todo.Image = global::UNCSM.Properties.Resources.window_minimize_icon_198334;
+            this.btn_Minimizar_Todo.Location = new System.Drawing.Point(355, 3);
+            this.btn_Minimizar_Todo.Name = "btn_Minimizar_Todo";
+            this.btn_Minimizar_Todo.Size = new System.Drawing.Size(20, 20);
+            this.btn_Minimizar_Todo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_Minimizar_Todo.TabIndex = 7;
+            this.btn_Minimizar_Todo.TabStop = false;
+            this.btn_Minimizar_Todo.Click += new System.EventHandler(this.btn_Minimizar_Todo_Click);
             // 
-            // button1
+            // bnt_Cerrar_todo
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::UNCSM.Properties.Resources.registro_en_linea;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(20, 91);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(138, 38);
-            this.button1.TabIndex = 28;
-            this.button1.Text = "Reingreso";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
+            this.bnt_Cerrar_todo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bnt_Cerrar_todo.Image = global::UNCSM.Properties.Resources.ic_cancel_97589;
+            this.bnt_Cerrar_todo.Location = new System.Drawing.Point(407, 3);
+            this.bnt_Cerrar_todo.Name = "bnt_Cerrar_todo";
+            this.bnt_Cerrar_todo.Size = new System.Drawing.Size(20, 20);
+            this.bnt_Cerrar_todo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bnt_Cerrar_todo.TabIndex = 7;
+            this.bnt_Cerrar_todo.TabStop = false;
+            this.bnt_Cerrar_todo.Click += new System.EventHandler(this.bnt_Cerrar_todo_Click);
             // 
-            // btnRegistroCalificaciones
+            // btn_maximizar_todo
             // 
-            this.btnRegistroCalificaciones.BackColor = System.Drawing.Color.Transparent;
-            this.btnRegistroCalificaciones.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegistroCalificaciones.FlatAppearance.BorderSize = 0;
-            this.btnRegistroCalificaciones.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.btnRegistroCalificaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegistroCalificaciones.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistroCalificaciones.ForeColor = System.Drawing.Color.White;
-            this.btnRegistroCalificaciones.Image = global::UNCSM.Properties.Resources.registro_en_linea;
-            this.btnRegistroCalificaciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegistroCalificaciones.Location = new System.Drawing.Point(20, 3);
-            this.btnRegistroCalificaciones.Name = "btnRegistroCalificaciones";
-            this.btnRegistroCalificaciones.Size = new System.Drawing.Size(153, 38);
-            this.btnRegistroCalificaciones.TabIndex = 23;
-            this.btnRegistroCalificaciones.Text = "Nuevo Ingreso";
-            this.btnRegistroCalificaciones.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnRegistroCalificaciones.UseVisualStyleBackColor = false;
-            this.btnRegistroCalificaciones.Click += new System.EventHandler(this.button2_Click_1);
+            this.btn_maximizar_todo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_maximizar_todo.Image = global::UNCSM.Properties.Resources.resize_minimize_maximize_expand_screen_icon_190600;
+            this.btn_maximizar_todo.Location = new System.Drawing.Point(381, 3);
+            this.btn_maximizar_todo.Name = "btn_maximizar_todo";
+            this.btn_maximizar_todo.Size = new System.Drawing.Size(20, 20);
+            this.btn_maximizar_todo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_maximizar_todo.TabIndex = 6;
+            this.btn_maximizar_todo.TabStop = false;
+            this.btn_maximizar_todo.Click += new System.EventHandler(this.btn_maximizar_todo_Click);
             // 
             // Frm_Inicio
             // 
@@ -1181,15 +1182,10 @@
             this.Panel_superior.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_normalizar_todo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Minimizar_Todo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bnt_Cerrar_todo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_maximizar_todo)).EndInit();
             this.Panel_Menu.ResumeLayout(false);
-            this.PanelRegistroOpciones.ResumeLayout(false);
             this.PanelRegistroUsuario.ResumeLayout(false);
             this.PanelRegistroCalificaciones.ResumeLayout(false);
+            this.PanelRegistroOpciones.ResumeLayout(false);
             this.PanelReportes.ResumeLayout(false);
             this.PanelRegistroVistas.ResumeLayout(false);
             this.PanelRegistroGrupos.ResumeLayout(false);
@@ -1199,11 +1195,16 @@
             this.PanelOpciones.ResumeLayout(false);
             this.panelCalificaciones.ResumeLayout(false);
             this.PanelUsuario.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_normalizar_todo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Minimizar_Todo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bnt_Cerrar_todo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_maximizar_todo)).EndInit();
             this.ResumeLayout(false);
 
         }

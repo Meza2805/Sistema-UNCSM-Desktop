@@ -28,18 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnBajaMatricula = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnHistorialCertificados = new System.Windows.Forms.Button();
             this.btnCertificadoCalificaciones = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
+            // btnBajaMatricula
+            // 
+            this.btnBajaMatricula.BackgroundImage = global::UNCSM.Properties.Resources.btnHistorialBajaMatricula;
+            this.btnBajaMatricula.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBajaMatricula.Location = new System.Drawing.Point(22, 275);
+            this.btnBajaMatricula.Name = "btnBajaMatricula";
+            this.btnBajaMatricula.Size = new System.Drawing.Size(287, 66);
+            this.btnBajaMatricula.TabIndex = 4;
+            this.btnBajaMatricula.UseVisualStyleBackColor = true;
+            this.btnBajaMatricula.Click += new System.EventHandler(this.btnBajaMatricula_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.BackgroundImage = global::UNCSM.Properties.Resources.Reportes_Registro_Academico;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            //this.pictureBox1.Image = global::UNCSM.Properties.Resources.Reportes_Registro_Academico;
             this.pictureBox1.Location = new System.Drawing.Point(377, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(308, 93);
@@ -48,22 +60,22 @@
             // 
             // btnHistorialCertificados
             // 
-            //this.btnHistorialCertificados.BackgroundImage = global::UNCSM.Properties.Resources.btnHistorialCertificados;
+            this.btnHistorialCertificados.BackgroundImage = global::UNCSM.Properties.Resources.btnHistorialCertificadosGenerados;
             this.btnHistorialCertificados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnHistorialCertificados.Location = new System.Drawing.Point(22, 199);
             this.btnHistorialCertificados.Name = "btnHistorialCertificados";
-            this.btnHistorialCertificados.Size = new System.Drawing.Size(240, 60);
+            this.btnHistorialCertificados.Size = new System.Drawing.Size(287, 70);
             this.btnHistorialCertificados.TabIndex = 1;
             this.btnHistorialCertificados.UseVisualStyleBackColor = true;
             this.btnHistorialCertificados.Click += new System.EventHandler(this.btnHistorialCertificados_Click);
             // 
             // btnCertificadoCalificaciones
             // 
-            //this.btnCertificadoCalificaciones.BackgroundImage = global::UNCSM.Properties.Resources.btnCertificadoCalificaciones;
+            this.btnCertificadoCalificaciones.BackgroundImage = global::UNCSM.Properties.Resources.btnCertificadoCalificaciones__2_;
             this.btnCertificadoCalificaciones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCertificadoCalificaciones.Location = new System.Drawing.Point(22, 122);
             this.btnCertificadoCalificaciones.Name = "btnCertificadoCalificaciones";
-            this.btnCertificadoCalificaciones.Size = new System.Drawing.Size(240, 60);
+            this.btnCertificadoCalificaciones.Size = new System.Drawing.Size(287, 71);
             this.btnCertificadoCalificaciones.TabIndex = 0;
             this.btnCertificadoCalificaciones.UseVisualStyleBackColor = true;
             this.btnCertificadoCalificaciones.Click += new System.EventHandler(this.btnCertificadoCalificaciones_Click);
@@ -73,6 +85,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1040, 450);
+            this.Controls.Add(this.btnBajaMatricula);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnHistorialCertificados);
             this.Controls.Add(this.btnCertificadoCalificaciones);
@@ -89,5 +102,6 @@
         private System.Windows.Forms.Button btnCertificadoCalificaciones;
         private System.Windows.Forms.Button btnHistorialCertificados;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnBajaMatricula;
     }
 }
