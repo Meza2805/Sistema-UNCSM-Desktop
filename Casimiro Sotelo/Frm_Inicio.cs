@@ -281,35 +281,35 @@ namespace Ginmasio
             int VistasPosicionY = PanelVista.Location.Y;
             int ReportesPosicionY = PanelReporte.Location.Y;
 
-            if (bandera == true)
+            if (bandera == true) // se abre este panel
             {
                 if (band_calificaciones == true)
                 {
                     PanelRegistroCalificaciones.Visible = true;
-                    PanelOpciones.Location = new Point(3, OpcionesPosicionY + 100);
-                    PanelUsuario.Location = new Point(3, UsuarioPosicionY + 100);
-                    PanelGrupo.Location = new Point(3, GrupoPosicionY + 100);
-                    PanelVista.Location = new Point(3, VistasPosicionY + 100);
-                    PanelReporte.Location = new Point(3, ReportesPosicionY + 100);
+                    PanelOpciones.Location = new Point(3, OpcionesPosicionY + 145);
+                    PanelUsuario.Location = new Point(3, UsuarioPosicionY + 145);
+                    PanelGrupo.Location = new Point(3, GrupoPosicionY + 145);
+                    PanelVista.Location = new Point(3, VistasPosicionY + 145);
+                    PanelReporte.Location = new Point(3, ReportesPosicionY + 145);
                 }
                 else
                 {
                     PanelRegistroCalificaciones.Visible = false;
-                    PanelOpciones.Location = new Point(3, OpcionesPosicionY - 100);
-                    PanelUsuario.Location = new Point(3, UsuarioPosicionY - 100);
-                    PanelGrupo.Location = new Point(3, GrupoPosicionY - 100);
-                    PanelVista.Location = new Point(3, VistasPosicionY - 100);
-                    PanelReporte.Location = new Point(3, ReportesPosicionY - 100);
+                    PanelOpciones.Location = new Point(3, OpcionesPosicionY - 145);
+                    PanelUsuario.Location = new Point(3, UsuarioPosicionY - 145);
+                    PanelGrupo.Location = new Point(3, GrupoPosicionY - 145);
+                    PanelVista.Location = new Point(3, VistasPosicionY - 145);
+                    PanelReporte.Location = new Point(3, ReportesPosicionY - 145);
                 }
             }
             else if (bandera == false && band_calificaciones == true)
             {
                 PanelRegistroCalificaciones.Visible = false;
-                PanelOpciones.Location = new Point(3, OpcionesPosicionY - 100);
-                PanelUsuario.Location = new Point(3, UsuarioPosicionY - 100);
-                PanelGrupo.Location = new Point(3, GrupoPosicionY - 100);
-                PanelVista.Location = new Point(3, VistasPosicionY - 100);
-                PanelReporte.Location = new Point(3, ReportesPosicionY - 100);
+                PanelOpciones.Location = new Point(3, OpcionesPosicionY - 145);
+                PanelUsuario.Location = new Point(3, UsuarioPosicionY - 145);
+                PanelGrupo.Location = new Point(3, GrupoPosicionY - 145);
+                PanelVista.Location = new Point(3, VistasPosicionY - 145);
+                PanelReporte.Location = new Point(3, ReportesPosicionY - 145);
                 band_calificaciones = CambiarBandera(band_calificaciones); //Funcion para cambiar el valor de la bandera
             }
 
@@ -615,7 +615,7 @@ namespace Ginmasio
 
         private void button8_Click(object sender, EventArgs e)
         {
-            //abrirFormHijo(new Frm_GrupDoc());
+           abrirFormHijo(new Frm_GrupDoc());
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -628,10 +628,10 @@ namespace Ginmasio
             abrirFormHijo(new Actualizar_Usuario()); 
         }
 
-        private void Frm_Inicio_Load(object sender, EventArgs e)
+        private void Frm_Inicio_Load(object sender, EventArgs e) //Constructor
         {
             PanelRegistroCalificaciones.Location = new Point(21, 157);
-            PanelRegistroCalificaciones.Size = new Size(165, 97);
+            PanelRegistroCalificaciones.Size = new Size(191,143);
 
             PanelRegistroUsuario.Location = new Point(21, 214);
             PanelRegistroUsuario.Size = new Size(166, 135);

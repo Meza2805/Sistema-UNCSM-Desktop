@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace UNCSM {
+namespace UNCSM.Reportes {
     using System;
     using System.ComponentModel;
     using CrystalDecisions.Shared;
@@ -16,14 +16,14 @@ namespace UNCSM {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class Actas_de_Calificaciones : ReportClass {
+    public class Frm_Actas_Calificaciones : ReportClass {
         
-        public Actas_de_Calificaciones() {
+        public Frm_Actas_Calificaciones() {
         }
         
         public override string ResourceName {
             get {
-                return "Actas de Calificaciones.rpt";
+                return "Frm_Actas_Calificaciones.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace UNCSM {
         
         public override string FullResourceName {
             get {
-                return "UNCSM.Actas de Calificaciones.rpt";
+                return "UNCSM.Reportes.Frm_Actas_Calificaciones.rpt";
             }
             set {
                 // Do nothing
@@ -87,12 +87,60 @@ namespace UNCSM {
                 return this.ReportDefinition.Sections[4];
             }
         }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_año {
+            get {
+                return this.DataDefinition.ParameterFields[0];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_facultad {
+            get {
+                return this.DataDefinition.ParameterFields[1];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_carrera {
+            get {
+                return this.DataDefinition.ParameterFields[2];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_asignatura {
+            get {
+                return this.DataDefinition.ParameterFields[3];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_grupo {
+            get {
+                return this.DataDefinition.ParameterFields[4];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_docente {
+            get {
+                return this.DataDefinition.ParameterFields[5];
+            }
+        }
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedActas_de_Calificaciones : Component, ICachedReport {
+    public class CachedFrm_Actas_Calificaciones : Component, ICachedReport {
         
-        public CachedActas_de_Calificaciones() {
+        public CachedFrm_Actas_Calificaciones() {
         }
         
         [Browsable(false)]
@@ -129,7 +177,7 @@ namespace UNCSM {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            Actas_de_Calificaciones rpt = new Actas_de_Calificaciones();
+            Frm_Actas_Calificaciones rpt = new Frm_Actas_Calificaciones();
             rpt.Site = this.Site;
             return rpt;
         }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_GrupDoc));
             this.txtsemestre = new System.Windows.Forms.GroupBox();
             this.txtsemes = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
@@ -78,6 +79,7 @@
             // 
             this.txtsemestre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtsemestre.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtsemestre.Controls.Add(this.txtsemes);
             this.txtsemestre.Controls.Add(this.label16);
             this.txtsemestre.Controls.Add(this.txtaño);
@@ -206,18 +208,19 @@
             // 
             // btnguardar2
             // 
-            this.btnguardar2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
+            this.btnguardar2.BackColor = System.Drawing.Color.Transparent;
+            this.btnguardar2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnguardar2.BackgroundImage")));
+            this.btnguardar2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnguardar2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnguardar2.FlatAppearance.BorderSize = 0;
             this.btnguardar2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
             this.btnguardar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnguardar2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnguardar2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnguardar2.Location = new System.Drawing.Point(477, 226);
+            this.btnguardar2.Location = new System.Drawing.Point(503, 224);
             this.btnguardar2.Name = "btnguardar2";
-            this.btnguardar2.Size = new System.Drawing.Size(179, 43);
+            this.btnguardar2.Size = new System.Drawing.Size(162, 54);
             this.btnguardar2.TabIndex = 61;
-            this.btnguardar2.Text = "GUARDAR";
             this.btnguardar2.UseVisualStyleBackColor = false;
             this.btnguardar2.Click += new System.EventHandler(this.btnguardar2_Click);
             // 
@@ -321,6 +324,7 @@
             // 
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.groupBox2.Controls.Add(this.btnasignar);
             this.groupBox2.Controls.Add(this.txtcedula);
             this.groupBox2.Controls.Add(this.label10);
@@ -347,7 +351,9 @@
             // btnasignar
             // 
             this.btnasignar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnasignar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
+            this.btnasignar.BackColor = System.Drawing.Color.Transparent;
+            this.btnasignar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnasignar.BackgroundImage")));
+            this.btnasignar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnasignar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnasignar.Enabled = false;
             this.btnasignar.FlatAppearance.BorderSize = 0;
@@ -355,11 +361,10 @@
             this.btnasignar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnasignar.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnasignar.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnasignar.Location = new System.Drawing.Point(879, 181);
+            this.btnasignar.Location = new System.Drawing.Point(840, 200);
             this.btnasignar.Name = "btnasignar";
-            this.btnasignar.Size = new System.Drawing.Size(110, 49);
+            this.btnasignar.Size = new System.Drawing.Size(160, 46);
             this.btnasignar.TabIndex = 68;
-            this.btnasignar.Text = "ASIGNAR";
             this.btnasignar.UseVisualStyleBackColor = false;
             this.btnasignar.Click += new System.EventHandler(this.btnasignar_click);
             // 
@@ -384,18 +389,19 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
+            this.btnBuscar.BackColor = System.Drawing.Color.Transparent;
+            this.btnBuscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBuscar.BackgroundImage")));
+            this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBuscar.FlatAppearance.BorderSize = 0;
             this.btnBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnBuscar.Location = new System.Drawing.Point(670, 34);
+            this.btnBuscar.Location = new System.Drawing.Point(679, 27);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(94, 23);
+            this.btnBuscar.Size = new System.Drawing.Size(124, 37);
             this.btnBuscar.TabIndex = 57;
-            this.btnBuscar.Text = "BUSCAR";
             this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
@@ -517,6 +523,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.LavenderBlush;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.groupBox2);
@@ -529,7 +536,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::UNCSM.Properties.Resources.grupos;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(380, 7);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(65, 58);
@@ -573,7 +580,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button btnguardar2;
         private System.Windows.Forms.GroupBox txtsemestre;
         private System.Windows.Forms.TextBox txtgrupo;
         private System.Windows.Forms.TextBox txtbusgrupos;
@@ -613,5 +619,6 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txtsemes;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button btnguardar2;
     }
 }

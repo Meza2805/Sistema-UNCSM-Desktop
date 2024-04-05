@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using UNCSM;
+using UNCSM.Reportes;
 
 namespace Ginmasio
 {
@@ -36,11 +37,15 @@ namespace Ginmasio
             dataGridLista.DataBindingComplete += dataGridLista_DataBindingComplete;
         }
 
-  
+        private void btnvalidar_Click(object sender, EventArgs e)
+        {
+            ValidarNotasVacias();
+            
+        }
 
         private void btnmostrarlista_Click(object sender, EventArgs e)
         {
-            btnnotas.Enabled=true;
+            btnvalidar.Enabled=true;
             btnmostrarlista.Enabled = false;
             btnBuscar.Enabled = false;
             txtcedula.Enabled = false;
@@ -56,6 +61,36 @@ namespace Ginmasio
 
 
         }
+
+        private void btnactas_Click(object sender, EventArgs e)
+        {
+            string año = txtaño2.Text;
+            string areaConocimiento = txtareaconocimiento.Text;
+            string carrera = txtcarrera.Text;
+            string asignatura = txtasignatura.Text;
+
+            string grupo = "";
+            if (cbgrupos.SelectedItem != null)
+            {
+                grupo = cbgrupos.SelectedItem.ToString();
+            }
+
+            string docente = txtdocente.Text;
+
+            Frm_Acta_calificacion report = new Frm_Acta_calificacion(año, areaConocimiento, carrera, asignatura, grupo, docente);
+
+            //report.Load(@"C:\Repositorio\hoy\Desktop-UNCSM--3.0\Casimiro Sotelo\Reportes\Frm_Actas_Calificaciones.rpt");
+
+            report.Show();
+
+            dataGridLista.Visible = false; // Limpiar la tabla después de guardar
+            limpiardatos();
+            txtcedula.Enabled = true;
+            btnBuscar.Enabled = true;
+            cbgrupos.Enabled = false;
+        }
+
+
         private void dataGridLista_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
         {
             TextBox textBox = e.Control as TextBox;
@@ -242,9 +277,9 @@ namespace Ginmasio
             GuardarNotas();
         }
 
-        private void GuardarNotas()
+        private void ValidarNotasVacias()
         {
-            bool hayNotasVacias = false; // Variable para verificar si hay notas vacías
+            bool todasLasNotasLlenas = true; // Variable para verificar si todas las notas están llenas
 
             // Verificar si hay filas en el DataGridView
             if (dataGridLista.Rows.Count > 0)
@@ -257,51 +292,98 @@ namespace Ginmasio
                         // Verificar si la celda de la nota final está vacía
                         if (row.Cells["NOTA_FINAL"].Value == null || string.IsNullOrWhiteSpace(row.Cells["NOTA_FINAL"].Value.ToString()))
                         {
-                            hayNotasVacias = true; // Hay notas vacías
-                            break; // Salir del bucle tan pronto como se encuentre una nota vacía
+                            // Si una nota está vacía, cambiar el estado a falso y salir del bucle
+                            todasLasNotasLlenas = false;
+                            break;
                         }
                     }
                 }
 
-                // Si hay notas vacías, mostrar un mensaje y guardar provisionalmente
-                if (hayNotasVacias)
-                {
-                    Frm_Mensaje_Advertencia mensaje01 = new Frm_Mensaje_Advertencia("Hay campos vacíos, se guardarán provisionalmente");
-                    mensaje01.ShowDialog();
-                }
+                // Si no hay notas vacías, habilitar el botón para guardar las notas definitivamente
+                btnnotas.Enabled = todasLasNotasLlenas;
 
-                // Procede a guardar las notas
-                foreach (DataGridViewRow row in dataGridLista.Rows)
+                // Si hay notas vacías, mostrar el mensaje de confirmación
+                if (!todasLasNotasLlenas)
                 {
-                    if (!row.IsNewRow)
+                    DialogResult result = MessageBox.Show("¿Desea guardar las notas provisionalmente?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                    // Si el usuario elige "Sí", se procede con el guardado provisional
+                    if (result == DialogResult.Yes)
                     {
-                        // Obtener los valores de las celdas
-                        string people_id = row.Cells["PEOPLE_ID"].Value.ToString();
-                        string cod_asig = row.Cells["CODIGO_ASIGNATURA"].Value.ToString();
-                        string nota_final = row.Cells["NOTA_FINAL"].Value?.ToString() ?? ""; // Si es nulo, asigna cadena vacía
+                        // Aquí puedes agregar el código para guardar provisionalmente las notas
+                        foreach (DataGridViewRow row in dataGridLista.Rows)
+                        {
+                            if (!row.IsNewRow)
+                            {
+                                string people_id = row.Cells["PEOPLE_ID"].Value.ToString();
+                                string cod_asig = row.Cells["CODIGO_ASIGNATURA"].Value.ToString();
+                                string nota_final = row.Cells["NOTA_FINAL"].Value?.ToString() ?? "";
 
-                        // Llamar al método para actualizar las notas
-                        Actualizar_Notas_Alumnos.Actualiza_Notas_Alumnos(people_id, cod_asig, nota_final);
+                                // Llamar al método para guardar provisionalmente las notas
+                                Actualizar_Notas_Alumnos.Actualiza_Notas_Alumnos(people_id, cod_asig, nota_final);
+                            }
+                        }
+
+                        Frm_Mensaje_Advertencia mensajeAdvertencia = new Frm_Mensaje_Advertencia("Las notas se han guardado provisionalmente");
+                        mensajeAdvertencia.ShowDialog();
+
+                        // Limpiar los demás elementos solo si el usuario elige "Sí"
+                        dataGridLista.Visible = false; // Limpiar la tabla después de guardar
+                        limpiardatos();
+                        btnvalidar.Enabled = false;
+                        txtcedula.Enabled = true;
+                        btnBuscar.Enabled = true;
+                        cbgrupos.Enabled = false;
                     }
                 }
-
-                dataGridLista.Visible = false; // Limpiar la tabla después de guardar
-                limpiardatos();
-
-                mensaje.ShowDialog(); // Suponiendo que mensaje es el mensaje de éxito
-                txtcedula.Enabled = true;
-                btnBuscar.Enabled = true;
-                cbgrupos.Enabled = false;
-            }
-            else
-            {
-                MessageBox.Show("No hay filas para guardar.", "Error de Guardado", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
 
 
-        public void limpiardatos()
+        private void GuardarNotas()
+        {
+            // Validar y guardar las notas vacías provisionalmente
+            ValidarNotasVacias();
+
+            // Verificar si hay notas vacías
+            bool hayNotasVacias = dataGridLista.Rows.Cast<DataGridViewRow>().Any(row =>
+                !row.IsNewRow && (row.Cells["NOTA_FINAL"].Value == null || string.IsNullOrWhiteSpace(row.Cells["NOTA_FINAL"].Value.ToString())));
+
+            // Si hay notas vacías, no proceder con el guardado
+            if (hayNotasVacias)
+            {
+                MessageBox.Show("Por favor llene todas las notas antes de guardar.", "Notas Vacías", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Procede a guardar las notas
+            foreach (DataGridViewRow row in dataGridLista.Rows)
+            {
+                if (!row.IsNewRow)
+                {
+                    // Obtener los valores de las celdas
+                    string people_id = row.Cells["PEOPLE_ID"].Value.ToString();
+                    string cod_asig = row.Cells["CODIGO_ASIGNATURA"].Value.ToString();
+                    string nota_final = row.Cells["NOTA_FINAL"].Value?.ToString() ?? ""; // Si es nulo, asigna cadena vacía
+
+                    // Llamar al método para actualizar las notas
+                    Actualizar_Notas_Alumnos.Actualiza_Notas_Alumnos(people_id, cod_asig, nota_final);
+                }
+            }
+
+            //dataGridLista.Visible = false; // Limpiar la tabla después de guardar
+            //limpiardatos();
+            btnactas.Enabled = true;
+            mensaje.ShowDialog(); // Suponiendo que mensaje es el mensaje de éxito
+            //txtcedula.Enabled = true;
+            //btnBuscar.Enabled = true;
+            //cbgrupos.Enabled = false;
+        }
+
+    
+
+    public void limpiardatos()
         {
             txtcedula.Clear();
             txtdocente.Clear();

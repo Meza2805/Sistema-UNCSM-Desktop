@@ -53,6 +53,10 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this.btnRegistroUsuario = new System.Windows.Forms.Button();
             this.panel12 = new System.Windows.Forms.Panel();
+            this.PanelRegistroCalificaciones = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.btnCalificacionesActualizacion = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.PanelReportes = new System.Windows.Forms.Panel();
             this.panel19 = new System.Windows.Forms.Panel();
             this.btnRectoria = new System.Windows.Forms.Button();
@@ -72,11 +76,6 @@
             this.button9 = new System.Windows.Forms.Button();
             this.panel13 = new System.Windows.Forms.Panel();
             this.button10 = new System.Windows.Forms.Button();
-            this.PanelRegistroCalificaciones = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.btnCalificacionesActualizacion = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.btnRegistroCalificaciones = new System.Windows.Forms.Button();
             this.PanelReporte = new System.Windows.Forms.Panel();
             this.btnReportes = new System.Windows.Forms.Button();
             this.panel20 = new System.Windows.Forms.Panel();
@@ -105,6 +104,9 @@
             this.pcLogo = new System.Windows.Forms.PictureBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.Panel_Contenedor = new System.Windows.Forms.Panel();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnRegistroCalificaciones = new System.Windows.Forms.Button();
             this.Panel_superior.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_normalizar_todo)).BeginInit();
@@ -115,10 +117,10 @@
             this.Panel_Menu.SuspendLayout();
             this.PanelRegistroOpciones.SuspendLayout();
             this.PanelRegistroUsuario.SuspendLayout();
+            this.PanelRegistroCalificaciones.SuspendLayout();
             this.PanelReportes.SuspendLayout();
             this.PanelRegistroVistas.SuspendLayout();
             this.PanelRegistroGrupos.SuspendLayout();
-            this.PanelRegistroCalificaciones.SuspendLayout();
             this.PanelReporte.SuspendLayout();
             this.PanelVista.SuspendLayout();
             this.PanelGrupo.SuspendLayout();
@@ -256,9 +258,9 @@
             // Panel_Menu
             // 
             this.Panel_Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(127)))), ((int)(((byte)(180)))));
-            this.Panel_Menu.Controls.Add(this.PanelRegistroOpciones);
             this.Panel_Menu.Controls.Add(this.PanelRegistroUsuario);
             this.Panel_Menu.Controls.Add(this.PanelRegistroCalificaciones);
+            this.Panel_Menu.Controls.Add(this.PanelRegistroOpciones);
             this.Panel_Menu.Controls.Add(this.PanelReportes);
             this.Panel_Menu.Controls.Add(this.PanelRegistroVistas);
             this.Panel_Menu.Controls.Add(this.PanelRegistroGrupos);
@@ -313,7 +315,6 @@
             this.btnBajaMatricula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBajaMatricula.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBajaMatricula.ForeColor = System.Drawing.Color.White;
-            this.btnBajaMatricula.Image = global::UNCSM.Properties.Resources.vcsconflicting_93497;
             this.btnBajaMatricula.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBajaMatricula.Location = new System.Drawing.Point(14, 48);
             this.btnBajaMatricula.Name = "btnBajaMatricula";
@@ -362,7 +363,7 @@
             this.PanelRegistroUsuario.Controls.Add(this.btnRegistroUsuario);
             this.PanelRegistroUsuario.Controls.Add(this.panel12);
             this.PanelRegistroUsuario.ForeColor = System.Drawing.Color.Blue;
-            this.PanelRegistroUsuario.Location = new System.Drawing.Point(4, 437);
+            this.PanelRegistroUsuario.Location = new System.Drawing.Point(18, 421);
             this.PanelRegistroUsuario.Name = "PanelRegistroUsuario";
             this.PanelRegistroUsuario.Size = new System.Drawing.Size(166, 10);
             this.PanelRegistroUsuario.TabIndex = 25;
@@ -451,6 +452,57 @@
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(12, 38);
             this.panel12.TabIndex = 9;
+            // 
+            // PanelRegistroCalificaciones
+            // 
+            this.PanelRegistroCalificaciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(148)))), ((int)(((byte)(218)))));
+            this.PanelRegistroCalificaciones.Controls.Add(this.button1);
+            this.PanelRegistroCalificaciones.Controls.Add(this.panel24);
+            this.PanelRegistroCalificaciones.Controls.Add(this.panel7);
+            this.PanelRegistroCalificaciones.Controls.Add(this.btnCalificacionesActualizacion);
+            this.PanelRegistroCalificaciones.Controls.Add(this.panel5);
+            this.PanelRegistroCalificaciones.Controls.Add(this.btnRegistroCalificaciones);
+            this.PanelRegistroCalificaciones.ForeColor = System.Drawing.Color.Blue;
+            this.PanelRegistroCalificaciones.Location = new System.Drawing.Point(3, 495);
+            this.PanelRegistroCalificaciones.Name = "PanelRegistroCalificaciones";
+            this.PanelRegistroCalificaciones.Size = new System.Drawing.Size(191, 11);
+            this.PanelRegistroCalificaciones.TabIndex = 24;
+            this.PanelRegistroCalificaciones.Visible = false;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel7.Location = new System.Drawing.Point(2, 47);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(12, 38);
+            this.panel7.TabIndex = 26;
+            // 
+            // btnCalificacionesActualizacion
+            // 
+            this.btnCalificacionesActualizacion.BackColor = System.Drawing.Color.Transparent;
+            this.btnCalificacionesActualizacion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCalificacionesActualizacion.FlatAppearance.BorderSize = 0;
+            this.btnCalificacionesActualizacion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.btnCalificacionesActualizacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalificacionesActualizacion.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalificacionesActualizacion.ForeColor = System.Drawing.Color.White;
+            this.btnCalificacionesActualizacion.Image = global::UNCSM.Properties.Resources._17_104874;
+            this.btnCalificacionesActualizacion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCalificacionesActualizacion.Location = new System.Drawing.Point(20, 47);
+            this.btnCalificacionesActualizacion.Name = "btnCalificacionesActualizacion";
+            this.btnCalificacionesActualizacion.Size = new System.Drawing.Size(143, 38);
+            this.btnCalificacionesActualizacion.TabIndex = 25;
+            this.btnCalificacionesActualizacion.Text = "Actualización";
+            this.btnCalificacionesActualizacion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCalificacionesActualizacion.UseVisualStyleBackColor = false;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel5.Location = new System.Drawing.Point(2, 3);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(12, 38);
+            this.panel5.TabIndex = 24;
             // 
             // PanelReportes
             // 
@@ -719,75 +771,6 @@
             this.button10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button10.UseVisualStyleBackColor = false;
             this.button10.Click += new System.EventHandler(this.button10_Click);
-            // 
-            // PanelRegistroCalificaciones
-            // 
-            this.PanelRegistroCalificaciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(148)))), ((int)(((byte)(218)))));
-            this.PanelRegistroCalificaciones.Controls.Add(this.panel7);
-            this.PanelRegistroCalificaciones.Controls.Add(this.btnCalificacionesActualizacion);
-            this.PanelRegistroCalificaciones.Controls.Add(this.panel5);
-            this.PanelRegistroCalificaciones.Controls.Add(this.btnRegistroCalificaciones);
-            this.PanelRegistroCalificaciones.ForeColor = System.Drawing.Color.Blue;
-            this.PanelRegistroCalificaciones.Location = new System.Drawing.Point(5, 421);
-            this.PanelRegistroCalificaciones.Name = "PanelRegistroCalificaciones";
-            this.PanelRegistroCalificaciones.Size = new System.Drawing.Size(165, 10);
-            this.PanelRegistroCalificaciones.TabIndex = 24;
-            this.PanelRegistroCalificaciones.Visible = false;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.panel7.Location = new System.Drawing.Point(2, 47);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(12, 38);
-            this.panel7.TabIndex = 26;
-            // 
-            // btnCalificacionesActualizacion
-            // 
-            this.btnCalificacionesActualizacion.BackColor = System.Drawing.Color.Transparent;
-            this.btnCalificacionesActualizacion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCalificacionesActualizacion.FlatAppearance.BorderSize = 0;
-            this.btnCalificacionesActualizacion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.btnCalificacionesActualizacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCalificacionesActualizacion.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalificacionesActualizacion.ForeColor = System.Drawing.Color.White;
-            this.btnCalificacionesActualizacion.Image = global::UNCSM.Properties.Resources._17_104874;
-            this.btnCalificacionesActualizacion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCalificacionesActualizacion.Location = new System.Drawing.Point(20, 47);
-            this.btnCalificacionesActualizacion.Name = "btnCalificacionesActualizacion";
-            this.btnCalificacionesActualizacion.Size = new System.Drawing.Size(143, 38);
-            this.btnCalificacionesActualizacion.TabIndex = 25;
-            this.btnCalificacionesActualizacion.Text = "Actualización";
-            this.btnCalificacionesActualizacion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCalificacionesActualizacion.UseVisualStyleBackColor = false;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.panel5.Location = new System.Drawing.Point(2, 3);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(12, 38);
-            this.panel5.TabIndex = 24;
-            // 
-            // btnRegistroCalificaciones
-            // 
-            this.btnRegistroCalificaciones.BackColor = System.Drawing.Color.Transparent;
-            this.btnRegistroCalificaciones.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegistroCalificaciones.FlatAppearance.BorderSize = 0;
-            this.btnRegistroCalificaciones.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.btnRegistroCalificaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegistroCalificaciones.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistroCalificaciones.ForeColor = System.Drawing.Color.White;
-            this.btnRegistroCalificaciones.Image = global::UNCSM.Properties.Resources.registro_en_linea;
-            this.btnRegistroCalificaciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegistroCalificaciones.Location = new System.Drawing.Point(20, 3);
-            this.btnRegistroCalificaciones.Name = "btnRegistroCalificaciones";
-            this.btnRegistroCalificaciones.Size = new System.Drawing.Size(138, 38);
-            this.btnRegistroCalificaciones.TabIndex = 23;
-            this.btnRegistroCalificaciones.Text = "Registro";
-            this.btnRegistroCalificaciones.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnRegistroCalificaciones.UseVisualStyleBackColor = false;
-            this.btnRegistroCalificaciones.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // PanelReporte
             // 
@@ -1131,6 +1114,53 @@
             this.Panel_Contenedor.TabIndex = 5;
             this.Panel_Contenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Contenedor_Paint);
             // 
+            // panel24
+            // 
+            this.panel24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel24.Location = new System.Drawing.Point(2, 91);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(12, 38);
+            this.panel24.TabIndex = 27;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::UNCSM.Properties.Resources.registro_en_linea;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(20, 91);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(138, 38);
+            this.button1.TabIndex = 28;
+            this.button1.Text = "Reingreso";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // btnRegistroCalificaciones
+            // 
+            this.btnRegistroCalificaciones.BackColor = System.Drawing.Color.Transparent;
+            this.btnRegistroCalificaciones.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRegistroCalificaciones.FlatAppearance.BorderSize = 0;
+            this.btnRegistroCalificaciones.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.btnRegistroCalificaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistroCalificaciones.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistroCalificaciones.ForeColor = System.Drawing.Color.White;
+            this.btnRegistroCalificaciones.Image = global::UNCSM.Properties.Resources.registro_en_linea;
+            this.btnRegistroCalificaciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRegistroCalificaciones.Location = new System.Drawing.Point(20, 3);
+            this.btnRegistroCalificaciones.Name = "btnRegistroCalificaciones";
+            this.btnRegistroCalificaciones.Size = new System.Drawing.Size(153, 38);
+            this.btnRegistroCalificaciones.TabIndex = 23;
+            this.btnRegistroCalificaciones.Text = "Nuevo Ingreso";
+            this.btnRegistroCalificaciones.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnRegistroCalificaciones.UseVisualStyleBackColor = false;
+            this.btnRegistroCalificaciones.Click += new System.EventHandler(this.button2_Click_1);
+            // 
             // Frm_Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1159,10 +1189,10 @@
             this.Panel_Menu.ResumeLayout(false);
             this.PanelRegistroOpciones.ResumeLayout(false);
             this.PanelRegistroUsuario.ResumeLayout(false);
+            this.PanelRegistroCalificaciones.ResumeLayout(false);
             this.PanelReportes.ResumeLayout(false);
             this.PanelRegistroVistas.ResumeLayout(false);
             this.PanelRegistroGrupos.ResumeLayout(false);
-            this.PanelRegistroCalificaciones.ResumeLayout(false);
             this.PanelReporte.ResumeLayout(false);
             this.PanelVista.ResumeLayout(false);
             this.PanelGrupo.ResumeLayout(false);
@@ -1227,7 +1257,6 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button btnCalificacionesActualizacion;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button btnRegistroCalificaciones;
         private System.Windows.Forms.Panel PanelRegistroUsuario;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Button btnCredencialesUsuario;
@@ -1255,5 +1284,8 @@
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Button btnBajaMatricula;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel24;
+        private System.Windows.Forms.Button btnRegistroCalificaciones;
     }
 }

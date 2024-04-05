@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Docente));
             this.txtusuario = new System.Windows.Forms.GroupBox();
             this.txtinss = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -102,6 +103,7 @@
             // 
             this.txtusuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtusuario.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtusuario.Controls.Add(this.txtinss);
             this.txtusuario.Controls.Add(this.label15);
             this.txtusuario.Controls.Add(this.cbtipousuario);
@@ -125,6 +127,7 @@
             this.txtusuario.Controls.Add(this.txtPrimerApellido);
             this.txtusuario.Controls.Add(this.label5);
             this.txtusuario.Font = new System.Drawing.Font("Tahoma", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.txtusuario.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtusuario.Location = new System.Drawing.Point(0, 75);
             this.txtusuario.Name = "txtusuario";
             this.txtusuario.Size = new System.Drawing.Size(1033, 197);
@@ -368,6 +371,7 @@
             // 
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.groupBox2.Controls.Add(this.cbMunicipio);
             this.groupBox2.Controls.Add(this.cbDepartamento);
             this.groupBox2.Controls.Add(this.txtDireccion);
@@ -446,18 +450,19 @@
             // 
             // btnvalidar
             // 
-            this.btnvalidar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
+            this.btnvalidar.BackColor = System.Drawing.Color.Transparent;
+            this.btnvalidar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnvalidar.BackgroundImage")));
+            this.btnvalidar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnvalidar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnvalidar.FlatAppearance.BorderSize = 0;
             this.btnvalidar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
             this.btnvalidar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnvalidar.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnvalidar.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnvalidar.Location = new System.Drawing.Point(422, 193);
+            this.btnvalidar.Location = new System.Drawing.Point(317, 201);
             this.btnvalidar.Name = "btnvalidar";
-            this.btnvalidar.Size = new System.Drawing.Size(124, 57);
+            this.btnvalidar.Size = new System.Drawing.Size(150, 57);
             this.btnvalidar.TabIndex = 59;
-            this.btnvalidar.Text = "VALIDAR";
             this.btnvalidar.UseVisualStyleBackColor = false;
             this.btnvalidar.Click += new System.EventHandler(this.btnvalidar_Click);
             // 
@@ -487,7 +492,9 @@
             // 
             // btnguardar
             // 
-            this.btnguardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
+            this.btnguardar.BackColor = System.Drawing.Color.Transparent;
+            this.btnguardar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnguardar.BackgroundImage")));
+            this.btnguardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnguardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnguardar.Enabled = false;
             this.btnguardar.FlatAppearance.BorderSize = 0;
@@ -495,11 +502,10 @@
             this.btnguardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnguardar.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnguardar.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnguardar.Location = new System.Drawing.Point(552, 193);
+            this.btnguardar.Location = new System.Drawing.Point(512, 201);
             this.btnguardar.Name = "btnguardar";
-            this.btnguardar.Size = new System.Drawing.Size(124, 57);
+            this.btnguardar.Size = new System.Drawing.Size(150, 57);
             this.btnguardar.TabIndex = 58;
-            this.btnguardar.Text = "GUARDAR";
             this.btnguardar.UseVisualStyleBackColor = false;
             this.btnguardar.Click += new System.EventHandler(this.btnguardar_Click);
             // 
@@ -598,7 +604,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Control;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
             this.label1.Location = new System.Drawing.Point(415, 26);
@@ -611,6 +617,7 @@
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.LavenderBlush;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txtusuario);
@@ -622,7 +629,8 @@
             // 
             // pictureBox1
             // 
-          //  this.pictureBox1.Image = global::UNCSM.Properties.Resources.User_Group_80_icon_icons1;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(360, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(58, 54);
