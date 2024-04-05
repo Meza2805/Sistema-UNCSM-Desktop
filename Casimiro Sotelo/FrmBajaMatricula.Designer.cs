@@ -288,7 +288,7 @@
             // btnBaja
             // 
             this.btnBaja.BackColor = System.Drawing.Color.Transparent;
-            this.btnBaja.BackgroundImage = global::UNCSM.Properties.Resources.btnDardeBaja;
+            //this.btnBaja.BackgroundImage = global::UNCSM.Properties.Resources.btnDardeBaja;
             this.btnBaja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnBaja.Location = new System.Drawing.Point(74, 208);
             this.btnBaja.Name = "btnBaja";
@@ -299,7 +299,7 @@
             // btnBuscar
             // 
             this.btnBuscar.BackColor = System.Drawing.Color.Transparent;
-            this.btnBuscar.BackgroundImage = global::UNCSM.Properties.Resources.btnBuscarEstudiante;
+            //this.btnBuscar.BackgroundImage = global::UNCSM.Properties.Resources.btnBuscarEstudiante;
             this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnBuscar.Location = new System.Drawing.Point(295, 12);
             this.btnBuscar.Name = "btnBuscar";
