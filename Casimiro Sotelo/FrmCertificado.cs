@@ -23,6 +23,7 @@ namespace UNCSM
         {
             InitializeComponent();
             btn_Reporte.Visible = false;
+            btn_Reporte02.Visible = false;
             cod_user = codigo_user;
 
         }
@@ -134,6 +135,65 @@ namespace UNCSM
 
         }
 
+        private void btnGenerarDriver_Click(object sender, EventArgs e)
+        {
+            bool bandera = false;
+            foreach (DataRow row in tabla.Rows)
+            {
+                if (cbCarrera.Text == Convert.ToString(row["CARRERA"]))
+                {
+                    bandera = true;
+                }
+            }
+
+            if (bandera == true)
+            {
+                cargar_boton();
+            }
+            else
+            {
+                Frm_Mensaje_Advertencia me = new Frm_Mensaje_Advertencia("DEBE SELECCIONAR UNA CARRERA VALIDA");
+                me.ShowDialog();
+            }
+
+        }
+
+        private void btn_Reporte02_Click(object sender, EventArgs e)
+        {
+            if (dgvCerificado.RowCount == 0)
+            {
+                mensaje = new Frm_Mensaje_Advertencia("DEBE BUSCAR UN ESTUDIANTE PRIMERO!");
+                mensaje.ShowDialog();
+            }
+            else
+            {
+                cbCarrera.Enabled = false;
+                string Event_Id = "";
+                int limite = dgvCerificado.RowCount, contador = 1;
+                foreach (DataGridViewRow fila in dgvCerificado.Rows)
+                {
+                    if (contador == limite)
+                    {
+                        Event_Id += Convert.ToString(fila.Cells[2].Value);
+                    }
+                    else
+                    {
+                        Event_Id += Convert.ToString(fila.Cells[2].Value) + ",";
+                    }
+                    contador++;
+                }
+
+                Event_Id += "";
+                int credito_entero = Convert.ToInt32(txtCreditos.Text);
+
+                Frm_Certificado_Notas_Driver certificado = new Frm_Certificado_Notas_Driver(Convert.ToInt32(people), curriculum_02, "Pre", Event_Id, Convert.ToString(credito_entero), txtPromedio.Text, cod_user, Convert.ToString(conteo), txtNombre.Text);
+
+                certificado.Show();
+                //Frm_Reporte_Certificado Certificado = new Frm_Reporte_Certificado();
+            }
+
+        }
+
         private void btnCertificadoVacio_Click(object sender, EventArgs e)
         {
 
@@ -241,10 +301,10 @@ namespace UNCSM
 
         void cargar_boton()
         {
-            PgProgres.Visible = true;
-            lbProgres.Visible = true;
-            PgProgres.Value = 10;
-            curriculum_02 = "";
+            //////PgProgres.Visible = true;
+            //lbProgres.Visible = true;
+            //////PgProgres.Value = 10;
+            //curriculum_02 = "";
 
             Mensaje_Suscripcion cuadro = new Mensaje_Suscripcion();
             //cuadro.ShowDialog();
@@ -266,14 +326,14 @@ namespace UNCSM
                     // gpDetalle.Visible = false;
                 }
             }
-            PgProgres.Value = 20;
+            //////PgProgres.Value = 20;
             txtPlan.Text = plan;
             txtTipoMatricula.Text = matricula;
-            PgProgres.Value = 40;
+            ////PgProgres.Value = 40;
 
             //Cargar el plan de estudios
             tbl_Plan = bd.MOSTRAR_ASIGNATURA_SEGUN_PLAN(Convert.ToInt32(txtPeople.Text), curriculum_02);
-            PgProgres.Value = 50;
+            //////PgProgres.Value = 50;
             // Verificar si ya existe una instancia del formulario
             FrmPlanEstudios existingInstance = Application.OpenForms.OfType<FrmPlanEstudios>().FirstOrDefault();
 
@@ -283,7 +343,7 @@ namespace UNCSM
                 existingInstance.Close();
             }
             //Ventan_plan = new FrmPlanEstudios(tbl_Plan, "PLAN DE ESTUDIOS " + matricula + " " + plan + " PARA EL ESTUDIANTE " + nombre, plan_Aca, creditos, cursos, carrera);
-            PgProgres.Value = 70;
+            ////PgProgres.Value = 70;
 
             tbl_Certificado.Columns.Clear();
             tbl_Certificado.Rows.Clear();
@@ -293,14 +353,15 @@ namespace UNCSM
 
             dgvCerificado.DataSource = tbl_Certificado;
             //Ventan_plan.Show();
-            PgProgres.Value = 80;
+            ////PgProgres.Value = 80;
 
             RecorrerDataGridView(dgvCerificado);
             cuadro.ShowDialog();
-            PgProgres.Value = 100;
-            PgProgres.Visible = false;
+            ////PgProgres.Value = 100;
+            ////PgProgres.Visible = false;
             lbProgres.Visible = false;
             btn_Reporte.Visible = true;
+            btn_Reporte02.Visible = true;
             btn_Excel.Visible = true;
             btnCertificadoVacio.Visible = true;
         }

@@ -34,8 +34,11 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCertificado));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnAgregarAsignatura = new System.Windows.Forms.Button();
+            this.btnCertificadoVacio = new System.Windows.Forms.Button();
             this.lbProgres = new System.Windows.Forms.Label();
-            this.PgProgres = new Bunifu.Framework.UI.BunifuProgressBar();
+            this.btn_Excel = new System.Windows.Forms.Button();
+            this.btn_Reporte = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.txtBusqueda = new System.Windows.Forms.TextBox();
             this.gpDetalle = new System.Windows.Forms.GroupBox();
@@ -51,22 +54,19 @@
             this.txtTipoMatricula = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtPlan = new System.Windows.Forms.TextBox();
+            this.btnGenerar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtPeopleID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtPeople = new System.Windows.Forms.TextBox();
+            this.btnCargarMatricula = new System.Windows.Forms.Button();
             this.cbCarrera = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dgvCerificado = new System.Windows.Forms.DataGridView();
-            this.btnAgregarAsignatura = new System.Windows.Forms.Button();
-            this.btnCertificadoVacio = new System.Windows.Forms.Button();
-            this.btn_Excel = new System.Windows.Forms.Button();
-            this.btn_Reporte = new System.Windows.Forms.Button();
-            this.btnGenerar = new System.Windows.Forms.Button();
-            this.btnCargarMatricula = new System.Windows.Forms.Button();
+            this.btn_Reporte02 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.gpDetalle.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -76,10 +76,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.btn_Reporte02);
             this.panel1.Controls.Add(this.btnAgregarAsignatura);
             this.panel1.Controls.Add(this.btnCertificadoVacio);
             this.panel1.Controls.Add(this.lbProgres);
-            this.panel1.Controls.Add(this.PgProgres);
             this.panel1.Controls.Add(this.btn_Excel);
             this.panel1.Controls.Add(this.btn_Reporte);
             this.panel1.Controls.Add(this.label5);
@@ -103,6 +103,42 @@
             this.panel1.TabIndex = 83;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // btnAgregarAsignatura
+            // 
+            this.btnAgregarAsignatura.BackColor = System.Drawing.Color.Transparent;
+            this.btnAgregarAsignatura.BackgroundImage = global::UNCSM.Properties.Resources.btnAgregarAsignatura;
+            this.btnAgregarAsignatura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAgregarAsignatura.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnAgregarAsignatura.Enabled = false;
+            this.btnAgregarAsignatura.FlatAppearance.BorderSize = 0;
+            this.btnAgregarAsignatura.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.btnAgregarAsignatura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarAsignatura.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarAsignatura.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnAgregarAsignatura.Location = new System.Drawing.Point(221, 144);
+            this.btnAgregarAsignatura.Name = "btnAgregarAsignatura";
+            this.btnAgregarAsignatura.Size = new System.Drawing.Size(200, 50);
+            this.btnAgregarAsignatura.TabIndex = 114;
+            this.btnAgregarAsignatura.UseVisualStyleBackColor = false;
+            // 
+            // btnCertificadoVacio
+            // 
+            this.btnCertificadoVacio.BackColor = System.Drawing.Color.Transparent;
+            this.btnCertificadoVacio.BackgroundImage = global::UNCSM.Properties.Resources.btnCertificadoSiucap;
+            this.btnCertificadoVacio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCertificadoVacio.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnCertificadoVacio.FlatAppearance.BorderSize = 0;
+            this.btnCertificadoVacio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.btnCertificadoVacio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCertificadoVacio.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCertificadoVacio.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnCertificadoVacio.Location = new System.Drawing.Point(416, 11);
+            this.btnCertificadoVacio.Name = "btnCertificadoVacio";
+            this.btnCertificadoVacio.Size = new System.Drawing.Size(200, 50);
+            this.btnCertificadoVacio.TabIndex = 113;
+            this.btnCertificadoVacio.UseVisualStyleBackColor = false;
+            this.btnCertificadoVacio.Click += new System.EventHandler(this.btnCertificadoVacio_Click);
+            // 
             // lbProgres
             // 
             this.lbProgres.AutoSize = true;
@@ -114,24 +150,48 @@
             this.lbProgres.Text = "Cargando...";
             this.lbProgres.Visible = false;
             // 
-            // PgProgres
+            // btn_Excel
             // 
-            this.PgProgres.BackColor = System.Drawing.Color.Silver;
-            this.PgProgres.BorderRadius = 5;
-            this.PgProgres.Location = new System.Drawing.Point(473, 101);
-            this.PgProgres.MaximumValue = 100;
-            this.PgProgres.Name = "PgProgres";
-            this.PgProgres.ProgressColor = System.Drawing.Color.Teal;
-            this.PgProgres.Size = new System.Drawing.Size(136, 10);
-            this.PgProgres.TabIndex = 111;
-            this.PgProgres.Value = 0;
-            this.PgProgres.Visible = false;
+            this.btn_Excel.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Excel.BackgroundImage = global::UNCSM.Properties.Resources.btnGenerarExcel;
+            this.btn_Excel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Excel.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btn_Excel.FlatAppearance.BorderSize = 0;
+            this.btn_Excel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.btn_Excel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Excel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Excel.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_Excel.Location = new System.Drawing.Point(438, 277);
+            this.btn_Excel.Name = "btn_Excel";
+            this.btn_Excel.Size = new System.Drawing.Size(200, 50);
+            this.btn_Excel.TabIndex = 110;
+            this.btn_Excel.UseVisualStyleBackColor = false;
+            this.btn_Excel.Visible = false;
+            this.btn_Excel.Click += new System.EventHandler(this.btn_Excel_Click);
+            // 
+            // btn_Reporte
+            // 
+            this.btn_Reporte.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Reporte.BackgroundImage = global::UNCSM.Properties.Resources.btnGenerarPDF;
+            this.btn_Reporte.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Reporte.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btn_Reporte.FlatAppearance.BorderSize = 0;
+            this.btn_Reporte.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.btn_Reporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Reporte.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Reporte.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_Reporte.Location = new System.Drawing.Point(22, 277);
+            this.btn_Reporte.Name = "btn_Reporte";
+            this.btn_Reporte.Size = new System.Drawing.Size(200, 50);
+            this.btn_Reporte.TabIndex = 109;
+            this.btn_Reporte.UseVisualStyleBackColor = false;
+            this.btn_Reporte.Click += new System.EventHandler(this.btn_Reporte_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(529, 297);
+            this.label5.Location = new System.Drawing.Point(752, 294);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(176, 16);
             this.label5.TabIndex = 108;
@@ -143,7 +203,7 @@
             this.txtBusqueda.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtBusqueda.Cursor = System.Windows.Forms.Cursors.Default;
             this.txtBusqueda.Font = new System.Drawing.Font("Times New Roman", 9.75F);
-            this.txtBusqueda.Location = new System.Drawing.Point(711, 292);
+            this.txtBusqueda.Location = new System.Drawing.Point(934, 289);
             this.txtBusqueda.MaxLength = 500;
             this.txtBusqueda.Name = "txtBusqueda";
             this.txtBusqueda.Size = new System.Drawing.Size(231, 22);
@@ -313,6 +373,24 @@
             this.txtPlan.TabIndex = 105;
             this.txtPlan.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // btnGenerar
+            // 
+            this.btnGenerar.BackColor = System.Drawing.Color.Transparent;
+            this.btnGenerar.BackgroundImage = global::UNCSM.Properties.Resources.BtnGenerarCertificado;
+            this.btnGenerar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGenerar.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnGenerar.FlatAppearance.BorderSize = 0;
+            this.btnGenerar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.btnGenerar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerar.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerar.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnGenerar.Location = new System.Drawing.Point(15, 144);
+            this.btnGenerar.Name = "btnGenerar";
+            this.btnGenerar.Size = new System.Drawing.Size(200, 50);
+            this.btnGenerar.TabIndex = 105;
+            this.btnGenerar.UseVisualStyleBackColor = false;
+            this.btnGenerar.Click += new System.EventHandler(this.btnGenerar_Click);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -382,6 +460,24 @@
             this.txtPeople.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtPeople.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPeople_KeyDown);
             this.txtPeople.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPeople_KeyPress);
+            // 
+            // btnCargarMatricula
+            // 
+            this.btnCargarMatricula.BackColor = System.Drawing.Color.Transparent;
+            this.btnCargarMatricula.BackgroundImage = global::UNCSM.Properties.Resources.btnBuscarEstudiante;
+            this.btnCargarMatricula.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCargarMatricula.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnCargarMatricula.FlatAppearance.BorderSize = 0;
+            this.btnCargarMatricula.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.btnCargarMatricula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCargarMatricula.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCargarMatricula.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnCargarMatricula.Location = new System.Drawing.Point(210, 11);
+            this.btnCargarMatricula.Name = "btnCargarMatricula";
+            this.btnCargarMatricula.Size = new System.Drawing.Size(200, 50);
+            this.btnCargarMatricula.TabIndex = 80;
+            this.btnCargarMatricula.UseVisualStyleBackColor = false;
+            this.btnCargarMatricula.Click += new System.EventHandler(this.btnCargarMatricula_Click);
             // 
             // cbCarrera
             // 
@@ -475,114 +571,24 @@
             this.dgvCerificado.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.dgvCerificado_RowsRemoved);
             this.dgvCerificado.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dgvCerificado_KeyDown);
             // 
-            // btnAgregarAsignatura
+            // btn_Reporte02
             // 
-            this.btnAgregarAsignatura.BackColor = System.Drawing.Color.Transparent;
-            this.btnAgregarAsignatura.BackgroundImage = global::UNCSM.Properties.Resources.btnAgregarAsignatura;
-            this.btnAgregarAsignatura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAgregarAsignatura.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnAgregarAsignatura.Enabled = false;
-            this.btnAgregarAsignatura.FlatAppearance.BorderSize = 0;
-            this.btnAgregarAsignatura.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.btnAgregarAsignatura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarAsignatura.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarAsignatura.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnAgregarAsignatura.Location = new System.Drawing.Point(248, 144);
-            this.btnAgregarAsignatura.Name = "btnAgregarAsignatura";
-            this.btnAgregarAsignatura.Size = new System.Drawing.Size(200, 50);
-            this.btnAgregarAsignatura.TabIndex = 114;
-            this.btnAgregarAsignatura.UseVisualStyleBackColor = false;
-            // 
-            // btnCertificadoVacio
-            // 
-            this.btnCertificadoVacio.BackColor = System.Drawing.Color.Transparent;
-            this.btnCertificadoVacio.BackgroundImage = global::UNCSM.Properties.Resources.btnCertificadoSiucap;
-            this.btnCertificadoVacio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCertificadoVacio.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnCertificadoVacio.FlatAppearance.BorderSize = 0;
-            this.btnCertificadoVacio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.btnCertificadoVacio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCertificadoVacio.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCertificadoVacio.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnCertificadoVacio.Location = new System.Drawing.Point(416, 11);
-            this.btnCertificadoVacio.Name = "btnCertificadoVacio";
-            this.btnCertificadoVacio.Size = new System.Drawing.Size(200, 50);
-            this.btnCertificadoVacio.TabIndex = 113;
-            this.btnCertificadoVacio.UseVisualStyleBackColor = false;
-            this.btnCertificadoVacio.Click += new System.EventHandler(this.btnCertificadoVacio_Click);
-            // 
-            // btn_Excel
-            // 
-            this.btn_Excel.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Excel.BackgroundImage = global::UNCSM.Properties.Resources.btnGenerarExcel;
-            this.btn_Excel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Excel.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btn_Excel.FlatAppearance.BorderSize = 0;
-            this.btn_Excel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.btn_Excel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Excel.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Excel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_Excel.Location = new System.Drawing.Point(228, 277);
-            this.btn_Excel.Name = "btn_Excel";
-            this.btn_Excel.Size = new System.Drawing.Size(200, 50);
-            this.btn_Excel.TabIndex = 110;
-            this.btn_Excel.UseVisualStyleBackColor = false;
-            this.btn_Excel.Visible = false;
-            this.btn_Excel.Click += new System.EventHandler(this.btn_Excel_Click);
-            // 
-            // btn_Reporte
-            // 
-            this.btn_Reporte.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Reporte.BackgroundImage = global::UNCSM.Properties.Resources.btnGenerarPDF;
-            this.btn_Reporte.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Reporte.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btn_Reporte.FlatAppearance.BorderSize = 0;
-            this.btn_Reporte.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.btn_Reporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Reporte.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Reporte.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_Reporte.Location = new System.Drawing.Point(22, 277);
-            this.btn_Reporte.Name = "btn_Reporte";
-            this.btn_Reporte.Size = new System.Drawing.Size(200, 50);
-            this.btn_Reporte.TabIndex = 109;
-            this.btn_Reporte.UseVisualStyleBackColor = false;
-            this.btn_Reporte.Click += new System.EventHandler(this.btn_Reporte_Click);
-            // 
-            // btnGenerar
-            // 
-            this.btnGenerar.BackColor = System.Drawing.Color.Transparent;
-            this.btnGenerar.BackgroundImage = global::UNCSM.Properties.Resources.BtnGenerarCertificado;
-            this.btnGenerar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnGenerar.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnGenerar.FlatAppearance.BorderSize = 0;
-            this.btnGenerar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.btnGenerar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGenerar.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGenerar.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnGenerar.Location = new System.Drawing.Point(15, 144);
-            this.btnGenerar.Name = "btnGenerar";
-            this.btnGenerar.Size = new System.Drawing.Size(200, 50);
-            this.btnGenerar.TabIndex = 105;
-            this.btnGenerar.UseVisualStyleBackColor = false;
-            this.btnGenerar.Click += new System.EventHandler(this.btnGenerar_Click);
-            // 
-            // btnCargarMatricula
-            // 
-            this.btnCargarMatricula.BackColor = System.Drawing.Color.Transparent;
-            this.btnCargarMatricula.BackgroundImage = global::UNCSM.Properties.Resources.btnBuscarEstudiante;
-            this.btnCargarMatricula.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCargarMatricula.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnCargarMatricula.FlatAppearance.BorderSize = 0;
-            this.btnCargarMatricula.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.btnCargarMatricula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCargarMatricula.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCargarMatricula.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnCargarMatricula.Location = new System.Drawing.Point(210, 11);
-            this.btnCargarMatricula.Name = "btnCargarMatricula";
-            this.btnCargarMatricula.Size = new System.Drawing.Size(200, 50);
-            this.btnCargarMatricula.TabIndex = 80;
-            this.btnCargarMatricula.UseVisualStyleBackColor = false;
-            this.btnCargarMatricula.Click += new System.EventHandler(this.btnCargarMatricula_Click);
+            this.btn_Reporte02.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Reporte02.BackgroundImage = global::UNCSM.Properties.Resources.btnGenerarPDF;
+            this.btn_Reporte02.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Reporte02.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btn_Reporte02.FlatAppearance.BorderSize = 0;
+            this.btn_Reporte02.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.btn_Reporte02.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Reporte02.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Reporte02.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_Reporte02.Location = new System.Drawing.Point(232, 277);
+            this.btn_Reporte02.Name = "btn_Reporte02";
+            this.btn_Reporte02.Size = new System.Drawing.Size(200, 50);
+            this.btn_Reporte02.TabIndex = 115;
+            this.btn_Reporte02.UseVisualStyleBackColor = false;
+            this.btn_Reporte02.Visible = false;
+            this.btn_Reporte02.Click += new System.EventHandler(this.btn_Reporte02_Click);
             // 
             // FrmCertificado
             // 
@@ -639,9 +645,10 @@
         private System.Windows.Forms.TextBox txtPromedio;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtHoras;
-        private Bunifu.Framework.UI.BunifuProgressBar PgProgres;
+        //private Bunifu.Framework.UI.BunifuProgressBar PgProgres;
         private System.Windows.Forms.Label lbProgres;
         private System.Windows.Forms.Button btnCertificadoVacio;
         private System.Windows.Forms.Button btnAgregarAsignatura;
+        private System.Windows.Forms.Button btn_Reporte02;
     }
 }
