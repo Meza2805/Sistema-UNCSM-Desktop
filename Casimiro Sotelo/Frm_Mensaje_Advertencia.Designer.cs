@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbMensaje = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -38,7 +37,6 @@
             this.lbBienvenida = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -64,7 +62,7 @@
             // lbMensaje
             // 
             this.lbMensaje.BackColor = System.Drawing.Color.Transparent;
-            this.lbMensaje.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMensaje.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
             this.lbMensaje.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbMensaje.Location = new System.Drawing.Point(9, 109);
             this.lbMensaje.Name = "lbMensaje";
@@ -111,13 +109,13 @@
             // 
             // lbBienvenida
             // 
-            this.lbBienvenida.Font = new System.Drawing.Font("Tahoma", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBienvenida.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbBienvenida.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(219)))), ((int)(((byte)(221)))));
-            this.lbBienvenida.Location = new System.Drawing.Point(-1, 6);
+            this.lbBienvenida.Location = new System.Drawing.Point(2, 6);
             this.lbBienvenida.Name = "lbBienvenida";
-            this.lbBienvenida.Size = new System.Drawing.Size(644, 19);
+            this.lbBienvenida.Size = new System.Drawing.Size(644, 35);
             this.lbBienvenida.TabIndex = 2;
-            this.lbBienvenida.Text = "ATENCIÓN";
+            this.lbBienvenida.Text = "Atención";
             this.lbBienvenida.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
@@ -134,21 +132,16 @@
             // 
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(219)))), ((int)(((byte)(221)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(219)))), ((int)(((byte)(221)))));
             this.button1.Location = new System.Drawing.Point(269, 153);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(110, 30);
             this.button1.TabIndex = 0;
             this.button1.Tag = "";
-            this.button1.Text = "ACEPTAR";
+            this.button1.Text = "Aceptar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 5;
-            this.bunifuElipse1.TargetControl = this;
             // 
             // Frm_Mensaje_Advertencia
             // 
@@ -178,6 +171,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label lbMensaje;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        //private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
     }
 }

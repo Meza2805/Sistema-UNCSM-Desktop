@@ -63,14 +63,14 @@
             // 
             this.btnNo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(219)))), ((int)(((byte)(221)))));
             this.btnNo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNo.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btnNo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(219)))), ((int)(((byte)(221)))));
-            this.btnNo.Location = new System.Drawing.Point(198, 142);
+            this.btnNo.Location = new System.Drawing.Point(204, 154);
             this.btnNo.Name = "btnNo";
             this.btnNo.Size = new System.Drawing.Size(60, 30);
             this.btnNo.TabIndex = 7;
             this.btnNo.Tag = "";
-            this.btnNo.Text = "NO";
+            this.btnNo.Text = "No";
             this.btnNo.UseVisualStyleBackColor = true;
             this.btnNo.Click += new System.EventHandler(this.btnNo_Click);
             // 
@@ -113,35 +113,35 @@
             // lbBienvenida
             // 
             this.lbBienvenida.AutoSize = true;
-            this.lbBienvenida.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBienvenida.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbBienvenida.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(219)))), ((int)(((byte)(221)))));
-            this.lbBienvenida.Location = new System.Drawing.Point(52, 23);
+            this.lbBienvenida.Location = new System.Drawing.Point(46, 22);
             this.lbBienvenida.Name = "lbBienvenida";
-            this.lbBienvenida.Size = new System.Drawing.Size(296, 19);
+            this.lbBienvenida.Size = new System.Drawing.Size(324, 26);
             this.lbBienvenida.TabIndex = 2;
-            this.lbBienvenida.Text = "¿ESTA SEGURO QUE DESEA SALIR?";
+            this.lbBienvenida.Text = "¿Esta Seguro que Desea Salir?";
             // 
             // btnSi
             // 
             this.btnSi.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(219)))), ((int)(((byte)(221)))));
             this.btnSi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSi.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSi.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btnSi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(219)))), ((int)(((byte)(221)))));
-            this.btnSi.Location = new System.Drawing.Point(129, 142);
+            this.btnSi.Location = new System.Drawing.Point(135, 154);
             this.btnSi.Name = "btnSi";
             this.btnSi.Size = new System.Drawing.Size(63, 30);
             this.btnSi.TabIndex = 0;
             this.btnSi.Tag = "";
-            this.btnSi.Text = "SI";
+            this.btnSi.Text = "Si";
             this.btnSi.UseVisualStyleBackColor = true;
             this.btnSi.Click += new System.EventHandler(this.btnSi_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::UNCSM.Properties.Resources.crisis;
-            this.pictureBox1.Location = new System.Drawing.Point(164, 61);
+            this.pictureBox1.Image = global::UNCSM.Properties.Resources.Pregunta;
+            this.pictureBox1.Location = new System.Drawing.Point(135, 61);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(65, 65);
+            this.pictureBox1.Size = new System.Drawing.Size(129, 87);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;

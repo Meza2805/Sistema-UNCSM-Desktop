@@ -34,6 +34,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Matricula_Global));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.lbCarga = new System.Windows.Forms.Label();
+            this.pgBar = new System.Windows.Forms.ProgressBar();
             this.btnRecargar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,9 +45,6 @@
             this.txtBusqueda = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dgvRegistro = new System.Windows.Forms.DataGridView();
-            this.pgBar = new System.Windows.Forms.ProgressBar();
-            this.lbCarga = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegistro)).BeginInit();
             this.SuspendLayout();
@@ -65,16 +65,47 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1000, 121);
+            this.panel1.Size = new System.Drawing.Size(1000, 132);
             this.panel1.TabIndex = 39;
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
+            this.linkLabel1.Location = new System.Drawing.Point(686, 7);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(71, 16);
+            this.linkLabel1.TabIndex = 42;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "linkLabel1";
+            this.linkLabel1.Visible = false;
+            // 
+            // lbCarga
+            // 
+            this.lbCarga.AutoSize = true;
+            this.lbCarga.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCarga.Location = new System.Drawing.Point(666, 33);
+            this.lbCarga.Name = "lbCarga";
+            this.lbCarga.Size = new System.Drawing.Size(296, 16);
+            this.lbCarga.TabIndex = 41;
+            this.lbCarga.Text = "CARGANDO REGISTROS, ESPERE POR FAVOR...";
+            this.lbCarga.Visible = false;
+            // 
+            // pgBar
+            // 
+            this.pgBar.Location = new System.Drawing.Point(669, 52);
+            this.pgBar.Name = "pgBar";
+            this.pgBar.Size = new System.Drawing.Size(319, 23);
+            this.pgBar.TabIndex = 40;
+            this.pgBar.Visible = false;
             // 
             // btnRecargar
             // 
-            this.btnRecargar.BackgroundImage = global::UNCSM.Properties.Resources.actualizar;
+            this.btnRecargar.BackgroundImage = global::UNCSM.Properties.Resources.btnActualizarDatos;
             this.btnRecargar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnRecargar.Location = new System.Drawing.Point(571, 53);
+            this.btnRecargar.Location = new System.Drawing.Point(321, 62);
             this.btnRecargar.Name = "btnRecargar";
-            this.btnRecargar.Size = new System.Drawing.Size(56, 56);
+            this.btnRecargar.Size = new System.Drawing.Size(168, 56);
             this.btnRecargar.TabIndex = 39;
             this.btnRecargar.UseVisualStyleBackColor = true;
             this.btnRecargar.Click += new System.EventHandler(this.btnRecargar_Click);
@@ -82,50 +113,53 @@
             // btnBuscar
             // 
             this.btnBuscar.BackColor = System.Drawing.Color.Transparent;
-            this.btnBuscar.BackgroundImage = global::UNCSM.Properties.Resources.papel;
+            this.btnBuscar.BackgroundImage = global::UNCSM.Properties.Resources.btnBuscarEstudiante;
             this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBuscar.Location = new System.Drawing.Point(509, 53);
+            this.btnBuscar.Location = new System.Drawing.Point(710, 72);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(56, 56);
+            this.btnBuscar.Size = new System.Drawing.Size(168, 54);
             this.btnBuscar.TabIndex = 38;
             this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Visible = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(296, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(452, 33);
+            this.label1.Size = new System.Drawing.Size(351, 26);
             this.label1.TabIndex = 1;
-            this.label1.Text = "REGISTRO DE MATRICULA 2024";
+            this.label1.Text = "Registro de Matrícula Total 2024";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(9, 86);
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(19, 65);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 16);
+            this.label3.Size = new System.Drawing.Size(63, 15);
             this.label3.TabIndex = 37;
             this.label3.Text = "BUSCAR:";
             // 
             // txtCarne
             // 
-            this.txtCarne.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
-            this.txtCarne.Location = new System.Drawing.Point(384, 83);
+            this.txtCarne.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCarne.Location = new System.Drawing.Point(100, 96);
             this.txtCarne.Name = "txtCarne";
-            this.txtCarne.Size = new System.Drawing.Size(100, 23);
+            this.txtCarne.Size = new System.Drawing.Size(100, 22);
             this.txtCarne.TabIndex = 34;
             this.txtCarne.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtBusqueda
             // 
-            this.txtBusqueda.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
-            this.txtBusqueda.Location = new System.Drawing.Point(73, 83);
+            this.txtBusqueda.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBusqueda.Location = new System.Drawing.Point(100, 62);
             this.txtBusqueda.Name = "txtBusqueda";
-            this.txtBusqueda.Size = new System.Drawing.Size(215, 23);
+            this.txtBusqueda.Size = new System.Drawing.Size(215, 22);
             this.txtBusqueda.TabIndex = 36;
             this.txtBusqueda.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtBusqueda.TextChanged += new System.EventHandler(this.txtBusqueda_TextChanged);
@@ -133,10 +167,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(303, 86);
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(19, 99);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 16);
+            this.label2.Size = new System.Drawing.Size(75, 15);
             this.label2.TabIndex = 35;
             this.label2.Text = "NO. CARNE";
             // 
@@ -172,7 +206,7 @@
             this.dgvRegistro.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvRegistro.EnableHeadersVisualStyles = false;
             this.dgvRegistro.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
-            this.dgvRegistro.Location = new System.Drawing.Point(0, 121);
+            this.dgvRegistro.Location = new System.Drawing.Point(0, 132);
             this.dgvRegistro.MultiSelect = false;
             this.dgvRegistro.Name = "dgvRegistro";
             this.dgvRegistro.ReadOnly = true;
@@ -194,40 +228,9 @@
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
             this.dgvRegistro.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvRegistro.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvRegistro.Size = new System.Drawing.Size(1000, 430);
+            this.dgvRegistro.Size = new System.Drawing.Size(1000, 419);
             this.dgvRegistro.TabIndex = 40;
             this.dgvRegistro.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRegistro_CellContentClick);
-            // 
-            // pgBar
-            // 
-            this.pgBar.Location = new System.Drawing.Point(669, 98);
-            this.pgBar.Name = "pgBar";
-            this.pgBar.Size = new System.Drawing.Size(319, 23);
-            this.pgBar.TabIndex = 40;
-            this.pgBar.Visible = false;
-            // 
-            // lbCarga
-            // 
-            this.lbCarga.AutoSize = true;
-            this.lbCarga.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCarga.Location = new System.Drawing.Point(666, 79);
-            this.lbCarga.Name = "lbCarga";
-            this.lbCarga.Size = new System.Drawing.Size(296, 16);
-            this.lbCarga.TabIndex = 41;
-            this.lbCarga.Text = "CARGANDO REGISTROS, ESPERE POR FAVOR...";
-            this.lbCarga.Visible = false;
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
-            this.linkLabel1.Location = new System.Drawing.Point(686, 53);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(71, 16);
-            this.linkLabel1.TabIndex = 42;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "linkLabel1";
-            this.linkLabel1.Visible = false;
             // 
             // Frm_Matricula_Global
             // 
@@ -236,6 +239,7 @@
             this.ClientSize = new System.Drawing.Size(1000, 551);
             this.Controls.Add(this.dgvRegistro);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Frm_Matricula_Global";
             this.Text = "Matricula Global";

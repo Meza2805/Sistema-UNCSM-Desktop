@@ -19,6 +19,12 @@ namespace UNCSM.Reportes
         Rpt_Certificado report = new Rpt_Certificado();
         campus bd = new campus();
         string carne = "",usurio ="", CarreraR = "", nombre_t = "";
+
+        private void RvCertificado_Load(object sender, EventArgs e)
+        {
+
+        }
+
         int codigo = 0;
         public Frm_Certificado_Notas(int people, string carrera, string pertenece, string cadena,string TotalCredito,string promedio,string codigo_usuario,string TotalHoras,string Nombre)
         {
@@ -63,11 +69,14 @@ namespace UNCSM.Reportes
                 //Console.WriteLine("La acción se ejecutará.");
 
                 RvCertificado.ExportReport();
-                codigo =  bd.Insertar_Registro_Certificado(carne, usurio,nombre_t);
+
+
+                codigo = bd.Insertar_Registro_Certificado(carne, usurio, nombre_t);
                 bd.Insertar_Carrera_Certificado(CarreraR, codigo);
                 FrmPaginas cuadro = new FrmPaginas(codigo);
                 cuadro.ShowDialog();
                 this.Close();
+
                 Mensaje_Suscripcion mensaje = new Mensaje_Suscripcion();
                 mensaje.ShowDialog();
                 //RvCertificado.re;

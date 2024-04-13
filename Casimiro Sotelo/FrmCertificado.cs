@@ -18,7 +18,38 @@ namespace UNCSM
 {
     public partial class FrmCertificado : Form
     {
-        string cod_user="";
+        public void Agregar_asignatura(string anio,string periodo, string codigo, string asignatura, string credito, string nota, string hora)
+        {
+            // 1. Crea una nueva fila utilizando el método NewRow() del DataTable
+            DataRow newRow = tbl_Certificado.NewRow();
+            newRow["AÑO"] = anio;
+            newRow["MOMENTO"] = periodo;
+            newRow["CODIGO"] = codigo;
+            newRow["ASIGNATURA"] = asignatura;
+            newRow["CREDITOS"] = credito;
+            newRow["NOTA"] = nota;
+            newRow["HORAS"] = hora;
+
+            tbl_Certificado.Rows.Add(newRow);
+      
+            dgvCerificado.DataSource = tbl_Certificado;
+
+            RecorrerDataGridView(dgvCerificado);
+
+            MessageBox.Show($"Se agrego la asignatura {asignatura} correctamente");
+        }
+        
+        /*Evitar que se mueva el formulario*/
+        private bool dragging = false;
+        private Point dragCursorPoint;
+        private Point dragFormPoint;
+        /*Evitar que se mueva el formulario*/
+
+        string cod_user ="";
+        Loader Ventana_Carga;
+        int credito_entero;
+        string Event_Id;
+        Frm_Certificado_Notas certificado;
         public FrmCertificado(string codigo_user)
         {
             InitializeComponent();
@@ -32,7 +63,7 @@ namespace UNCSM
         Utilerias U = new Utilerias();
         Frm_Mensaje_Advertencia mensaje;
         DataTable tabla = new DataTable("PLA_ESTUDIANTE");
-        DataTable tbl_Plan = new DataTable("PLAN_DE_ESTUDIOS");
+     //   DataTable tbl_Plan = new DataTable("PLAN_DE_ESTUDIOS");
         DataTable tbl_Certificado = new DataTable("CERTIFICADO");
         FrmPlanEstudios Ventan_plan;
         campus bd = new campus();
@@ -52,7 +83,7 @@ namespace UNCSM
             if (e.KeyCode == Keys.Delete)
             {
                 // MessageBox.Show(dgvCerificado.CurrentRow.Cells[3].Value.ToString());
-                mensaje = new Frm_Mensaje_Advertencia("SE HA ELIMINADO LA ASIGNATURA "+ dgvCerificado.CurrentRow.Cells[3].Value.ToString());
+                mensaje = new Frm_Mensaje_Advertencia("Se ha eliminado la asignatura "+ dgvCerificado.CurrentRow.Cells[3].Value.ToString()+ "del Registro temporal");
                 mensaje.ShowDialog();
             
 
@@ -80,13 +111,13 @@ namespace UNCSM
         {
             if (dgvCerificado.RowCount ==0)
             {
-                mensaje = new Frm_Mensaje_Advertencia("DEBE BUSCAR UN ESTUDIANTE PRIMERO!");
+                mensaje = new Frm_Mensaje_Advertencia("Debe Buscar un Estudiante Primero!");
                 mensaje.ShowDialog();
             }
             else
             {
                 cbCarrera.Enabled = false;
-                string Event_Id = "";
+                Event_Id = "";
                 int limite = dgvCerificado.RowCount, contador= 1;
                 foreach (DataGridViewRow fila in dgvCerificado.Rows)
                 {
@@ -102,12 +133,13 @@ namespace UNCSM
                 }
         
                 Event_Id += "";
-                int credito_entero = Convert.ToInt32(txtCreditos.Text);
-          
-                Frm_Certificado_Notas certificado = new Frm_Certificado_Notas(Convert.ToInt32(people), curriculum_02,"Pre", Event_Id,Convert.ToString(credito_entero),txtPromedio.Text, cod_user,Convert.ToString(conteo),txtNombre.Text);
+                credito_entero = Convert.ToInt32(txtCreditos.Text);
 
-                certificado.Show();
-                //Frm_Reporte_Certificado Certificado = new Frm_Reporte_Certificado();
+             certificado = new Frm_Certificado_Notas(Convert.ToInt32(people), curriculum_02,"Pre", Event_Id,Convert.ToString(credito_entero),txtPromedio.Text, cod_user,Convert.ToString(conteo),txtNombre.Text);
+             certificado.ShowDialog();
+                 //LLamarCertificadoAsync();
+            
+         
             }
            
         }
@@ -116,7 +148,7 @@ namespace UNCSM
         {
             if (dgvCerificado.RowCount == 0)
             {
-                mensaje = new Frm_Mensaje_Advertencia("DEBE BUSCAR UN ESTUDIANTE PRIMERO!");
+                mensaje = new Frm_Mensaje_Advertencia("Debe Buscar un Estudiante Primero!");
                 mensaje.ShowDialog();
             }
             else
@@ -148,7 +180,7 @@ namespace UNCSM
 
             if (bandera == true)
             {
-                cargar_boton();
+                cargar_botonAsync();
             }
             else
             {
@@ -188,10 +220,47 @@ namespace UNCSM
 
                 Frm_Certificado_Notas_Driver certificado = new Frm_Certificado_Notas_Driver(Convert.ToInt32(people), curriculum_02, "Pre", Event_Id, Convert.ToString(credito_entero), txtPromedio.Text, cod_user, Convert.ToString(conteo), txtNombre.Text);
 
-                certificado.Show();
+                certificado.ShowDialog();
                 //Frm_Reporte_Certificado Certificado = new Frm_Reporte_Certificado();
             }
 
+        }
+
+        private void btnAgregarAsignatura_Click(object sender, EventArgs e)
+        {
+            if (cbCarrera.Text == "")
+            {
+                MessageBox.Show("Debe Seleccionar Una Carrera");
+            }
+            else
+            {
+                AgregandoAsignatura agregar = new AgregandoAsignatura(txtPeopleID.Text, txtNombre.Text, cbCarrera.Text);
+                agregar.ShowDialog();
+            }
+           
+        }
+
+
+        /*Evitar que se mueva el formulario*/
+        private void FrmCertificado_MouseDown(object sender, MouseEventArgs e)
+        {
+            dragging = true;
+            dragCursorPoint = Cursor.Position;
+            dragFormPoint = this.Location;
+        }
+        /*Evitar que se mueva el formulario*/
+        private void FrmCertificado_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (dragging)
+            {
+                Point dif = Point.Subtract(Cursor.Position, new Size(dragCursorPoint));
+                this.Location = Point.Add(dragFormPoint, new Size(dif));
+            }
+        }
+        /*Evitar que se mueva el formulario*/
+        private void FrmCertificado_MouseUp(object sender, MouseEventArgs e)
+        {
+            dragging = false;
         }
 
         private void btnCertificadoVacio_Click(object sender, EventArgs e)
@@ -201,27 +270,10 @@ namespace UNCSM
                 cuadro.ShowDialog();
         }
 
-        //private void dgvCerificado_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
-        //{
-        //    // Especifica el índice de la columna que determina el color
-        //    int columnIndex = 6; // Por ejemplo, si la columna que determina el color es la primera columna, el índice es 0
+        private void label7_Click(object sender, EventArgs e)
+        {
 
-        //    // Especifica el valor esperado para aplicar el color
-        //    string expectedValue = "FUERA DE PENSUM";
-
-        //    // Verifica si es la columna y fila deseada
-        //    if (e.ColumnIndex == columnIndex && e.RowIndex >= 0 && !dgvCerificado.Rows[e.RowIndex].IsNewRow)
-        //    {
-        //        DataGridViewCell cell = dgvCerificado.Rows[e.RowIndex].Cells[columnIndex];
-        //        if (cell.Value != null && cell.Value.ToString() == expectedValue)
-        //        {
-        //            // Cambia el color de fondo de la fila
-        //            dgvCerificado.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.LightGreen;
-        //            // Cambia el color del texto de la fila
-        //            dgvCerificado.Rows[e.RowIndex].DefaultCellStyle.ForeColor = Color.Black;
-        //        }
-        //    }
-        //}
+        }
 
         private void FrmCertificado_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -239,7 +291,6 @@ namespace UNCSM
         {
             evento_boton();
         }
-
 
         void evento_boton()
         {
@@ -268,6 +319,7 @@ namespace UNCSM
                 }
             }
         }
+
         private void txtPeople_KeyPress(object sender, KeyPressEventArgs e)
         {
             U.SoloNumeros(sender, e);
@@ -286,11 +338,11 @@ namespace UNCSM
 
             if (bandera == true)
             {
-                cargar_boton();
+                 cargar_botonAsync();
             }
             else
             {
-                Frm_Mensaje_Advertencia me = new Frm_Mensaje_Advertencia("DEBE SELECCIONAR UNA CARRERA VALIDA");
+                Frm_Mensaje_Advertencia me = new Frm_Mensaje_Advertencia("Debe Seleccionar Una Carrera");
                 me.ShowDialog();
             }
 
@@ -299,12 +351,8 @@ namespace UNCSM
             //cuadro.Close();
         }
 
-        void cargar_boton()
+        async Task cargar_botonAsync()
         {
-            //////PgProgres.Visible = true;
-            //lbProgres.Visible = true;
-            //////PgProgres.Value = 10;
-            //curriculum_02 = "";
 
             Mensaje_Suscripcion cuadro = new Mensaje_Suscripcion();
             //cuadro.ShowDialog();
@@ -326,15 +374,14 @@ namespace UNCSM
                     // gpDetalle.Visible = false;
                 }
             }
-            //////PgProgres.Value = 20;
+       
             txtPlan.Text = plan;
             txtTipoMatricula.Text = matricula;
-            ////PgProgres.Value = 40;
+     
 
             //Cargar el plan de estudios
-            tbl_Plan = bd.MOSTRAR_ASIGNATURA_SEGUN_PLAN(Convert.ToInt32(txtPeople.Text), curriculum_02);
-            //////PgProgres.Value = 50;
-            // Verificar si ya existe una instancia del formulario
+          //  tbl_Plan = bd.MOSTRAR_ASIGNATURA_SEGUN_PLAN(Convert.ToInt32(txtPeople.Text), curriculum_02);
+         
             FrmPlanEstudios existingInstance = Application.OpenForms.OfType<FrmPlanEstudios>().FirstOrDefault();
 
             if (existingInstance != null)
@@ -342,29 +389,35 @@ namespace UNCSM
                 // Si existe una instancia, cerrarla
                 existingInstance.Close();
             }
-            //Ventan_plan = new FrmPlanEstudios(tbl_Plan, "PLAN DE ESTUDIOS " + matricula + " " + plan + " PARA EL ESTUDIANTE " + nombre, plan_Aca, creditos, cursos, carrera);
-            ////PgProgres.Value = 70;
 
+
+            //tbl_Certificado.Columns.Clear();
+            //tbl_Certificado.Rows.Clear();
+            //tbl_Certificado = bd.MOSTRAR_CERTIFICADO(Convert.ToInt32(txtPeople.Text), curriculum_02);
+            Ventana_Carga  = new Loader();
             tbl_Certificado.Columns.Clear();
             tbl_Certificado.Rows.Clear();
-
-
-            tbl_Certificado = bd.MOSTRAR_CERTIFICADO(Convert.ToInt32(txtPeople.Text), curriculum_02);
+            Ventana_Carga.Show();
+            tbl_Certificado = await CargarCertificado();
 
             dgvCerificado.DataSource = tbl_Certificado;
-            //Ventan_plan.Show();
-            ////PgProgres.Value = 80;
-
             RecorrerDataGridView(dgvCerificado);
-            cuadro.ShowDialog();
-            ////PgProgres.Value = 100;
-            ////PgProgres.Visible = false;
+
+            if(Ventana_Carga != null)
+            {
+                Ventana_Carga.Close();
+            }
+        
+            cuadro.Show();
+
             lbProgres.Visible = false;
             btn_Reporte.Visible = true;
             btn_Reporte02.Visible = true;
             btn_Excel.Visible = true;
             btnCertificadoVacio.Visible = true;
+            btnAgregarAsignatura.Visible = true;
         }
+
         void llenar_carrera()
         {
      
@@ -381,14 +434,13 @@ namespace UNCSM
             txtPeopleID.Clear();
             txtNombre.Text = nombre;
             txtPeopleID.Text = people;
-            //txtPeopleB.text = people;
+         
 
 
         }
 
         void reiniciar()
         {
-            //dgvCerificado.Rows.Clear();
             dgvCerificado.Columns.Clear();
             cbCarrera.Items.Clear();
             cbCarrera.Text = string.Empty;
@@ -424,6 +476,7 @@ namespace UNCSM
             txtPromedio.Text = Convert.ToString(promedio);
             txtHoras.Text = Convert.ToString(total_clase);
         }
+
         private void ExportToExcel(DataGridView dataGridView)
         {
             // Crear un nuevo libro de trabajo de Excel
@@ -457,6 +510,32 @@ namespace UNCSM
             {
                 workbook.SaveAs(saveFileDialog.FileName);
             }
+        }
+
+        public  async Task<DataTable> CargarCertificado()  //Metodo asincronico para cargar registros desde la base de datos
+        {
+
+            // Llamar al método MOSTRAR_CERTIFICADO de forma asíncrona
+            var task =new Task<DataTable>(() => bd.MOSTRAR_CERTIFICADO(Convert.ToInt32(txtPeople.Text), curriculum_02));
+
+            task.Start();
+            DataTable salida = await task;
+            //tbl_Certificado = await Task.Run(() => bd.MOSTRAR_CERTIFICADO(Convert.ToInt32(txtPeople.Text), curriculum_02));
+            return salida;
+            //dgvCerificado.DataSource = tbl_Certificado;
+        }
+        public async Task LLamarCertificadoAsync()
+        {
+            await GenerarCertificado();
+            certificado.ShowDialog();
+        }
+
+        public async Task GenerarCertificado()
+        {
+            var task = new Task(() => certificado = new Frm_Certificado_Notas(Convert.ToInt32(people), curriculum_02, "Pre", Event_Id, Convert.ToString(credito_entero), txtPromedio.Text, cod_user, Convert.ToString(conteo), txtNombre.Text));
+           
+            task.Start();
+            //certificado.ShowDialog();
         }
     }
 }

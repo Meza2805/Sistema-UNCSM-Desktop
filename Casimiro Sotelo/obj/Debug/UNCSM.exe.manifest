@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="UNCSM.exe" version="1.0.0.37" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="UNCSM.exe" version="1.0.0.44" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="icono_CSM.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -55,18 +55,6 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Bunifu_UI_v1.5.3.dll" size="242176">
-      <assemblyIdentity name="Bunifu_UI_v1.5.3" version="1.5.3.0" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>8bPg8nUKkQPkampKNPHPnRd3lyX5gELMJHXsZkhIAc8=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Capa Datos.dll" size="4608">
       <assemblyIdentity name="Capa Datos" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -74,19 +62,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>xbnebxTLnpumnHcMhuWlDElI1P2QUS3yoguwD0BEAbc=</dsig:DigestValue>
+        <dsig:DigestValue>cLdebP76nGR8xptVgLh6fiTfwQjCEKzTlcRXQzTCWfI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Capa Negocio.dll" size="41472">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Capa Negocio.dll" size="43520">
       <assemblyIdentity name="Capa Negocio" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>FXQTByNTiwr6oiRYvbNMeCeq38AgfheWXLzd229dj/Q=</dsig:DigestValue>
+        <dsig:DigestValue>0yH7oTDUAwk1pTmlar8fjq5gqI632gGqvVS9sqYLsMM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1579,14 +1567,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UNCSM.exe" size="4375040">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UNCSM.exe" size="9873408">
       <assemblyIdentity name="UNCSM" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>41qSbum3hTHtN7p1XoIiNH5jyiN006ovNCW7sKoRCts=</dsig:DigestValue>
+        <dsig:DigestValue>fjrL5ZarZndrjF91QySsrlJjiB9e8yJtY6KK8f1nbWY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1609,6 +1597,213 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>qmaMdmZICSwkHYpoUIqs38FwfzcFTfUSal0cJQL5QTw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\acta.png" size="7272">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Tcjj2lqF5hf8/uiWhf/qe7tVKmuQtFS/5idBSbGkdB8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\actualiza.png" size="9061">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>WBSucYX6oOPeU2hzZ7fMjU4p++O2XYUZVsEcwu/MlrE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\BajaMatricula.png" size="8600">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Mhf0E3CyZ59S6iNdA0kr3NRtsgnDctIVrffy2FrG2ng=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\btnBajaMatriculaEstudiantes.png" size="6917">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>pa1R7IgwwIhI39E7EkUaQyyhsXL+sgY8Zt46HMoABEc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\btnBajaMatriculaEstudiantes1.png" size="6917">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>pa1R7IgwwIhI39E7EkUaQyyhsXL+sgY8Zt46HMoABEc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\btnBuscarEstudiante.png" size="9341">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>s9m3q+8qcwEZlv76LzEwCZA+vUJP9Heo9rGi5gi0A/Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\btnCertificadoCalificaciones.png" size="10480">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>w0Avl0NNFaRhctMn7llTV4mSpT4MspQK/5kax5htejc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\btnDardeBaja.png" size="7515">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>hvt1IaV4eTuUl04vZNfczDBLjdcfX/E9YbLKF5ojpVk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\btnHistorialCertificados.png" size="10258">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8esEOFNBzuXyNLPTMvVXFq53N7aT1WSelaLmlei/42k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\calificaciones.png" size="11892">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3YAYCXO5GXLuA2YW2sb7TXFrW5dfa6sWdcsUVXXSUmk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\gdatos1.png" size="7262">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>aOfqM1DLWc/McsrMJ9F+/71R9oi2eWbHvpV5jYrgPck=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\gdatos2.png" size="7435">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xipd7XN8U9RGHkBrh2UvEPlcdz8781F2NOA2rLZRoek=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\grupos.png" size="29899">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>PPtznbDRbLIn/qvsKwsQNKiQAYrNXRcER1SilmsqOw0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\guardar.png" size="7195">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>DUY0V+Iwu4ox1t7fCmP+8qg0tKdXU9osI1DTETVVt8M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\lapiz.png" size="18847">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>T1PYJRw3GCf75Erc+LDVn9cH/Z2cH+rRR9BoNd9J8k4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\logo.ico" size="265278">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YXhMJjlfi5KRktjwZzTQoeeHBHFMZlVu1LPXM+l96nU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\MOSTRAR.png" size="7175">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>iCmJ7M3urkkd1M1+sJxrPPyk6kYWDParH4m/tyhrl0U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\Reportes Registro Academico.png" size="10792">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>E54Xa/mpD9soCcgXqjvttDshor9sRk+BWrTTZfe+O9A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\Sonido_boton.wav" size="352908">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>F7CWX2IdL4z7o6qoCKa935CtAROsBWWYHzb06RGUHVs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\sonido_menu.wav" size="897102">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>LkTcb48q7W6uhrC7s8bmh0peToG+NjTgc2aDJydQQpw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\validadatps.png" size="8560">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>pS0gRUdh8Pj4FXQxiFvn1rVKrb2CZllsZxGnCt3NknY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\validat.png" size="8510">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>C1tmkUKE8sriJCDs6JbSeAcwSiUYyB9CNS3EQ7IW1uw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\vcsconflicting_93497.png" size="1559">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>oWqHyDEbW8UhrtLL+CVzGea+KAj1k8b2f33oqFUMUy0=</dsig:DigestValue>
     </hash>
   </file>
   <file name="UNCSM.exe.config" size="18907">

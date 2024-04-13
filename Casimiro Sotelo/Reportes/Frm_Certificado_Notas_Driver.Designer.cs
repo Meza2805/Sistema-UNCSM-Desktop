@@ -41,16 +41,16 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 84);
+            this.panel1.Size = new System.Drawing.Size(864, 84);
             this.panel1.TabIndex = 3;
             // 
             // btnImprimir
             // 
-            this.btnImprimir.BackgroundImage = global::UNCSM.Properties.Resources._1491252319_24_82827;
+            this.btnImprimir.BackgroundImage = global::UNCSM.Properties.Resources.btnGenerarPDF;
             this.btnImprimir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnImprimir.Location = new System.Drawing.Point(12, 12);
             this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(56, 57);
+            this.btnImprimir.Size = new System.Drawing.Size(203, 57);
             this.btnImprimir.TabIndex = 1;
             this.btnImprimir.UseVisualStyleBackColor = true;
             this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
@@ -73,7 +73,7 @@
             this.RvCertificado02.ShowPrintButton = false;
             this.RvCertificado02.ShowRefreshButton = false;
             this.RvCertificado02.ShowZoomButton = false;
-            this.RvCertificado02.Size = new System.Drawing.Size(800, 366);
+            this.RvCertificado02.Size = new System.Drawing.Size(864, 577);
             this.RvCertificado02.TabIndex = 4;
             this.RvCertificado02.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
@@ -81,11 +81,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(864, 661);
             this.Controls.Add(this.RvCertificado02);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Frm_Certificado_Notas_Driver";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Certificado de Notas";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

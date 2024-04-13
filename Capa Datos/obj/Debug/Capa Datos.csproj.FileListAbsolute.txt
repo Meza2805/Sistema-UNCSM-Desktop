@@ -86,3 +86,9 @@ C:\Users\UNCSM-SISTEMAS\Desktop\Respaldo Meza\Desktop-UNCSM-Full\Capa Datos\obj\
 C:\Users\UNCSM-SISTEMAS\Desktop\Respaldo Meza\Desktop-UNCSM-Full\Capa Datos\obj\Debug\Capa Datos.csproj.CoreCompileInputs.cache
 C:\Users\UNCSM-SISTEMAS\Desktop\Respaldo Meza\Desktop-UNCSM-Full\Capa Datos\obj\Debug\Capa Datos.dll
 C:\Users\UNCSM-SISTEMAS\Desktop\Respaldo Meza\Desktop-UNCSM-Full\Capa Datos\obj\Debug\Capa Datos.pdb
+C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Sistema-UNCSM-Desktop\Capa Datos\bin\Debug\Capa Datos.dll
+C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Sistema-UNCSM-Desktop\Capa Datos\bin\Debug\Capa Datos.pdb
+C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Sistema-UNCSM-Desktop\Capa Datos\obj\Debug\Capa Datos.csproj.CoreCompileInputs.cache
+C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Sistema-UNCSM-Desktop\Capa Datos\obj\Debug\Capa Datos.dll
+C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Sistema-UNCSM-Desktop\Capa Datos\obj\Debug\Capa Datos.pdb
+C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Sistema-UNCSM-Desktop\Capa Datos\obj\Debug\Capa Datos.csprojAssemblyReference.cache

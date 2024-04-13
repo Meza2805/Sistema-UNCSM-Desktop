@@ -61,8 +61,8 @@ namespace UNCSM
                 case "MATRÍCULA GENERAL REGULAR":
                     lbSabatino.Text = "MATUTINO";
                     lbDominical.Text = "VESPERTINO";
-                    groupBox2.Text = "CANTIDAD DE GRUPOS TURNO MATUINO";
-                    groupBox3.Text = "CANTIDAD DE GRUPOS TURNO VESPERTINO";
+                    //groupBox2.Text = "CANTIDAD DE GRUPOS TURNO MATUINO";
+                    //groupBox3.Text = "CANTIDAD DE GRUPOS TURNO VESPERTINO";
                     txtSabatino.Text = "MATUINO";
                     txtDominical.Text = "VESPERTINO";
                     cargarRegular();
@@ -74,8 +74,8 @@ namespace UNCSM
                     bandera = true;
                     lbSabatino.Text = "SABATINO";
                     lbDominical.Text = "DOMINICAL";
-                    groupBox2.Text = "CANTIDAD DE GRUPOS TURNO SABATINO";
-                    groupBox3.Text = "CANTIDAD DE GRUPOS TURNO DOMINICAL";
+                    //groupBox2.Text = "CANTIDAD DE GRUPOS TURNO SABATINO";
+                    //groupBox3.Text = "CANTIDAD DE GRUPOS TURNO DOMINICAL";
                     cargarFin();
                     break;
                 

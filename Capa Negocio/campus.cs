@@ -695,7 +695,7 @@ namespace Capa_Negocio
             Comando.ExecuteNonQuery();
             conexion.conexion_datos.Close(); // se cierra la conexion
         }
-        public int BajaEstudiante(string usuario, string carne)
+        public int BajaEstudiante(string usuario, string carne,string motivo,int opcion)
         {
             int salida = 0;
             DataTable Tabla_Estudiante = new DataTable(); //Instancia de un ojeto de tipo DataTable para recibir la tabla que devuelde el objeto SqlDataAdapter
@@ -705,8 +705,8 @@ namespace Capa_Negocio
             Comando.CommandType = System.Data.CommandType.StoredProcedure;
             Comando.Parameters.Add(new SqlParameter("@CODE_USER", System.Data.SqlDbType.NVarChar)).Value = usuario;
             Comando.Parameters.Add(new SqlParameter("@CARNE", System.Data.SqlDbType.NVarChar)).Value = carne;
-            //Comando.Parameters.Add(new SqlParameter("@ID_CURRICULUM_P", System.Data.SqlDbType.Int)).Value = ID_CURRICULUM_P;
-            //Comando.Parameters.Add(new SqlParameter("@ACA_SESSION_P", System.Data.SqlDbType.NVarChar)).Value = ACA_SESSION_P;
+            Comando.Parameters.Add(new SqlParameter("@MOTIVO", System.Data.SqlDbType.NVarChar)).Value = motivo;
+            Comando.Parameters.Add(new SqlParameter("@OPCION", System.Data.SqlDbType.Int)).Value = opcion;
             Comando.Parameters.Add("@salida", SqlDbType.Int).Direction = ParameterDirection.Output;
             Comando.Connection = conexion.conexion_datos; // se abre la conexion para el comando
             Comando.ExecuteNonQuery();
@@ -727,6 +727,66 @@ namespace Capa_Negocio
             Comando.CommandType = System.Data.CommandType.StoredProcedure;
             //Comando.Parameters.Add(new SqlParameter("@PEOPLE", System.Data.SqlDbType.Int)).Value = usuario;
             //Comando.Parameters.Add(new SqlParameter("@CURRICULUM", System.Data.SqlDbType.NVarChar)).Value = curriculum;
+            Comando.Connection = conexion.conexion_datos; // se abre la conexion para el comando
+            Adaptador = new SqlDataAdapter(Comando); //se reciebe la tabla producto de la ejecucion del procedimiento
+            Adaptador.Fill(tabla_registro); // con el sqldataadapter se llena la tabla
+            conexion.conexion_datos.Close(); // se cierra la conexion
+            return tabla_registro; // retorno de la tabla 
+        }
+        public DataTable BuscarDatosEstudiantesReingreso(string id)
+        {
+            DataTable Tabla = new DataTable(); //Instancia de un ojeto de tipo DataTable para recibir la tabla que devuelde el objeto SqlDataAdapter
+            conexion.conexion_datos.Open(); //se abre la conexion para el comando
+            Comando = new SqlCommand(); //instancia del objeto de tipo sqlcommando
+            Comando.CommandText = "SP_MOSTRAR_ESTUDIANTE_REINGRESO"; //se pasa el procedimiento almancenado
+            Comando.CommandType = System.Data.CommandType.StoredProcedure;
+            Comando.Parameters.Add(new SqlParameter("@PEOPLE", System.Data.SqlDbType.NVarChar)).Value = id;
+            Comando.Connection = conexion.conexion_datos; // se abre la conexion para el comando
+            Adaptador = new SqlDataAdapter(Comando); //se reciebe la tabla producto de la ejecucion del procedimiento
+            Adaptador.Fill(Tabla); // con el SqlDataAdapter se llena la tabla
+            conexion.conexion_datos.Close(); // se cierra la conexion
+            return Tabla; // retorno de la tabla 
+        }
+
+        public DataTable Todas_Asignaturas(int PeopleId)
+        {
+            DataTable tabla_registro = new DataTable(); //instancia de un ojeto de tipo datatable para recibir la tabla que devuelde el objeto sqldataadapter
+            conexion.conexion_datos.Open(); //se abre la conexion para el comando
+            Comando = new SqlCommand(); //instancia del objeto de tipo sqlcommando
+            Comando.CommandText = "SP_MOSTRAR_ASGINATURAS_TODAS"; //se pasa el procedimiento almancenado
+            Comando.CommandType = System.Data.CommandType.StoredProcedure;
+            Comando.Parameters.Add(new SqlParameter("@PEOPLE", System.Data.SqlDbType.Int)).Value = PeopleId;
+            //Comando.Parameters.Add(new SqlParameter("@CURRICULUM", System.Data.SqlDbType.NVarChar)).Value = curriculum;
+            Comando.Connection = conexion.conexion_datos; // se abre la conexion para el comando
+            Adaptador = new SqlDataAdapter(Comando); //se reciebe la tabla producto de la ejecucion del procedimiento
+            Adaptador.Fill(tabla_registro); // con el sqldataadapter se llena la tabla
+            conexion.conexion_datos.Close(); // se cierra la conexion
+            return tabla_registro; // retorno de la tabla 
+        }
+
+        public DataTable Buscar_Asignatura(int usuario, string asignatura)
+        {
+            DataTable tabla_registro = new DataTable(); //instancia de un ojeto de tipo datatable para recibir la tabla que devuelde el objeto sqldataadapter
+            conexion.conexion_datos.Open(); //se abre la conexion para el comando
+            Comando = new SqlCommand(); //instancia del objeto de tipo sqlcommando
+            Comando.CommandText = "SP_BUSCAR_ASIGNATURA"; //se pasa el procedimiento almancenado
+            Comando.CommandType = System.Data.CommandType.StoredProcedure;
+            Comando.Parameters.Add(new SqlParameter("@PEOPLE", System.Data.SqlDbType.Int)).Value = usuario;
+            Comando.Parameters.Add(new SqlParameter("@EVENT_ID", System.Data.SqlDbType.NVarChar)).Value = asignatura;
+            Comando.Connection = conexion.conexion_datos; // se abre la conexion para el comando
+            Adaptador = new SqlDataAdapter(Comando); //se reciebe la tabla producto de la ejecucion del procedimiento
+            Adaptador.Fill(tabla_registro); // con el sqldataadapter se llena la tabla
+            conexion.conexion_datos.Close(); // se cierra la conexion
+            return tabla_registro; // retorno de la tabla 
+        }
+        public DataTable PlanAcadamicoVerficado(int PeopleID)
+        {
+            DataTable tabla_registro = new DataTable(); //instancia de un ojeto de tipo datatable para recibir la tabla que devuelde el objeto sqldataadapter
+            conexion.conexion_datos.Open(); //se abre la conexion para el comando
+            Comando = new SqlCommand(); //instancia del objeto de tipo sqlcommando
+            Comando.CommandText = "SP_MOSTRAR_PLAN_VERIFICADO"; //se pasa el procedimiento almancenado
+            Comando.CommandType = System.Data.CommandType.StoredProcedure;
+            Comando.Parameters.Add(new SqlParameter("@PEOPLE", System.Data.SqlDbType.Int)).Value = PeopleID;
             Comando.Connection = conexion.conexion_datos; // se abre la conexion para el comando
             Adaptador = new SqlDataAdapter(Comando); //se reciebe la tabla producto de la ejecucion del procedimiento
             Adaptador.Fill(tabla_registro); // con el sqldataadapter se llena la tabla

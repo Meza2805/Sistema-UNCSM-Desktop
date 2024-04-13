@@ -124,7 +124,7 @@ namespace Ginmasio
 
         private void txtpass_Click(object sender, EventArgs e)
         {
-            txtpass.Clear();
+            //txtpass.Clear();
         }
 
         private void ChkMostrarContraseña_CheckedChanged(object sender, EventArgs e)

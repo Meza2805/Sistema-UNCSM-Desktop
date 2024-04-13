@@ -22,7 +22,7 @@ namespace UNCSM
         private void btnCertificadoCalificaciones_Click(object sender, EventArgs e)
         {
             FrmCertificado notas = new FrmCertificado(codigo_su);
-            notas.Show();
+            notas.ShowDialog();
         }
 
         private void btnHistorialCertificados_Click(object sender, EventArgs e)
@@ -34,6 +34,12 @@ namespace UNCSM
         private void btnBajaMatricula_Click(object sender, EventArgs e)
         {
             FrmRegistroBaja frmbaja = new FrmRegistroBaja();
+            frmbaja.Show();
+        }
+
+        private void btnPlanEstudios_Click(object sender, EventArgs e)
+        {
+            FrmPlanEstudiosVerificado frmbaja = new FrmPlanEstudiosVerificado(codigo_su);
             frmbaja.Show();
         }
     }

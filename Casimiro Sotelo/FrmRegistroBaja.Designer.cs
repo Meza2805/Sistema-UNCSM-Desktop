@@ -34,8 +34,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistroBaja));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dgvRegistro = new System.Windows.Forms.DataGridView();
             this.btnCarga = new System.Windows.Forms.Button();
+            this.dgvRegistro = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegistro)).BeginInit();
             this.SuspendLayout();
@@ -50,6 +50,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 93);
             this.panel1.TabIndex = 87;
+            // 
+            // btnCarga
+            // 
+            this.btnCarga.BackgroundImage = global::UNCSM.Properties.Resources.btnActualizarDatos;
+            this.btnCarga.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCarga.Location = new System.Drawing.Point(13, 13);
+            this.btnCarga.Name = "btnCarga";
+            this.btnCarga.Size = new System.Drawing.Size(230, 66);
+            this.btnCarga.TabIndex = 117;
+            this.btnCarga.UseVisualStyleBackColor = true;
+            this.btnCarga.Click += new System.EventHandler(this.btnCarga_Click);
             // 
             // dgvRegistro
             // 
@@ -108,17 +119,6 @@
             this.dgvRegistro.Size = new System.Drawing.Size(800, 357);
             this.dgvRegistro.TabIndex = 88;
             // 
-            // btnCarga
-            // 
-            this.btnCarga.BackgroundImage = global::UNCSM.Properties.Resources.btnActualizarDatos;
-            this.btnCarga.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCarga.Location = new System.Drawing.Point(13, 13);
-            this.btnCarga.Name = "btnCarga";
-            this.btnCarga.Size = new System.Drawing.Size(230, 66);
-            this.btnCarga.TabIndex = 117;
-            this.btnCarga.UseVisualStyleBackColor = true;
-            this.btnCarga.Click += new System.EventHandler(this.btnCarga_Click);
-            // 
             // FrmRegistroBaja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -128,6 +128,7 @@
             this.Controls.Add(this.dgvRegistro);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "FrmRegistroBaja";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Historial de Baja de Matricula";

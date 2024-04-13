@@ -458,7 +458,7 @@ namespace Ginmasio
                     PanelRegistroVistas.Visible = true;
                     //PanelGrupo.Location = new Point(3, GrupoPosicionY + 100);
                     //PanelVista.Location = new Point(3, VistasPosicionY + 100);
-                    PanelReporte.Location = new Point(3, ReportesPosicionY + 130);
+                    PanelReporte.Location = new Point(3, ReportesPosicionY + 330);
 
                 }
                 else
@@ -467,7 +467,7 @@ namespace Ginmasio
 
                     //PanelGrupo.Location = new Point(3, GrupoPosicionY - 100);
                     //PanelVista.Location = new Point(3, VistasPosicionY - 100);
-                    PanelReporte.Location = new Point(3, ReportesPosicionY - 130);
+                    PanelReporte.Location = new Point(3, ReportesPosicionY - 330);
 
                 }
             }
@@ -477,7 +477,7 @@ namespace Ginmasio
 
                 //PanelGrupo.Location = new Point(3, GrupoPosicionY - 100);
                 //PanelVista.Location = new Point(3, VistasPosicionY - 100);
-                PanelReporte.Location = new Point(3, ReportesPosicionY - 130);
+                PanelReporte.Location = new Point(3, ReportesPosicionY - 330);
 
                 band_Vistas = CambiarBandera(band_Vistas); //Funcion para cambiar el valor de la bandera
 
@@ -654,7 +654,7 @@ namespace Ginmasio
 
 
             PanelRegistroVistas.Location = new Point(21, 367);
-            PanelRegistroVistas.Size = new Size(171, 142);
+            PanelRegistroVistas.Size = new Size(171, 351);
 
             PanelReportes.Location = new Point(17, 420);
             PanelReportes.Size = new Size(171, 142);
@@ -746,6 +746,11 @@ namespace Ginmasio
         private void btnBajaMatricula_Click(object sender, EventArgs e)
         {
             abrirFormHijo(new FrmBajaMatricula(codigo_user));
+        }
+
+        private void button2_Click_2(object sender, EventArgs e)
+        {
+
         }
 
 

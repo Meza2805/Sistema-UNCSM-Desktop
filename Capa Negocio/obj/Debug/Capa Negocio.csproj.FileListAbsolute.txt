@@ -142,3 +142,21 @@ C:\Users\UNCSM-SISTEMAS\Desktop\Respaldo Meza\Desktop-UNCSM-Full\Capa Negocio\ob
 C:\Users\UNCSM-SISTEMAS\Desktop\Respaldo Meza\Desktop-UNCSM-Full\Capa Negocio\obj\Debug\Capa Negocio.csproj.CopyComplete
 C:\Users\UNCSM-SISTEMAS\Desktop\Respaldo Meza\Desktop-UNCSM-Full\Capa Negocio\obj\Debug\Capa Negocio.dll
 C:\Users\UNCSM-SISTEMAS\Desktop\Respaldo Meza\Desktop-UNCSM-Full\Capa Negocio\obj\Debug\Capa Negocio.pdb
+D:\Sistema-UNCSM-Desktop\Capa Negocio\bin\Debug\Capa Negocio.dll
+D:\Sistema-UNCSM-Desktop\Capa Negocio\bin\Debug\Capa Negocio.pdb
+D:\Sistema-UNCSM-Desktop\Capa Negocio\bin\Debug\Capa Datos.dll
+D:\Sistema-UNCSM-Desktop\Capa Negocio\bin\Debug\Capa Datos.pdb
+D:\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.csprojAssemblyReference.cache
+D:\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.csproj.CoreCompileInputs.cache
+D:\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.csproj.CopyComplete
+D:\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.dll
+D:\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.pdb
+C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Sistema-UNCSM-Desktop\Capa Negocio\bin\Debug\Capa Negocio.dll
+C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Sistema-UNCSM-Desktop\Capa Negocio\bin\Debug\Capa Negocio.pdb
+C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Sistema-UNCSM-Desktop\Capa Negocio\bin\Debug\Capa Datos.dll
+C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Sistema-UNCSM-Desktop\Capa Negocio\bin\Debug\Capa Datos.pdb
+C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.csprojAssemblyReference.cache
+C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.csproj.CoreCompileInputs.cache
+C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.csproj.CopyComplete
+C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.dll
+C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.pdb
