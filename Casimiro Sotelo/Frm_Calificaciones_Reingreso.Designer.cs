@@ -29,91 +29,124 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Calificaciones_Reingreso));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnCargarMatricula = new System.Windows.Forms.Button();
-            this.txtpeople = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.cbgrupo = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtidest = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtestudiante = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtturno = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtarea = new System.Windows.Forms.TextBox();
+            this.txtdocente = new System.Windows.Forms.TextBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.txtcedula = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtaño = new System.Windows.Forms.Panel();
+            this.cbcod_carrera = new System.Windows.Forms.ComboBox();
+            this.cbcarrera = new System.Windows.Forms.ComboBox();
+            this.cbcodasig = new System.Windows.Forms.ComboBox();
+            this.cbsection = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtcarrera = new System.Windows.Forms.TextBox();
-            this.panel1.SuspendLayout();
+            this.txtcod_area = new System.Windows.Forms.TextBox();
+            this.txtseccion = new System.Windows.Forms.TextBox();
+            this.txtsubtype = new System.Windows.Forms.TextBox();
+            this.txtacaterm = new System.Windows.Forms.TextBox();
+            this.txtsemestre = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtaño2 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.cbasignatura = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtturno = new System.Windows.Forms.TextBox();
+            this.btnmostrarlista = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.dataGridLista2 = new System.Windows.Forms.DataGridView();
+            this.btnregistro = new System.Windows.Forms.Button();
+            this.btnactas = new System.Windows.Forms.Button();
+            this.btnvalidar = new System.Windows.Forms.Button();
+            this.btnnotas = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cbareacon = new System.Windows.Forms.ComboBox();
+            this.cbgrupo.SuspendLayout();
+            this.txtaño.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridLista2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // cbgrupo
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.txtcarrera);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.txtarea);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.txtturno);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.txtestudiante);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.txtidest);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.btnCargarMatricula);
-            this.panel1.Controls.Add(this.txtpeople);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Location = new System.Drawing.Point(0, 67);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1010, 141);
-            this.panel1.TabIndex = 0;
+            this.cbgrupo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbgrupo.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.cbgrupo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.cbgrupo.Controls.Add(this.label2);
+            this.cbgrupo.Controls.Add(this.txtdocente);
+            this.cbgrupo.Controls.Add(this.btnBuscar);
+            this.cbgrupo.Controls.Add(this.txtcedula);
+            this.cbgrupo.Controls.Add(this.label7);
+            this.cbgrupo.Location = new System.Drawing.Point(4, 60);
+            this.cbgrupo.Name = "cbgrupo";
+            this.cbgrupo.Size = new System.Drawing.Size(1017, 86);
+            this.cbgrupo.TabIndex = 47;
             // 
-            // btnCargarMatricula
+            // label2
             // 
-            this.btnCargarMatricula.BackColor = System.Drawing.Color.Transparent;
-            this.btnCargarMatricula.BackgroundImage = global::UNCSM.Properties.Resources.buscar;
-            this.btnCargarMatricula.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCargarMatricula.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnCargarMatricula.FlatAppearance.BorderSize = 0;
-            this.btnCargarMatricula.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.btnCargarMatricula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCargarMatricula.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCargarMatricula.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnCargarMatricula.Location = new System.Drawing.Point(274, 3);
-            this.btnCargarMatricula.Name = "btnCargarMatricula";
-            this.btnCargarMatricula.Size = new System.Drawing.Size(142, 43);
-            this.btnCargarMatricula.TabIndex = 81;
-            this.btnCargarMatricula.UseVisualStyleBackColor = false;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(284, 54);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(68, 16);
+            this.label2.TabIndex = 41;
+            this.label2.Text = "DOCENTE:";
             // 
-            // txtpeople
+            // txtdocente
             // 
-            this.txtpeople.Location = new System.Drawing.Point(94, 13);
-            this.txtpeople.Name = "txtpeople";
-            this.txtpeople.Size = new System.Drawing.Size(165, 20);
-            this.txtpeople.TabIndex = 49;
+            this.txtdocente.Enabled = false;
+            this.txtdocente.Location = new System.Drawing.Point(358, 54);
+            this.txtdocente.Name = "txtdocente";
+            this.txtdocente.Size = new System.Drawing.Size(389, 20);
+            this.txtdocente.TabIndex = 40;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.Color.Transparent;
+            this.btnBuscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBuscar.BackgroundImage")));
+            this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBuscar.FlatAppearance.BorderSize = 0;
+            this.btnBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnBuscar.Location = new System.Drawing.Point(583, 3);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(125, 40);
+            this.btnBuscar.TabIndex = 39;
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // txtcedula
+            // 
+            this.txtcedula.Location = new System.Drawing.Point(358, 15);
+            this.txtcedula.Multiline = true;
+            this.txtcedula.Name = "txtcedula";
+            this.txtcedula.Size = new System.Drawing.Size(209, 23);
+            this.txtcedula.TabIndex = 38;
+            this.txtcedula.Leave += new System.EventHandler(this.txtCedula_Leave);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(10, 13);
+            this.label7.Location = new System.Drawing.Point(128, 20);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 16);
-            this.label7.TabIndex = 48;
-            this.label7.Text = "PEOPLE ID:";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(369, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(58, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 47;
-            this.pictureBox1.TabStop = false;
+            this.label7.Size = new System.Drawing.Size(224, 16);
+            this.label7.TabIndex = 36;
+            this.label7.Text = "NÚMERO DE CÉDULA DEL DOCENTE:";
             // 
             // label1
             // 
@@ -121,112 +154,450 @@
             this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(423, 31);
+            this.label1.Location = new System.Drawing.Point(365, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(348, 18);
             this.label1.TabIndex = 46;
             this.label1.Text = " REGISTRO DE CALIFICACIONES REINGRESO";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // txtaño
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(10, 65);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 16);
-            this.label2.TabIndex = 82;
-            this.label2.Text = "PEOPLE ID:";
+            this.txtaño.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtaño.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtaño.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txtaño.Controls.Add(this.cbareacon);
+            this.txtaño.Controls.Add(this.cbcod_carrera);
+            this.txtaño.Controls.Add(this.cbcarrera);
+            this.txtaño.Controls.Add(this.cbcodasig);
+            this.txtaño.Controls.Add(this.cbsection);
+            this.txtaño.Controls.Add(this.label6);
+            this.txtaño.Controls.Add(this.txtcod_area);
+            this.txtaño.Controls.Add(this.txtseccion);
+            this.txtaño.Controls.Add(this.txtsubtype);
+            this.txtaño.Controls.Add(this.txtacaterm);
+            this.txtaño.Controls.Add(this.txtsemestre);
+            this.txtaño.Controls.Add(this.label11);
+            this.txtaño.Controls.Add(this.txtaño2);
+            this.txtaño.Controls.Add(this.label10);
+            this.txtaño.Controls.Add(this.cbasignatura);
+            this.txtaño.Controls.Add(this.label9);
+            this.txtaño.Controls.Add(this.txtturno);
+            this.txtaño.Controls.Add(this.btnmostrarlista);
+            this.txtaño.Controls.Add(this.label8);
+            this.txtaño.Controls.Add(this.label5);
+            this.txtaño.Controls.Add(this.label4);
+            this.txtaño.Controls.Add(this.label3);
+            this.txtaño.Location = new System.Drawing.Point(4, 152);
+            this.txtaño.Name = "txtaño";
+            this.txtaño.Size = new System.Drawing.Size(1017, 165);
+            this.txtaño.TabIndex = 49;
             // 
-            // txtidest
+            // cbcod_carrera
             // 
-            this.txtidest.Location = new System.Drawing.Point(93, 64);
-            this.txtidest.Name = "txtidest";
-            this.txtidest.Size = new System.Drawing.Size(165, 20);
-            this.txtidest.TabIndex = 83;
+            this.cbcod_carrera.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
+            this.cbcod_carrera.Enabled = false;
+            this.cbcod_carrera.ForeColor = System.Drawing.SystemColors.Info;
+            this.cbcod_carrera.FormattingEnabled = true;
+            this.cbcod_carrera.Location = new System.Drawing.Point(861, 55);
+            this.cbcod_carrera.Name = "cbcod_carrera";
+            this.cbcod_carrera.Size = new System.Drawing.Size(103, 21);
+            this.cbcod_carrera.TabIndex = 72;
             // 
-            // label3
+            // cbcarrera
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(283, 68);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(89, 16);
-            this.label3.TabIndex = 84;
-            this.label3.Text = "ESTUDIANTE:";
+            this.cbcarrera.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
+            this.cbcarrera.Enabled = false;
+            this.cbcarrera.ForeColor = System.Drawing.SystemColors.Info;
+            this.cbcarrera.FormattingEnabled = true;
+            this.cbcarrera.Location = new System.Drawing.Point(621, 55);
+            this.cbcarrera.Name = "cbcarrera";
+            this.cbcarrera.Size = new System.Drawing.Size(234, 21);
+            this.cbcarrera.TabIndex = 71;
             // 
-            // txtestudiante
+            // cbcodasig
             // 
-            this.txtestudiante.Location = new System.Drawing.Point(367, 67);
-            this.txtestudiante.Name = "txtestudiante";
-            this.txtestudiante.Size = new System.Drawing.Size(367, 20);
-            this.txtestudiante.TabIndex = 85;
+            this.cbcodasig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
+            this.cbcodasig.Enabled = false;
+            this.cbcodasig.ForeColor = System.Drawing.SystemColors.Info;
+            this.cbcodasig.FormattingEnabled = true;
+            this.cbcodasig.Location = new System.Drawing.Point(421, 95);
+            this.cbcodasig.Name = "cbcodasig";
+            this.cbcodasig.Size = new System.Drawing.Size(103, 21);
+            this.cbcodasig.TabIndex = 70;
             // 
-            // label4
+            // cbsection
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(754, 71);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 16);
-            this.label4.TabIndex = 86;
-            this.label4.Text = "TURNO:";
-            // 
-            // txtturno
-            // 
-            this.txtturno.Location = new System.Drawing.Point(814, 70);
-            this.txtturno.Name = "txtturno";
-            this.txtturno.Size = new System.Drawing.Size(165, 20);
-            this.txtturno.TabIndex = 87;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(10, 111);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(174, 16);
-            this.label5.TabIndex = 88;
-            this.label5.Text = "AREA DEL CONOCIMIENTO:";
-            // 
-            // txtarea
-            // 
-            this.txtarea.Location = new System.Drawing.Point(181, 110);
-            this.txtarea.Name = "txtarea";
-            this.txtarea.Size = new System.Drawing.Size(367, 20);
-            this.txtarea.TabIndex = 89;
+            this.cbsection.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
+            this.cbsection.Enabled = false;
+            this.cbsection.ForeColor = System.Drawing.SystemColors.Info;
+            this.cbsection.FormattingEnabled = true;
+            this.cbsection.Location = new System.Drawing.Point(616, 98);
+            this.cbsection.Name = "cbsection";
+            this.cbsection.Size = new System.Drawing.Size(103, 21);
+            this.cbsection.TabIndex = 69;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(564, 114);
+            this.label6.Location = new System.Drawing.Point(555, 99);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 16);
-            this.label6.TabIndex = 90;
-            this.label6.Text = "CARRERA:";
+            this.label6.Size = new System.Drawing.Size(55, 16);
+            this.label6.TabIndex = 68;
+            this.label6.Text = "GRUPO:";
             // 
-            // txtcarrera
+            // txtcod_area
             // 
-            this.txtcarrera.Location = new System.Drawing.Point(643, 113);
-            this.txtcarrera.Name = "txtcarrera";
-            this.txtcarrera.Size = new System.Drawing.Size(165, 20);
-            this.txtcarrera.TabIndex = 91;
+            this.txtcod_area.Enabled = false;
+            this.txtcod_area.Location = new System.Drawing.Point(184, 128);
+            this.txtcod_area.Name = "txtcod_area";
+            this.txtcod_area.Size = new System.Drawing.Size(102, 20);
+            this.txtcod_area.TabIndex = 66;
+            this.txtcod_area.Visible = false;
+            // 
+            // txtseccion
+            // 
+            this.txtseccion.Enabled = false;
+            this.txtseccion.Location = new System.Drawing.Point(645, 128);
+            this.txtseccion.Name = "txtseccion";
+            this.txtseccion.Size = new System.Drawing.Size(102, 20);
+            this.txtseccion.TabIndex = 65;
+            this.txtseccion.Visible = false;
+            // 
+            // txtsubtype
+            // 
+            this.txtsubtype.Enabled = false;
+            this.txtsubtype.Location = new System.Drawing.Point(540, 128);
+            this.txtsubtype.Name = "txtsubtype";
+            this.txtsubtype.Size = new System.Drawing.Size(102, 20);
+            this.txtsubtype.TabIndex = 64;
+            this.txtsubtype.Visible = false;
+            // 
+            // txtacaterm
+            // 
+            this.txtacaterm.Enabled = false;
+            this.txtacaterm.Location = new System.Drawing.Point(432, 128);
+            this.txtacaterm.Name = "txtacaterm";
+            this.txtacaterm.Size = new System.Drawing.Size(102, 20);
+            this.txtacaterm.TabIndex = 63;
+            this.txtacaterm.Visible = false;
+            // 
+            // txtsemestre
+            // 
+            this.txtsemestre.Enabled = false;
+            this.txtsemestre.Location = new System.Drawing.Point(88, 94);
+            this.txtsemestre.Name = "txtsemestre";
+            this.txtsemestre.Size = new System.Drawing.Size(169, 20);
+            this.txtsemestre.TabIndex = 62;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(13, 95);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(69, 16);
+            this.label11.TabIndex = 61;
+            this.label11.Text = "PERÍODO:";
+            // 
+            // txtaño2
+            // 
+            this.txtaño2.Enabled = false;
+            this.txtaño2.Location = new System.Drawing.Point(793, 21);
+            this.txtaño2.Name = "txtaño2";
+            this.txtaño2.Size = new System.Drawing.Size(62, 20);
+            this.txtaño2.TabIndex = 60;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(747, 22);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(40, 16);
+            this.label10.TabIndex = 59;
+            this.label10.Text = "AÑO:";
+            // 
+            // cbasignatura
+            // 
+            this.cbasignatura.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
+            this.cbasignatura.Enabled = false;
+            this.cbasignatura.ForeColor = System.Drawing.SystemColors.Info;
+            this.cbasignatura.FormattingEnabled = true;
+            this.cbasignatura.Location = new System.Drawing.Point(115, 21);
+            this.cbasignatura.Name = "cbasignatura";
+            this.cbasignatura.Size = new System.Drawing.Size(338, 21);
+            this.cbasignatura.TabIndex = 58;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(263, 95);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(152, 16);
+            this.label9.TabIndex = 56;
+            this.label9.Text = "CÓDIGO_ASIGNATURA:";
+            // 
+            // txtturno
+            // 
+            this.txtturno.Enabled = false;
+            this.txtturno.Location = new System.Drawing.Point(545, 21);
+            this.txtturno.Name = "txtturno";
+            this.txtturno.Size = new System.Drawing.Size(196, 20);
+            this.txtturno.TabIndex = 54;
+            // 
+            // btnmostrarlista
+            // 
+            this.btnmostrarlista.BackColor = System.Drawing.Color.Transparent;
+            this.btnmostrarlista.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnmostrarlista.BackgroundImage")));
+            this.btnmostrarlista.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnmostrarlista.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnmostrarlista.Enabled = false;
+            this.btnmostrarlista.FlatAppearance.BorderSize = 0;
+            this.btnmostrarlista.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.btnmostrarlista.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnmostrarlista.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnmostrarlista.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnmostrarlista.Location = new System.Drawing.Point(833, 105);
+            this.btnmostrarlista.Name = "btnmostrarlista";
+            this.btnmostrarlista.Size = new System.Drawing.Size(144, 43);
+            this.btnmostrarlista.TabIndex = 42;
+            this.btnmostrarlista.UseVisualStyleBackColor = false;
+            this.btnmostrarlista.Click += new System.EventHandler(this.btnmostrarlista_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(13, 25);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(96, 16);
+            this.label8.TabIndex = 50;
+            this.label8.Text = "ASIGNATURA:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(485, 25);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(54, 16);
+            this.label5.TabIndex = 46;
+            this.label5.Text = "TURNO:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(543, 57);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(75, 16);
+            this.label4.TabIndex = 44;
+            this.label4.Text = "CARRERA:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(13, 57);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(174, 16);
+            this.label3.TabIndex = 42;
+            this.label3.Text = "ÁREA DEL CONOCIMIENTO:";
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel3.Controls.Add(this.dataGridLista2);
+            this.panel3.Location = new System.Drawing.Point(22, 323);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(992, 222);
+            this.panel3.TabIndex = 51;
+            // 
+            // dataGridLista2
+            // 
+            this.dataGridLista2.AllowDrop = true;
+            this.dataGridLista2.AllowUserToAddRows = false;
+            this.dataGridLista2.AllowUserToDeleteRows = false;
+            this.dataGridLista2.AllowUserToResizeColumns = false;
+            this.dataGridLista2.AllowUserToResizeRows = false;
+            this.dataGridLista2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridLista2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridLista2.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridLista2.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dataGridLista2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridLista2.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
+            this.dataGridLista2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridLista2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridLista2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridLista2.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridLista2.EnableHeadersVisualStyles = false;
+            this.dataGridLista2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
+            this.dataGridLista2.Location = new System.Drawing.Point(5, 5);
+            this.dataGridLista2.MultiSelect = false;
+            this.dataGridLista2.Name = "dataGridLista2";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridLista2.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridLista2.RowHeadersVisible = false;
+            this.dataGridLista2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(219)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridLista2.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridLista2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridLista2.Size = new System.Drawing.Size(977, 205);
+            this.dataGridLista2.TabIndex = 44;
+            // 
+            // btnregistro
+            // 
+            this.btnregistro.BackColor = System.Drawing.Color.Transparent;
+            this.btnregistro.BackgroundImage = global::UNCSM.Properties.Resources.Nregistro;
+            this.btnregistro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnregistro.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnregistro.Enabled = false;
+            this.btnregistro.FlatAppearance.BorderSize = 0;
+            this.btnregistro.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.btnregistro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnregistro.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnregistro.ForeColor = System.Drawing.Color.Transparent;
+            this.btnregistro.Location = new System.Drawing.Point(705, 551);
+            this.btnregistro.Name = "btnregistro";
+            this.btnregistro.Size = new System.Drawing.Size(146, 53);
+            this.btnregistro.TabIndex = 54;
+            this.btnregistro.UseVisualStyleBackColor = false;
+            this.btnregistro.Click += new System.EventHandler(this.btnregistro_Click);
+            // 
+            // btnactas
+            // 
+            this.btnactas.BackColor = System.Drawing.Color.Transparent;
+            this.btnactas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnactas.BackgroundImage")));
+            this.btnactas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnactas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnactas.Enabled = false;
+            this.btnactas.FlatAppearance.BorderSize = 0;
+            this.btnactas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.btnactas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnactas.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnactas.ForeColor = System.Drawing.Color.Transparent;
+            this.btnactas.Location = new System.Drawing.Point(542, 551);
+            this.btnactas.Name = "btnactas";
+            this.btnactas.Size = new System.Drawing.Size(146, 53);
+            this.btnactas.TabIndex = 53;
+            this.btnactas.UseVisualStyleBackColor = false;
+            this.btnactas.Click += new System.EventHandler(this.btnactas_Click);
+            // 
+            // btnvalidar
+            // 
+            this.btnvalidar.BackColor = System.Drawing.Color.Transparent;
+            this.btnvalidar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnvalidar.BackgroundImage")));
+            this.btnvalidar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnvalidar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnvalidar.Enabled = false;
+            this.btnvalidar.FlatAppearance.BorderSize = 0;
+            this.btnvalidar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.btnvalidar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnvalidar.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnvalidar.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnvalidar.Location = new System.Drawing.Point(182, 551);
+            this.btnvalidar.Name = "btnvalidar";
+            this.btnvalidar.Size = new System.Drawing.Size(146, 53);
+            this.btnvalidar.TabIndex = 52;
+            this.btnvalidar.UseVisualStyleBackColor = false;
+            this.btnvalidar.Click += new System.EventHandler(this.btnvalidar_Click);
+            // 
+            // btnnotas
+            // 
+            this.btnnotas.BackColor = System.Drawing.Color.Transparent;
+            this.btnnotas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnnotas.BackgroundImage")));
+            this.btnnotas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnnotas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnnotas.Enabled = false;
+            this.btnnotas.FlatAppearance.BorderSize = 0;
+            this.btnnotas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.btnnotas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnnotas.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnnotas.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnnotas.Location = new System.Drawing.Point(360, 551);
+            this.btnnotas.Name = "btnnotas";
+            this.btnnotas.Size = new System.Drawing.Size(156, 53);
+            this.btnnotas.TabIndex = 50;
+            this.btnnotas.UseVisualStyleBackColor = false;
+            this.btnnotas.Click += new System.EventHandler(this.btnnotas_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(311, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(58, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 48;
+            this.pictureBox1.TabStop = false;
+            // 
+            // cbareacon
+            // 
+            this.cbareacon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
+            this.cbareacon.Enabled = false;
+            this.cbareacon.ForeColor = System.Drawing.SystemColors.Info;
+            this.cbareacon.FormattingEnabled = true;
+            this.cbareacon.Location = new System.Drawing.Point(193, 55);
+            this.cbareacon.Name = "cbareacon";
+            this.cbareacon.Size = new System.Drawing.Size(346, 21);
+            this.cbareacon.TabIndex = 73;
             // 
             // Frm_Calificaciones_Reingreso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LavenderBlush;
-            this.ClientSize = new System.Drawing.Size(1010, 590);
+            this.ClientSize = new System.Drawing.Size(1026, 629);
+            this.Controls.Add(this.btnregistro);
+            this.Controls.Add(this.btnactas);
+            this.Controls.Add(this.btnvalidar);
+            this.Controls.Add(this.btnnotas);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.txtaño);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.cbgrupo);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Frm_Calificaciones_Reingreso";
             this.Text = "Frm_Calificaciones_Reingreso";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.cbgrupo.ResumeLayout(false);
+            this.cbgrupo.PerformLayout();
+            this.txtaño.ResumeLayout(false);
+            this.txtaño.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridLista2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -235,21 +606,42 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtpeople;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button btnCargarMatricula;
-        private System.Windows.Forms.TextBox txtestudiante;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtidest;
+        private System.Windows.Forms.Panel cbgrupo;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtcarrera;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtarea;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtdocente;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.TextBox txtcedula;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel txtaño;
+        private System.Windows.Forms.TextBox txtsemestre;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txtaño2;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox cbasignatura;
+        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtturno;
+        private System.Windows.Forms.Button btnmostrarlista;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnactas;
+        private System.Windows.Forms.Button btnvalidar;
+        private System.Windows.Forms.Button btnnotas;
+        private System.Windows.Forms.Panel panel3;
+        public System.Windows.Forms.DataGridView dataGridLista2;
+        private System.Windows.Forms.TextBox txtseccion;
+        private System.Windows.Forms.TextBox txtsubtype;
+        private System.Windows.Forms.TextBox txtacaterm;
+        private System.Windows.Forms.TextBox txtcod_area;
+        private System.Windows.Forms.Button btnregistro;
+        private System.Windows.Forms.ComboBox cbsection;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox cbcodasig;
+        private System.Windows.Forms.ComboBox cbcarrera;
+        private System.Windows.Forms.ComboBox cbcod_carrera;
+        private System.Windows.Forms.ComboBox cbareacon;
     }
 }

@@ -63,8 +63,8 @@ namespace UNCSM
                 txtid.Text = dvusuarios.CurrentRow.Cells[0].Value.ToString();
                 txtname.Text = dvusuarios.CurrentRow.Cells[1].Value.ToString();
                 txtsubname.Text = dvusuarios.CurrentRow.Cells[2].Value.ToString();
-                txtuser.Text = dvusuarios.CurrentRow.Cells[5].Value.ToString();
-                txtpassword.Text = dvusuarios.CurrentRow.Cells[6].Value.ToString();
+                txtuser.Text = dvusuarios.CurrentRow.Cells[6].Value.ToString();
+                txtpassword.Text = dvusuarios.CurrentRow.Cells[7].Value.ToString();
 
             }
             else

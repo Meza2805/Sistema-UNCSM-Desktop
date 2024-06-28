@@ -130,7 +130,7 @@
             this.txtusuario.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtusuario.Location = new System.Drawing.Point(0, 75);
             this.txtusuario.Name = "txtusuario";
-            this.txtusuario.Size = new System.Drawing.Size(1033, 197);
+            this.txtusuario.Size = new System.Drawing.Size(1033, 205);
             this.txtusuario.TabIndex = 1;
             this.txtusuario.TabStop = false;
             this.txtusuario.Text = "INFORMACION PERSONAL";
@@ -396,7 +396,7 @@
             this.cbMunicipio.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMunicipio.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.cbMunicipio.FormattingEnabled = true;
-            this.cbMunicipio.Location = new System.Drawing.Point(421, 44);
+            this.cbMunicipio.Location = new System.Drawing.Point(415, 69);
             this.cbMunicipio.Name = "cbMunicipio";
             this.cbMunicipio.Size = new System.Drawing.Size(193, 24);
             this.cbMunicipio.TabIndex = 60;
@@ -410,7 +410,7 @@
             this.cbDepartamento.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbDepartamento.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.cbDepartamento.FormattingEnabled = true;
-            this.cbDepartamento.Location = new System.Drawing.Point(139, 44);
+            this.cbDepartamento.Location = new System.Drawing.Point(133, 69);
             this.cbDepartamento.Name = "cbDepartamento";
             this.cbDepartamento.Size = new System.Drawing.Size(149, 24);
             this.cbDepartamento.TabIndex = 59;
@@ -422,7 +422,7 @@
             this.txtDireccion.Location = new System.Drawing.Point(720, 31);
             this.txtDireccion.Multiline = true;
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(274, 54);
+            this.txtDireccion.Size = new System.Drawing.Size(274, 78);
             this.txtDireccion.TabIndex = 43;
             // 
             // groupBox3
@@ -441,7 +441,7 @@
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Controls.Add(this.label11);
             this.groupBox3.Font = new System.Drawing.Font("Tahoma", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.groupBox3.Location = new System.Drawing.Point(0, 102);
+            this.groupBox3.Location = new System.Drawing.Point(0, 141);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(1030, 322);
             this.groupBox3.TabIndex = 43;
@@ -459,7 +459,7 @@
             this.btnvalidar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnvalidar.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnvalidar.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnvalidar.Location = new System.Drawing.Point(317, 201);
+            this.btnvalidar.Location = new System.Drawing.Point(369, 174);
             this.btnvalidar.Name = "btnvalidar";
             this.btnvalidar.Size = new System.Drawing.Size(150, 57);
             this.btnvalidar.TabIndex = 59;
@@ -502,7 +502,7 @@
             this.btnguardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnguardar.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnguardar.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnguardar.Location = new System.Drawing.Point(512, 201);
+            this.btnguardar.Location = new System.Drawing.Point(564, 174);
             this.btnguardar.Name = "btnguardar";
             this.btnguardar.Size = new System.Drawing.Size(150, 57);
             this.btnguardar.TabIndex = 58;
@@ -575,7 +575,7 @@
             // 
             this.labelMunicipio.AutoSize = true;
             this.labelMunicipio.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMunicipio.Location = new System.Drawing.Point(335, 47);
+            this.labelMunicipio.Location = new System.Drawing.Point(329, 72);
             this.labelMunicipio.Name = "labelMunicipio";
             this.labelMunicipio.Size = new System.Drawing.Size(80, 16);
             this.labelMunicipio.TabIndex = 41;
@@ -585,7 +585,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(19, 47);
+            this.label8.Location = new System.Drawing.Point(13, 72);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(115, 16);
             this.label8.TabIndex = 40;
@@ -595,7 +595,7 @@
             // 
             this.lbDireccion.AutoSize = true;
             this.lbDireccion.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDireccion.Location = new System.Drawing.Point(633, 47);
+            this.lbDireccion.Location = new System.Drawing.Point(633, 69);
             this.lbDireccion.Name = "lbDireccion";
             this.lbDireccion.Size = new System.Drawing.Size(81, 16);
             this.lbDireccion.TabIndex = 36;
@@ -609,9 +609,9 @@
             this.label1.ForeColor = System.Drawing.Color.Blue;
             this.label1.Location = new System.Drawing.Point(415, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(202, 18);
+            this.label1.Size = new System.Drawing.Size(299, 18);
             this.label1.TabIndex = 5;
-            this.label1.Text = " REGISTRO DE USUARIOS";
+            this.label1.Text = " REGISTRO DE PERSONAL ACADÉMICO";
             // 
             // panel1
             // 

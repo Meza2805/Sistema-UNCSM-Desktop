@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Calificaciones));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.cbgrupo = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,13 +41,19 @@
             this.txtcedula = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtaño = new System.Windows.Forms.Panel();
+            this.cbasignatura = new System.Windows.Forms.ComboBox();
+            this.txtsection = new System.Windows.Forms.TextBox();
+            this.txt_codcarrera = new System.Windows.Forms.TextBox();
+            this.txtseccion = new System.Windows.Forms.TextBox();
+            this.txt_codarea = new System.Windows.Forms.TextBox();
             this.txtsemestre = new System.Windows.Forms.TextBox();
+            this.txtsubtype = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.txtacaterm = new System.Windows.Forms.TextBox();
             this.txtaño2 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.cbgrupos = new System.Windows.Forms.ComboBox();
             this.txtcodasig = new System.Windows.Forms.TextBox();
-            this.txtasignatura = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtturno = new System.Windows.Forms.TextBox();
             this.txtcarrera = new System.Windows.Forms.TextBox();
@@ -64,6 +70,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnvalidar = new System.Windows.Forms.Button();
             this.btnnotas = new System.Windows.Forms.Button();
+            this.btnregistro = new System.Windows.Forms.Button();
+            this.btnespecial = new System.Windows.Forms.Button();
             this.cbgrupo.SuspendLayout();
             this.txtaño.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -74,14 +82,14 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Control;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(457, 24);
+            this.label1.Location = new System.Drawing.Point(370, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(252, 18);
+            this.label1.Size = new System.Drawing.Size(386, 18);
             this.label1.TabIndex = 6;
-            this.label1.Text = " REGISTRO DE CALIFICACIONES";
+            this.label1.Text = " REGISTRO DE CALIFICACIONES NUEVO INGRESO";
             // 
             // cbgrupo
             // 
@@ -120,7 +128,7 @@
             // btnBuscar
             // 
             this.btnBuscar.BackColor = System.Drawing.Color.Transparent;
-            this.btnBuscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBuscar.BackgroundImage")));
+            this.btnBuscar.BackgroundImage = global::UNCSM.Properties.Resources.buscar;
             this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBuscar.FlatAppearance.BorderSize = 0;
@@ -142,7 +150,8 @@
             this.txtcedula.Name = "txtcedula";
             this.txtcedula.Size = new System.Drawing.Size(209, 23);
             this.txtcedula.TabIndex = 38;
-            this.txtcedula.Text = "No Cédula";
+            this.txtcedula.TextChanged += new System.EventHandler(this.txtcedula_TextChanged);
+            this.txtcedula.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcedula_KeyPress);
             // 
             // label7
             // 
@@ -160,13 +169,19 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtaño.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtaño.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.txtaño.Controls.Add(this.cbasignatura);
+            this.txtaño.Controls.Add(this.txtsection);
+            this.txtaño.Controls.Add(this.txt_codcarrera);
+            this.txtaño.Controls.Add(this.txtseccion);
+            this.txtaño.Controls.Add(this.txt_codarea);
             this.txtaño.Controls.Add(this.txtsemestre);
+            this.txtaño.Controls.Add(this.txtsubtype);
             this.txtaño.Controls.Add(this.label11);
+            this.txtaño.Controls.Add(this.txtacaterm);
             this.txtaño.Controls.Add(this.txtaño2);
             this.txtaño.Controls.Add(this.label10);
             this.txtaño.Controls.Add(this.cbgrupos);
             this.txtaño.Controls.Add(this.txtcodasig);
-            this.txtaño.Controls.Add(this.txtasignatura);
             this.txtaño.Controls.Add(this.label9);
             this.txtaño.Controls.Add(this.txtturno);
             this.txtaño.Controls.Add(this.txtcarrera);
@@ -182,6 +197,54 @@
             this.txtaño.Size = new System.Drawing.Size(1001, 165);
             this.txtaño.TabIndex = 8;
             // 
+            // cbasignatura
+            // 
+            this.cbasignatura.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
+            this.cbasignatura.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbasignatura.Enabled = false;
+            this.cbasignatura.ForeColor = System.Drawing.SystemColors.Info;
+            this.cbasignatura.FormattingEnabled = true;
+            this.cbasignatura.Location = new System.Drawing.Point(388, 93);
+            this.cbasignatura.Name = "cbasignatura";
+            this.cbasignatura.Size = new System.Drawing.Size(363, 21);
+            this.cbasignatura.TabIndex = 96;
+            // 
+            // txtsection
+            // 
+            this.txtsection.Enabled = false;
+            this.txtsection.Location = new System.Drawing.Point(651, 136);
+            this.txtsection.Name = "txtsection";
+            this.txtsection.Size = new System.Drawing.Size(100, 20);
+            this.txtsection.TabIndex = 95;
+            this.txtsection.Visible = false;
+            // 
+            // txt_codcarrera
+            // 
+            this.txt_codcarrera.Enabled = false;
+            this.txt_codcarrera.Location = new System.Drawing.Point(193, 136);
+            this.txt_codcarrera.Name = "txt_codcarrera";
+            this.txt_codcarrera.Size = new System.Drawing.Size(100, 20);
+            this.txt_codcarrera.TabIndex = 92;
+            this.txt_codcarrera.Visible = false;
+            // 
+            // txtseccion
+            // 
+            this.txtseccion.Enabled = false;
+            this.txtseccion.Location = new System.Drawing.Point(545, 136);
+            this.txtseccion.Name = "txtseccion";
+            this.txtseccion.Size = new System.Drawing.Size(100, 20);
+            this.txtseccion.TabIndex = 94;
+            this.txtseccion.Visible = false;
+            // 
+            // txt_codarea
+            // 
+            this.txt_codarea.Enabled = false;
+            this.txt_codarea.Location = new System.Drawing.Point(87, 136);
+            this.txt_codarea.Name = "txt_codarea";
+            this.txt_codarea.Size = new System.Drawing.Size(100, 20);
+            this.txt_codarea.TabIndex = 91;
+            this.txt_codarea.Visible = false;
+            // 
             // txtsemestre
             // 
             this.txtsemestre.Enabled = false;
@@ -189,6 +252,15 @@
             this.txtsemestre.Name = "txtsemestre";
             this.txtsemestre.Size = new System.Drawing.Size(169, 20);
             this.txtsemestre.TabIndex = 62;
+            // 
+            // txtsubtype
+            // 
+            this.txtsubtype.Enabled = false;
+            this.txtsubtype.Location = new System.Drawing.Point(439, 136);
+            this.txtsubtype.Name = "txtsubtype";
+            this.txtsubtype.Size = new System.Drawing.Size(100, 20);
+            this.txtsubtype.TabIndex = 93;
+            this.txtsubtype.Visible = false;
             // 
             // label11
             // 
@@ -199,6 +271,15 @@
             this.label11.Size = new System.Drawing.Size(77, 16);
             this.label11.TabIndex = 61;
             this.label11.Text = "SEMESTRE:";
+            // 
+            // txtacaterm
+            // 
+            this.txtacaterm.Enabled = false;
+            this.txtacaterm.Location = new System.Drawing.Point(333, 136);
+            this.txtacaterm.Name = "txtacaterm";
+            this.txtacaterm.Size = new System.Drawing.Size(100, 20);
+            this.txtacaterm.TabIndex = 92;
+            this.txtacaterm.Visible = false;
             // 
             // txtaño2
             // 
@@ -221,6 +302,7 @@
             // cbgrupos
             // 
             this.cbgrupos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
+            this.cbgrupos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbgrupos.Enabled = false;
             this.cbgrupos.ForeColor = System.Drawing.SystemColors.Info;
             this.cbgrupos.FormattingEnabled = true;
@@ -236,14 +318,6 @@
             this.txtcodasig.Name = "txtcodasig";
             this.txtcodasig.Size = new System.Drawing.Size(100, 20);
             this.txtcodasig.TabIndex = 57;
-            // 
-            // txtasignatura
-            // 
-            this.txtasignatura.Enabled = false;
-            this.txtasignatura.Location = new System.Drawing.Point(399, 94);
-            this.txtasignatura.Name = "txtasignatura";
-            this.txtasignatura.Size = new System.Drawing.Size(367, 20);
-            this.txtasignatura.TabIndex = 55;
             // 
             // label9
             // 
@@ -282,7 +356,7 @@
             // btnmostrarlista
             // 
             this.btnmostrarlista.BackColor = System.Drawing.Color.Transparent;
-            this.btnmostrarlista.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnmostrarlista.BackgroundImage")));
+            this.btnmostrarlista.BackgroundImage = global::UNCSM.Properties.Resources.MOSTRAR;
             this.btnmostrarlista.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnmostrarlista.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnmostrarlista.Enabled = false;
@@ -350,12 +424,14 @@
             // 
             // panel3
             // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel3.Controls.Add(this.dataGridLista);
-            this.panel3.Location = new System.Drawing.Point(166, 338);
+            this.panel3.Location = new System.Drawing.Point(13, 338);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(724, 222);
+            this.panel3.Size = new System.Drawing.Size(1001, 222);
             this.panel3.TabIndex = 44;
             // 
             // dataGridLista
@@ -365,59 +441,63 @@
             this.dataGridLista.AllowUserToDeleteRows = false;
             this.dataGridLista.AllowUserToResizeColumns = false;
             this.dataGridLista.AllowUserToResizeRows = false;
-            this.dataGridLista.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridLista.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridLista.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridLista.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridLista.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridLista.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridLista.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.dataGridLista.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridLista.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridLista.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridLista.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridLista.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridLista.EnableHeadersVisualStyles = false;
             this.dataGridLista.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
             this.dataGridLista.Location = new System.Drawing.Point(8, 5);
             this.dataGridLista.MultiSelect = false;
             this.dataGridLista.Name = "dataGridLista";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridLista.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridLista.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridLista.RowHeadersVisible = false;
             this.dataGridLista.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(219)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridLista.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(219)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridLista.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridLista.Size = new System.Drawing.Size(703, 205);
+            this.dataGridLista.Size = new System.Drawing.Size(982, 205);
             this.dataGridLista.TabIndex = 44;
+            this.dataGridLista.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridLista_CellValueChanged);
+            this.dataGridLista.CurrentCellDirtyStateChanged += new System.EventHandler(this.dataGridLista_CurrentCellDirtyStateChanged);
             // 
             // btnactas
             // 
             this.btnactas.BackColor = System.Drawing.Color.Transparent;
-            this.btnactas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnactas.BackgroundImage")));
+            this.btnactas.BackgroundImage = global::UNCSM.Properties.Resources.acta;
             this.btnactas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnactas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnactas.Enabled = false;
@@ -426,7 +506,7 @@
             this.btnactas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnactas.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnactas.ForeColor = System.Drawing.Color.Transparent;
-            this.btnactas.Location = new System.Drawing.Point(649, 566);
+            this.btnactas.Location = new System.Drawing.Point(434, 566);
             this.btnactas.Name = "btnactas";
             this.btnactas.Size = new System.Drawing.Size(146, 53);
             this.btnactas.TabIndex = 46;
@@ -436,7 +516,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(403, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(309, 5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(58, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -446,7 +526,7 @@
             // btnvalidar
             // 
             this.btnvalidar.BackColor = System.Drawing.Color.Transparent;
-            this.btnvalidar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnvalidar.BackgroundImage")));
+            this.btnvalidar.BackgroundImage = global::UNCSM.Properties.Resources.validat;
             this.btnvalidar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnvalidar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnvalidar.Enabled = false;
@@ -455,7 +535,7 @@
             this.btnvalidar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnvalidar.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnvalidar.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnvalidar.Location = new System.Drawing.Point(289, 566);
+            this.btnvalidar.Location = new System.Drawing.Point(74, 566);
             this.btnvalidar.Name = "btnvalidar";
             this.btnvalidar.Size = new System.Drawing.Size(146, 53);
             this.btnvalidar.TabIndex = 45;
@@ -474,19 +554,59 @@
             this.btnnotas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnnotas.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnnotas.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnnotas.Location = new System.Drawing.Point(469, 566);
+            this.btnnotas.Location = new System.Drawing.Point(249, 566);
             this.btnnotas.Name = "btnnotas";
-            this.btnnotas.Size = new System.Drawing.Size(146, 53);
+            this.btnnotas.Size = new System.Drawing.Size(151, 53);
             this.btnnotas.TabIndex = 43;
             this.btnnotas.UseVisualStyleBackColor = false;
             this.btnnotas.Click += new System.EventHandler(this.btnnotas_Click);
+            // 
+            // btnregistro
+            // 
+            this.btnregistro.BackColor = System.Drawing.Color.Transparent;
+            this.btnregistro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnregistro.BackgroundImage")));
+            this.btnregistro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnregistro.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnregistro.Enabled = false;
+            this.btnregistro.FlatAppearance.BorderSize = 0;
+            this.btnregistro.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.btnregistro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnregistro.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnregistro.ForeColor = System.Drawing.Color.Transparent;
+            this.btnregistro.Location = new System.Drawing.Point(774, 564);
+            this.btnregistro.Name = "btnregistro";
+            this.btnregistro.Size = new System.Drawing.Size(126, 53);
+            this.btnregistro.TabIndex = 47;
+            this.btnregistro.UseVisualStyleBackColor = false;
+            this.btnregistro.Click += new System.EventHandler(this.btnregistro_Click);
+            // 
+            // btnespecial
+            // 
+            this.btnespecial.BackColor = System.Drawing.Color.Transparent;
+            this.btnespecial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnespecial.BackgroundImage")));
+            this.btnespecial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnespecial.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnespecial.Enabled = false;
+            this.btnespecial.FlatAppearance.BorderSize = 0;
+            this.btnespecial.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.btnespecial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnespecial.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnespecial.ForeColor = System.Drawing.Color.Transparent;
+            this.btnespecial.Location = new System.Drawing.Point(598, 564);
+            this.btnespecial.Name = "btnespecial";
+            this.btnespecial.Size = new System.Drawing.Size(146, 53);
+            this.btnespecial.TabIndex = 48;
+            this.btnespecial.UseVisualStyleBackColor = false;
+            this.btnespecial.Click += new System.EventHandler(this.btnespecial_Click);
             // 
             // Frm_Calificaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LavenderBlush;
+            this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(1026, 629);
+            this.Controls.Add(this.btnespecial);
+            this.Controls.Add(this.btnregistro);
             this.Controls.Add(this.btnactas);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnvalidar);
@@ -527,7 +647,6 @@
         private System.Windows.Forms.Button btnmostrarlista;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtasignatura;
         private System.Windows.Forms.TextBox txtturno;
         private System.Windows.Forms.TextBox txtcarrera;
         private System.Windows.Forms.TextBox txtareaconocimiento;
@@ -544,5 +663,14 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btnvalidar;
         private System.Windows.Forms.Button btnactas;
+        private System.Windows.Forms.TextBox txtseccion;
+        private System.Windows.Forms.TextBox txtsubtype;
+        private System.Windows.Forms.TextBox txtacaterm;
+        private System.Windows.Forms.TextBox txt_codcarrera;
+        private System.Windows.Forms.TextBox txt_codarea;
+        private System.Windows.Forms.Button btnregistro;
+        private System.Windows.Forms.TextBox txtsection;
+        private System.Windows.Forms.ComboBox cbasignatura;
+        private System.Windows.Forms.Button btnespecial;
     }
 }

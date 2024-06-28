@@ -160,3 +160,48 @@ C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Sistema-UNCSM-Desktop\Capa Negocio\obj\
 C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.csproj.CopyComplete
 C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.dll
 C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.pdb
+C:\Repositorio\mas funciones(actual)\Sistema-UNCSM-Desktop\Capa Negocio\bin\Debug\Capa Negocio.dll
+C:\Repositorio\mas funciones(actual)\Sistema-UNCSM-Desktop\Capa Negocio\bin\Debug\Capa Negocio.pdb
+C:\Repositorio\mas funciones(actual)\Sistema-UNCSM-Desktop\Capa Negocio\bin\Debug\Capa Datos.dll
+C:\Repositorio\mas funciones(actual)\Sistema-UNCSM-Desktop\Capa Negocio\bin\Debug\Capa Datos.pdb
+C:\Repositorio\mas funciones(actual)\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.csprojAssemblyReference.cache
+C:\Repositorio\mas funciones(actual)\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.csproj.CoreCompileInputs.cache
+C:\Repositorio\mas funciones(actual)\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.csproj.CopyComplete
+C:\Repositorio\mas funciones(actual)\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.dll
+C:\Repositorio\mas funciones(actual)\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.pdb
+E:\SISTEMA DE NOTAS\SISTEMA DE NOTAS\Sistema_Notas_Producción\Sistema-UNCSM-Desktop\Capa Negocio\bin\Debug\Capa Negocio.dll
+E:\SISTEMA DE NOTAS\SISTEMA DE NOTAS\Sistema_Notas_Producción\Sistema-UNCSM-Desktop\Capa Negocio\bin\Debug\Capa Negocio.pdb
+E:\SISTEMA DE NOTAS\SISTEMA DE NOTAS\Sistema_Notas_Producción\Sistema-UNCSM-Desktop\Capa Negocio\bin\Debug\Capa Datos.dll
+E:\SISTEMA DE NOTAS\SISTEMA DE NOTAS\Sistema_Notas_Producción\Sistema-UNCSM-Desktop\Capa Negocio\bin\Debug\Capa Datos.pdb
+E:\SISTEMA DE NOTAS\SISTEMA DE NOTAS\Sistema_Notas_Producción\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.csprojAssemblyReference.cache
+E:\SISTEMA DE NOTAS\SISTEMA DE NOTAS\Sistema_Notas_Producción\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.csproj.CoreCompileInputs.cache
+E:\SISTEMA DE NOTAS\SISTEMA DE NOTAS\Sistema_Notas_Producción\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.csproj.CopyComplete
+E:\SISTEMA DE NOTAS\SISTEMA DE NOTAS\Sistema_Notas_Producción\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.dll
+E:\SISTEMA DE NOTAS\SISTEMA DE NOTAS\Sistema_Notas_Producción\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.pdb
+D:\SISTEMA DE NOTAS\SISTEMA DE NOTAS\Sistema_Notas_Producción\Sistema-UNCSM-Desktop\Capa Negocio\bin\Debug\Capa Negocio.dll
+D:\SISTEMA DE NOTAS\SISTEMA DE NOTAS\Sistema_Notas_Producción\Sistema-UNCSM-Desktop\Capa Negocio\bin\Debug\Capa Negocio.pdb
+D:\SISTEMA DE NOTAS\SISTEMA DE NOTAS\Sistema_Notas_Producción\Sistema-UNCSM-Desktop\Capa Negocio\bin\Debug\Capa Datos.dll
+D:\SISTEMA DE NOTAS\SISTEMA DE NOTAS\Sistema_Notas_Producción\Sistema-UNCSM-Desktop\Capa Negocio\bin\Debug\Capa Datos.pdb
+D:\SISTEMA DE NOTAS\SISTEMA DE NOTAS\Sistema_Notas_Producción\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.csprojAssemblyReference.cache
+D:\SISTEMA DE NOTAS\SISTEMA DE NOTAS\Sistema_Notas_Producción\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.csproj.CoreCompileInputs.cache
+D:\SISTEMA DE NOTAS\SISTEMA DE NOTAS\Sistema_Notas_Producción\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.csproj.CopyComplete
+D:\SISTEMA DE NOTAS\SISTEMA DE NOTAS\Sistema_Notas_Producción\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.dll
+D:\SISTEMA DE NOTAS\SISTEMA DE NOTAS\Sistema_Notas_Producción\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.pdb
+C:\Repositorio\SISTEMA ACTUAL DE NOTAS\Sistema-UNCSM-Desktop\Capa Negocio\bin\Debug\Capa Negocio.dll
+C:\Repositorio\SISTEMA ACTUAL DE NOTAS\Sistema-UNCSM-Desktop\Capa Negocio\bin\Debug\Capa Negocio.pdb
+C:\Repositorio\SISTEMA ACTUAL DE NOTAS\Sistema-UNCSM-Desktop\Capa Negocio\bin\Debug\Capa Datos.dll
+C:\Repositorio\SISTEMA ACTUAL DE NOTAS\Sistema-UNCSM-Desktop\Capa Negocio\bin\Debug\Capa Datos.pdb
+C:\Repositorio\SISTEMA ACTUAL DE NOTAS\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.csprojAssemblyReference.cache
+C:\Repositorio\SISTEMA ACTUAL DE NOTAS\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.csproj.CoreCompileInputs.cache
+C:\Repositorio\SISTEMA ACTUAL DE NOTAS\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.csproj.CopyComplete
+C:\Repositorio\SISTEMA ACTUAL DE NOTAS\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.dll
+C:\Repositorio\SISTEMA ACTUAL DE NOTAS\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.pdb
+C:\Repositorio\SISTEMA ACTUAL DE NOTAS\el sistema actual\Sistema-UNCSM-Desktop\Capa Negocio\bin\Debug\Capa Negocio.dll
+C:\Repositorio\SISTEMA ACTUAL DE NOTAS\el sistema actual\Sistema-UNCSM-Desktop\Capa Negocio\bin\Debug\Capa Negocio.pdb
+C:\Repositorio\SISTEMA ACTUAL DE NOTAS\el sistema actual\Sistema-UNCSM-Desktop\Capa Negocio\bin\Debug\Capa Datos.dll
+C:\Repositorio\SISTEMA ACTUAL DE NOTAS\el sistema actual\Sistema-UNCSM-Desktop\Capa Negocio\bin\Debug\Capa Datos.pdb
+C:\Repositorio\SISTEMA ACTUAL DE NOTAS\el sistema actual\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.csprojAssemblyReference.cache
+C:\Repositorio\SISTEMA ACTUAL DE NOTAS\el sistema actual\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.csproj.CoreCompileInputs.cache
+C:\Repositorio\SISTEMA ACTUAL DE NOTAS\el sistema actual\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.csproj.CopyComplete
+C:\Repositorio\SISTEMA ACTUAL DE NOTAS\el sistema actual\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.dll
+C:\Repositorio\SISTEMA ACTUAL DE NOTAS\el sistema actual\Sistema-UNCSM-Desktop\Capa Negocio\obj\Debug\Capa Negocio.pdb

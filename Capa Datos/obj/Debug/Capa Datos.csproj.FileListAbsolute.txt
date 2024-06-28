@@ -92,3 +92,35 @@ C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Sistema-UNCSM-Desktop\Capa Datos\obj\De
 C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Sistema-UNCSM-Desktop\Capa Datos\obj\Debug\Capa Datos.dll
 C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Sistema-UNCSM-Desktop\Capa Datos\obj\Debug\Capa Datos.pdb
 C:\Users\UNCSM-SISTEMAS\Documents\GitHub\Sistema-UNCSM-Desktop\Capa Datos\obj\Debug\Capa Datos.csprojAssemblyReference.cache
+C:\Repositorio\mas funciones(actual)\Sistema-UNCSM-Desktop\Capa Datos\bin\Debug\Capa Datos.dll
+C:\Repositorio\mas funciones(actual)\Sistema-UNCSM-Desktop\Capa Datos\bin\Debug\Capa Datos.pdb
+C:\Repositorio\mas funciones(actual)\Sistema-UNCSM-Desktop\Capa Datos\obj\Debug\Capa Datos.csprojAssemblyReference.cache
+C:\Repositorio\mas funciones(actual)\Sistema-UNCSM-Desktop\Capa Datos\obj\Debug\Capa Datos.csproj.CoreCompileInputs.cache
+C:\Repositorio\mas funciones(actual)\Sistema-UNCSM-Desktop\Capa Datos\obj\Debug\Capa Datos.dll
+C:\Repositorio\mas funciones(actual)\Sistema-UNCSM-Desktop\Capa Datos\obj\Debug\Capa Datos.pdb
+C:\Repositorio\mas funciones(actual)\Sistema-UNCSM-Desktop\Capa Datos\obj\Debug\Capa_Datos.Properties.Resources.resources
+C:\Repositorio\mas funciones(actual)\Sistema-UNCSM-Desktop\Capa Datos\obj\Debug\Capa Datos.csproj.GenerateResource.cache
+D:\SISTEMA DE NOTAS\SISTEMA DE NOTAS\Sistema_Notas_Producción\Sistema-UNCSM-Desktop\Capa Datos\bin\Debug\Capa Datos.dll
+D:\SISTEMA DE NOTAS\SISTEMA DE NOTAS\Sistema_Notas_Producción\Sistema-UNCSM-Desktop\Capa Datos\bin\Debug\Capa Datos.pdb
+D:\SISTEMA DE NOTAS\SISTEMA DE NOTAS\Sistema_Notas_Producción\Sistema-UNCSM-Desktop\Capa Datos\obj\Debug\Capa Datos.csprojAssemblyReference.cache
+D:\SISTEMA DE NOTAS\SISTEMA DE NOTAS\Sistema_Notas_Producción\Sistema-UNCSM-Desktop\Capa Datos\obj\Debug\Capa_Datos.Properties.Resources.resources
+D:\SISTEMA DE NOTAS\SISTEMA DE NOTAS\Sistema_Notas_Producción\Sistema-UNCSM-Desktop\Capa Datos\obj\Debug\Capa Datos.csproj.GenerateResource.cache
+D:\SISTEMA DE NOTAS\SISTEMA DE NOTAS\Sistema_Notas_Producción\Sistema-UNCSM-Desktop\Capa Datos\obj\Debug\Capa Datos.csproj.CoreCompileInputs.cache
+D:\SISTEMA DE NOTAS\SISTEMA DE NOTAS\Sistema_Notas_Producción\Sistema-UNCSM-Desktop\Capa Datos\obj\Debug\Capa Datos.dll
+D:\SISTEMA DE NOTAS\SISTEMA DE NOTAS\Sistema_Notas_Producción\Sistema-UNCSM-Desktop\Capa Datos\obj\Debug\Capa Datos.pdb
+C:\Repositorio\SISTEMA ACTUAL DE NOTAS\Sistema-UNCSM-Desktop\Capa Datos\bin\Debug\Capa Datos.dll
+C:\Repositorio\SISTEMA ACTUAL DE NOTAS\Sistema-UNCSM-Desktop\Capa Datos\bin\Debug\Capa Datos.pdb
+C:\Repositorio\SISTEMA ACTUAL DE NOTAS\Sistema-UNCSM-Desktop\Capa Datos\obj\Debug\Capa Datos.csprojAssemblyReference.cache
+C:\Repositorio\SISTEMA ACTUAL DE NOTAS\Sistema-UNCSM-Desktop\Capa Datos\obj\Debug\Capa_Datos.Properties.Resources.resources
+C:\Repositorio\SISTEMA ACTUAL DE NOTAS\Sistema-UNCSM-Desktop\Capa Datos\obj\Debug\Capa Datos.csproj.GenerateResource.cache
+C:\Repositorio\SISTEMA ACTUAL DE NOTAS\Sistema-UNCSM-Desktop\Capa Datos\obj\Debug\Capa Datos.csproj.CoreCompileInputs.cache
+C:\Repositorio\SISTEMA ACTUAL DE NOTAS\Sistema-UNCSM-Desktop\Capa Datos\obj\Debug\Capa Datos.dll
+C:\Repositorio\SISTEMA ACTUAL DE NOTAS\Sistema-UNCSM-Desktop\Capa Datos\obj\Debug\Capa Datos.pdb
+C:\Repositorio\SISTEMA ACTUAL DE NOTAS\el sistema actual\Sistema-UNCSM-Desktop\Capa Datos\bin\Debug\Capa Datos.dll
+C:\Repositorio\SISTEMA ACTUAL DE NOTAS\el sistema actual\Sistema-UNCSM-Desktop\Capa Datos\bin\Debug\Capa Datos.pdb
+C:\Repositorio\SISTEMA ACTUAL DE NOTAS\el sistema actual\Sistema-UNCSM-Desktop\Capa Datos\obj\Debug\Capa Datos.csprojAssemblyReference.cache
+C:\Repositorio\SISTEMA ACTUAL DE NOTAS\el sistema actual\Sistema-UNCSM-Desktop\Capa Datos\obj\Debug\Capa_Datos.Properties.Resources.resources
+C:\Repositorio\SISTEMA ACTUAL DE NOTAS\el sistema actual\Sistema-UNCSM-Desktop\Capa Datos\obj\Debug\Capa Datos.csproj.GenerateResource.cache
+C:\Repositorio\SISTEMA ACTUAL DE NOTAS\el sistema actual\Sistema-UNCSM-Desktop\Capa Datos\obj\Debug\Capa Datos.csproj.CoreCompileInputs.cache
+C:\Repositorio\SISTEMA ACTUAL DE NOTAS\el sistema actual\Sistema-UNCSM-Desktop\Capa Datos\obj\Debug\Capa Datos.dll
+C:\Repositorio\SISTEMA ACTUAL DE NOTAS\el sistema actual\Sistema-UNCSM-Desktop\Capa Datos\obj\Debug\Capa Datos.pdb

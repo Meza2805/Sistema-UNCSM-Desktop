@@ -42,10 +42,29 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Panel_Menu = new System.Windows.Forms.Panel();
             this.PanelRegistroOpciones = new System.Windows.Forms.Panel();
+            this.btnrect = new System.Windows.Forms.Button();
+            this.panel30 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.panel29 = new System.Windows.Forms.Panel();
             this.btnBajaMatricula = new System.Windows.Forms.Button();
             this.btnCambiarTurnoCarrera = new System.Windows.Forms.Button();
             this.panel18 = new System.Windows.Forms.Panel();
+            this.PanelRegistroCalificaciones = new System.Windows.Forms.Panel();
+            this.panel28 = new System.Windows.Forms.Panel();
+            this.btn_extraordinario = new System.Windows.Forms.Button();
+            this.btnReingresos = new System.Windows.Forms.Button();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.btnactascalificaciones = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.btnNingreso = new System.Windows.Forms.Button();
+            this.PanelRegistroGrupos = new System.Windows.Forms.Panel();
+            this.panel27 = new System.Windows.Forms.Panel();
+            this.btngroupreingreso = new System.Windows.Forms.Button();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.btnactualizar = new System.Windows.Forms.Button();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.button10 = new System.Windows.Forms.Button();
             this.PanelRegistroUsuario = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
             this.btnCredencialesUsuario = new System.Windows.Forms.Button();
@@ -53,13 +72,17 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this.btnRegistroUsuario = new System.Windows.Forms.Button();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.PanelRegistroCalificaciones = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.btnCalificacionesActualizacion = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.btnRegistroCalificaciones = new System.Windows.Forms.Button();
+            this.PanelRegistroVistas = new System.Windows.Forms.Panel();
+            this.panel26 = new System.Windows.Forms.Panel();
+            this.panel25 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnMatriculaTurnoSexo = new System.Windows.Forms.Button();
+            this.btnMatriculaGrupo = new System.Windows.Forms.Button();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.btnMatriculaGlobal = new System.Windows.Forms.Button();
             this.PanelReportes = new System.Windows.Forms.Panel();
             this.panel19 = new System.Windows.Forms.Panel();
             this.btnRectoria = new System.Windows.Forms.Button();
@@ -67,16 +90,6 @@
             this.btnSecretrariaAcademica = new System.Windows.Forms.Button();
             this.panel23 = new System.Windows.Forms.Panel();
             this.button19 = new System.Windows.Forms.Button();
-            this.PanelRegistroVistas = new System.Windows.Forms.Panel();
-            this.btnMatriculaTurnoSexo = new System.Windows.Forms.Button();
-            this.btnMatriculaGrupo = new System.Windows.Forms.Button();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.btnMatriculaGlobal = new System.Windows.Forms.Button();
-            this.PanelRegistroGrupos = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.button10 = new System.Windows.Forms.Button();
             this.PanelReporte = new System.Windows.Forms.Panel();
             this.btnReportes = new System.Windows.Forms.Button();
             this.panel20 = new System.Windows.Forms.Panel();
@@ -104,13 +117,7 @@
             this.btnClientes = new System.Windows.Forms.Button();
             this.pcLogo = new System.Windows.Forms.PictureBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.Panel_Contenedor = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel25 = new System.Windows.Forms.Panel();
-            this.panel26 = new System.Windows.Forms.Panel();
+            this.btnreingreso = new System.Windows.Forms.Panel();
             this.Panel_superior.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_normalizar_todo)).BeginInit();
@@ -120,11 +127,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_maximizar_todo)).BeginInit();
             this.Panel_Menu.SuspendLayout();
             this.PanelRegistroOpciones.SuspendLayout();
-            this.PanelRegistroUsuario.SuspendLayout();
+            this.panel15.SuspendLayout();
             this.PanelRegistroCalificaciones.SuspendLayout();
-            this.PanelReportes.SuspendLayout();
-            this.PanelRegistroVistas.SuspendLayout();
             this.PanelRegistroGrupos.SuspendLayout();
+            this.PanelRegistroUsuario.SuspendLayout();
+            this.PanelRegistroVistas.SuspendLayout();
+            this.PanelReportes.SuspendLayout();
             this.PanelReporte.SuspendLayout();
             this.PanelVista.SuspendLayout();
             this.PanelGrupo.SuspendLayout();
@@ -262,12 +270,12 @@
             // Panel_Menu
             // 
             this.Panel_Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(127)))), ((int)(((byte)(180)))));
-            this.Panel_Menu.Controls.Add(this.PanelRegistroVistas);
-            this.Panel_Menu.Controls.Add(this.PanelRegistroUsuario);
             this.Panel_Menu.Controls.Add(this.PanelRegistroOpciones);
             this.Panel_Menu.Controls.Add(this.PanelRegistroCalificaciones);
-            this.Panel_Menu.Controls.Add(this.PanelReportes);
             this.Panel_Menu.Controls.Add(this.PanelRegistroGrupos);
+            this.Panel_Menu.Controls.Add(this.PanelRegistroUsuario);
+            this.Panel_Menu.Controls.Add(this.PanelRegistroVistas);
+            this.Panel_Menu.Controls.Add(this.PanelReportes);
             this.Panel_Menu.Controls.Add(this.PanelReporte);
             this.Panel_Menu.Controls.Add(this.PanelVista);
             this.Panel_Menu.Controls.Add(this.PanelGrupo);
@@ -291,24 +299,64 @@
             // PanelRegistroOpciones
             // 
             this.PanelRegistroOpciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(148)))), ((int)(((byte)(218)))));
+            this.PanelRegistroOpciones.Controls.Add(this.btnrect);
+            this.PanelRegistroOpciones.Controls.Add(this.panel30);
             this.PanelRegistroOpciones.Controls.Add(this.panel15);
             this.PanelRegistroOpciones.Controls.Add(this.btnBajaMatricula);
             this.PanelRegistroOpciones.Controls.Add(this.btnCambiarTurnoCarrera);
             this.PanelRegistroOpciones.Controls.Add(this.panel18);
             this.PanelRegistroOpciones.ForeColor = System.Drawing.Color.Blue;
-            this.PanelRegistroOpciones.Location = new System.Drawing.Point(11, 442);
+            this.PanelRegistroOpciones.Location = new System.Drawing.Point(9, 442);
             this.PanelRegistroOpciones.Name = "PanelRegistroOpciones";
-            this.PanelRegistroOpciones.Size = new System.Drawing.Size(168, 31);
+            this.PanelRegistroOpciones.Size = new System.Drawing.Size(168, 28);
             this.PanelRegistroOpciones.TabIndex = 26;
             this.PanelRegistroOpciones.Visible = false;
+            // 
+            // btnrect
+            // 
+            this.btnrect.BackColor = System.Drawing.Color.Transparent;
+            this.btnrect.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnrect.FlatAppearance.BorderSize = 0;
+            this.btnrect.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.btnrect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnrect.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnrect.ForeColor = System.Drawing.Color.White;
+            this.btnrect.Image = ((System.Drawing.Image)(resources.GetObject("btnrect.Image")));
+            this.btnrect.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnrect.Location = new System.Drawing.Point(14, 96);
+            this.btnrect.Name = "btnrect";
+            this.btnrect.Size = new System.Drawing.Size(171, 38);
+            this.btnrect.TabIndex = 30;
+            this.btnrect.Text = "Calificaciones";
+            this.btnrect.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnrect.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnrect.UseVisualStyleBackColor = false;
+            this.btnrect.Click += new System.EventHandler(this.button1_Click_4);
+            // 
+            // panel30
+            // 
+            this.panel30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel30.Location = new System.Drawing.Point(3, 96);
+            this.panel30.Name = "panel30";
+            this.panel30.Size = new System.Drawing.Size(12, 40);
+            this.panel30.TabIndex = 29;
             // 
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel15.Controls.Add(this.panel29);
             this.panel15.Location = new System.Drawing.Point(3, 49);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(12, 40);
             this.panel15.TabIndex = 27;
+            // 
+            // panel29
+            // 
+            this.panel29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel29.Location = new System.Drawing.Point(0, 0);
+            this.panel29.Name = "panel29";
+            this.panel29.Size = new System.Drawing.Size(12, 40);
+            this.panel29.TabIndex = 28;
             // 
             // btnBajaMatricula
             // 
@@ -358,6 +406,237 @@
             this.panel18.Size = new System.Drawing.Size(12, 40);
             this.panel18.TabIndex = 9;
             // 
+            // PanelRegistroCalificaciones
+            // 
+            this.PanelRegistroCalificaciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(148)))), ((int)(((byte)(218)))));
+            this.PanelRegistroCalificaciones.Controls.Add(this.panel28);
+            this.PanelRegistroCalificaciones.Controls.Add(this.btn_extraordinario);
+            this.PanelRegistroCalificaciones.Controls.Add(this.btnReingresos);
+            this.PanelRegistroCalificaciones.Controls.Add(this.panel24);
+            this.PanelRegistroCalificaciones.Controls.Add(this.panel7);
+            this.PanelRegistroCalificaciones.Controls.Add(this.btnactascalificaciones);
+            this.PanelRegistroCalificaciones.Controls.Add(this.panel5);
+            this.PanelRegistroCalificaciones.Controls.Add(this.btnNingreso);
+            this.PanelRegistroCalificaciones.ForeColor = System.Drawing.Color.Blue;
+            this.PanelRegistroCalificaciones.Location = new System.Drawing.Point(4, 477);
+            this.PanelRegistroCalificaciones.Name = "PanelRegistroCalificaciones";
+            this.PanelRegistroCalificaciones.Size = new System.Drawing.Size(191, 22);
+            this.PanelRegistroCalificaciones.TabIndex = 24;
+            this.PanelRegistroCalificaciones.Visible = false;
+            // 
+            // panel28
+            // 
+            this.panel28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel28.Location = new System.Drawing.Point(2, 89);
+            this.panel28.Name = "panel28";
+            this.panel28.Size = new System.Drawing.Size(12, 38);
+            this.panel28.TabIndex = 29;
+            // 
+            // btn_extraordinario
+            // 
+            this.btn_extraordinario.BackColor = System.Drawing.Color.Transparent;
+            this.btn_extraordinario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_extraordinario.FlatAppearance.BorderSize = 0;
+            this.btn_extraordinario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.btn_extraordinario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_extraordinario.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_extraordinario.ForeColor = System.Drawing.Color.White;
+            this.btn_extraordinario.Image = ((System.Drawing.Image)(resources.GetObject("btn_extraordinario.Image")));
+            this.btn_extraordinario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_extraordinario.Location = new System.Drawing.Point(20, 89);
+            this.btn_extraordinario.Name = "btn_extraordinario";
+            this.btn_extraordinario.Size = new System.Drawing.Size(171, 38);
+            this.btn_extraordinario.TabIndex = 28;
+            this.btn_extraordinario.Text = "Equivalencias y Extraordinarios";
+            this.btn_extraordinario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_extraordinario.UseVisualStyleBackColor = false;
+            this.btn_extraordinario.Click += new System.EventHandler(this.button1_Click_3);
+            // 
+            // btnReingresos
+            // 
+            this.btnReingresos.BackColor = System.Drawing.Color.Transparent;
+            this.btnReingresos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReingresos.FlatAppearance.BorderSize = 0;
+            this.btnReingresos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.btnReingresos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReingresos.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReingresos.ForeColor = System.Drawing.Color.White;
+            this.btnReingresos.Image = global::UNCSM.Properties.Resources.registro_en_linea;
+            this.btnReingresos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReingresos.Location = new System.Drawing.Point(20, 47);
+            this.btnReingresos.Name = "btnReingresos";
+            this.btnReingresos.Size = new System.Drawing.Size(138, 38);
+            this.btnReingresos.TabIndex = 28;
+            this.btnReingresos.Text = "Reingreso";
+            this.btnReingresos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnReingresos.UseVisualStyleBackColor = false;
+            this.btnReingresos.Click += new System.EventHandler(this.button1_Click_2);
+            // 
+            // panel24
+            // 
+            this.panel24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel24.Location = new System.Drawing.Point(2, 133);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(12, 38);
+            this.panel24.TabIndex = 27;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel7.Location = new System.Drawing.Point(2, 47);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(12, 38);
+            this.panel7.TabIndex = 26;
+            // 
+            // btnactascalificaciones
+            // 
+            this.btnactascalificaciones.BackColor = System.Drawing.Color.Transparent;
+            this.btnactascalificaciones.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnactascalificaciones.FlatAppearance.BorderSize = 0;
+            this.btnactascalificaciones.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.btnactascalificaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnactascalificaciones.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnactascalificaciones.ForeColor = System.Drawing.Color.White;
+            this.btnactascalificaciones.Image = ((System.Drawing.Image)(resources.GetObject("btnactascalificaciones.Image")));
+            this.btnactascalificaciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnactascalificaciones.Location = new System.Drawing.Point(20, 133);
+            this.btnactascalificaciones.Name = "btnactascalificaciones";
+            this.btnactascalificaciones.Size = new System.Drawing.Size(171, 38);
+            this.btnactascalificaciones.TabIndex = 25;
+            this.btnactascalificaciones.Text = "Reportes de Calificaciones";
+            this.btnactascalificaciones.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnactascalificaciones.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnactascalificaciones.UseVisualStyleBackColor = false;
+            this.btnactascalificaciones.Click += new System.EventHandler(this.btnCalificacionesActualizacion_Click);
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel5.Location = new System.Drawing.Point(2, 3);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(12, 38);
+            this.panel5.TabIndex = 24;
+            // 
+            // btnNingreso
+            // 
+            this.btnNingreso.BackColor = System.Drawing.Color.Transparent;
+            this.btnNingreso.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNingreso.FlatAppearance.BorderSize = 0;
+            this.btnNingreso.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.btnNingreso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNingreso.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNingreso.ForeColor = System.Drawing.Color.White;
+            this.btnNingreso.Image = global::UNCSM.Properties.Resources.registro_en_linea;
+            this.btnNingreso.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNingreso.Location = new System.Drawing.Point(20, 3);
+            this.btnNingreso.Name = "btnNingreso";
+            this.btnNingreso.Size = new System.Drawing.Size(153, 38);
+            this.btnNingreso.TabIndex = 23;
+            this.btnNingreso.Text = "Nuevo Ingreso";
+            this.btnNingreso.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnNingreso.UseVisualStyleBackColor = false;
+            this.btnNingreso.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // PanelRegistroGrupos
+            // 
+            this.PanelRegistroGrupos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(148)))), ((int)(((byte)(218)))));
+            this.PanelRegistroGrupos.Controls.Add(this.panel27);
+            this.PanelRegistroGrupos.Controls.Add(this.btngroupreingreso);
+            this.PanelRegistroGrupos.Controls.Add(this.panel10);
+            this.PanelRegistroGrupos.Controls.Add(this.btnactualizar);
+            this.PanelRegistroGrupos.Controls.Add(this.panel13);
+            this.PanelRegistroGrupos.Controls.Add(this.button10);
+            this.PanelRegistroGrupos.ForeColor = System.Drawing.Color.Blue;
+            this.PanelRegistroGrupos.Location = new System.Drawing.Point(10, 505);
+            this.PanelRegistroGrupos.Name = "PanelRegistroGrupos";
+            this.PanelRegistroGrupos.Size = new System.Drawing.Size(171, 23);
+            this.PanelRegistroGrupos.TabIndex = 25;
+            this.PanelRegistroGrupos.Visible = false;
+            this.PanelRegistroGrupos.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
+            // 
+            // panel27
+            // 
+            this.panel27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel27.Location = new System.Drawing.Point(6, 92);
+            this.panel27.Name = "panel27";
+            this.panel27.Size = new System.Drawing.Size(12, 38);
+            this.panel27.TabIndex = 26;
+            // 
+            // btngroupreingreso
+            // 
+            this.btngroupreingreso.BackColor = System.Drawing.Color.Transparent;
+            this.btngroupreingreso.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btngroupreingreso.FlatAppearance.BorderSize = 0;
+            this.btngroupreingreso.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.btngroupreingreso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btngroupreingreso.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btngroupreingreso.ForeColor = System.Drawing.Color.White;
+            this.btngroupreingreso.Image = global::UNCSM.Properties.Resources.registro_en_linea;
+            this.btngroupreingreso.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btngroupreingreso.Location = new System.Drawing.Point(24, 49);
+            this.btngroupreingreso.Name = "btngroupreingreso";
+            this.btngroupreingreso.Size = new System.Drawing.Size(138, 38);
+            this.btngroupreingreso.TabIndex = 25;
+            this.btngroupreingreso.Text = "ReIngreso";
+            this.btngroupreingreso.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btngroupreingreso.UseVisualStyleBackColor = false;
+            this.btngroupreingreso.Click += new System.EventHandler(this.button5_Click_2);
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel10.Location = new System.Drawing.Point(6, 47);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(12, 38);
+            this.panel10.TabIndex = 26;
+            // 
+            // btnactualizar
+            // 
+            this.btnactualizar.BackColor = System.Drawing.Color.Transparent;
+            this.btnactualizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnactualizar.FlatAppearance.BorderSize = 0;
+            this.btnactualizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.btnactualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnactualizar.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnactualizar.ForeColor = System.Drawing.Color.White;
+            this.btnactualizar.Image = global::UNCSM.Properties.Resources._17_104874;
+            this.btnactualizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnactualizar.Location = new System.Drawing.Point(21, 92);
+            this.btnactualizar.Name = "btnactualizar";
+            this.btnactualizar.Size = new System.Drawing.Size(147, 38);
+            this.btnactualizar.TabIndex = 25;
+            this.btnactualizar.Text = "Actualización";
+            this.btnactualizar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnactualizar.UseVisualStyleBackColor = false;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel13.Location = new System.Drawing.Point(6, 3);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(12, 38);
+            this.panel13.TabIndex = 24;
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.Transparent;
+            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button10.FlatAppearance.BorderSize = 0;
+            this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.ForeColor = System.Drawing.Color.White;
+            this.button10.Image = global::UNCSM.Properties.Resources.registro_en_linea;
+            this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button10.Location = new System.Drawing.Point(24, 3);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(147, 38);
+            this.button10.TabIndex = 23;
+            this.button10.Text = "Nuevo Ingreso";
+            this.button10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
             // PanelRegistroUsuario
             // 
             this.PanelRegistroUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(148)))), ((int)(((byte)(218)))));
@@ -368,9 +647,9 @@
             this.PanelRegistroUsuario.Controls.Add(this.btnRegistroUsuario);
             this.PanelRegistroUsuario.Controls.Add(this.panel12);
             this.PanelRegistroUsuario.ForeColor = System.Drawing.Color.Blue;
-            this.PanelRegistroUsuario.Location = new System.Drawing.Point(18, 421);
+            this.PanelRegistroUsuario.Location = new System.Drawing.Point(14, 417);
             this.PanelRegistroUsuario.Name = "PanelRegistroUsuario";
-            this.PanelRegistroUsuario.Size = new System.Drawing.Size(166, 10);
+            this.PanelRegistroUsuario.Size = new System.Drawing.Size(166, 19);
             this.PanelRegistroUsuario.TabIndex = 25;
             this.PanelRegistroUsuario.Visible = false;
             // 
@@ -458,103 +737,164 @@
             this.panel12.Size = new System.Drawing.Size(12, 38);
             this.panel12.TabIndex = 9;
             // 
-            // PanelRegistroCalificaciones
+            // PanelRegistroVistas
             // 
-            this.PanelRegistroCalificaciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(148)))), ((int)(((byte)(218)))));
-            this.PanelRegistroCalificaciones.Controls.Add(this.button1);
-            this.PanelRegistroCalificaciones.Controls.Add(this.panel24);
-            this.PanelRegistroCalificaciones.Controls.Add(this.panel7);
-            this.PanelRegistroCalificaciones.Controls.Add(this.btnCalificacionesActualizacion);
-            this.PanelRegistroCalificaciones.Controls.Add(this.panel5);
-            this.PanelRegistroCalificaciones.Controls.Add(this.btnRegistroCalificaciones);
-            this.PanelRegistroCalificaciones.ForeColor = System.Drawing.Color.Blue;
-            this.PanelRegistroCalificaciones.Location = new System.Drawing.Point(3, 495);
-            this.PanelRegistroCalificaciones.Name = "PanelRegistroCalificaciones";
-            this.PanelRegistroCalificaciones.Size = new System.Drawing.Size(191, 11);
-            this.PanelRegistroCalificaciones.TabIndex = 24;
-            this.PanelRegistroCalificaciones.Visible = false;
+            this.PanelRegistroVistas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(148)))), ((int)(((byte)(218)))));
+            this.PanelRegistroVistas.Controls.Add(this.panel26);
+            this.PanelRegistroVistas.Controls.Add(this.panel25);
+            this.PanelRegistroVistas.Controls.Add(this.panel9);
+            this.PanelRegistroVistas.Controls.Add(this.panel8);
+            this.PanelRegistroVistas.Controls.Add(this.button4);
+            this.PanelRegistroVistas.Controls.Add(this.button2);
+            this.PanelRegistroVistas.Controls.Add(this.btnMatriculaTurnoSexo);
+            this.PanelRegistroVistas.Controls.Add(this.btnMatriculaGrupo);
+            this.PanelRegistroVistas.Controls.Add(this.panel21);
+            this.PanelRegistroVistas.Controls.Add(this.btnMatriculaGlobal);
+            this.PanelRegistroVistas.ForeColor = System.Drawing.Color.Blue;
+            this.PanelRegistroVistas.Location = new System.Drawing.Point(8, 534);
+            this.PanelRegistroVistas.Name = "PanelRegistroVistas";
+            this.PanelRegistroVistas.Size = new System.Drawing.Size(161, 24);
+            this.PanelRegistroVistas.TabIndex = 27;
+            this.PanelRegistroVistas.Visible = false;
             // 
-            // button1
+            // panel26
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::UNCSM.Properties.Resources.registro_en_linea;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(20, 91);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(138, 38);
-            this.button1.TabIndex = 28;
-            this.button1.Text = "Reingreso";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
+            this.panel26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel26.Location = new System.Drawing.Point(6, 279);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(12, 63);
+            this.panel26.TabIndex = 28;
             // 
-            // panel24
+            // panel25
             // 
-            this.panel24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.panel24.Location = new System.Drawing.Point(2, 91);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(12, 38);
-            this.panel24.TabIndex = 27;
+            this.panel25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel25.Location = new System.Drawing.Point(6, 210);
+            this.panel25.Name = "panel25";
+            this.panel25.Size = new System.Drawing.Size(12, 63);
+            this.panel25.TabIndex = 27;
             // 
-            // panel7
+            // panel9
             // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.panel7.Location = new System.Drawing.Point(2, 47);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(12, 38);
-            this.panel7.TabIndex = 26;
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel9.Location = new System.Drawing.Point(6, 141);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(12, 63);
+            this.panel9.TabIndex = 26;
             // 
-            // btnCalificacionesActualizacion
+            // panel8
             // 
-            this.btnCalificacionesActualizacion.BackColor = System.Drawing.Color.Transparent;
-            this.btnCalificacionesActualizacion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCalificacionesActualizacion.FlatAppearance.BorderSize = 0;
-            this.btnCalificacionesActualizacion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.btnCalificacionesActualizacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCalificacionesActualizacion.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalificacionesActualizacion.ForeColor = System.Drawing.Color.White;
-            this.btnCalificacionesActualizacion.Image = global::UNCSM.Properties.Resources._17_104874;
-            this.btnCalificacionesActualizacion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCalificacionesActualizacion.Location = new System.Drawing.Point(20, 47);
-            this.btnCalificacionesActualizacion.Name = "btnCalificacionesActualizacion";
-            this.btnCalificacionesActualizacion.Size = new System.Drawing.Size(143, 38);
-            this.btnCalificacionesActualizacion.TabIndex = 25;
-            this.btnCalificacionesActualizacion.Text = "Actualización";
-            this.btnCalificacionesActualizacion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCalificacionesActualizacion.UseVisualStyleBackColor = false;
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel8.Location = new System.Drawing.Point(6, 72);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(12, 63);
+            this.panel8.TabIndex = 25;
             // 
-            // panel5
+            // button4
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.panel5.Location = new System.Drawing.Point(2, 3);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(12, 38);
-            this.panel5.TabIndex = 24;
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Image = global::UNCSM.Properties.Resources.informe_seo;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(21, 210);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(147, 62);
+            this.button4.TabIndex = 30;
+            this.button4.Text = "Matrícula Global Reingreso";
+            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button4.UseVisualStyleBackColor = false;
             // 
-            // btnRegistroCalificaciones
+            // button2
             // 
-            this.btnRegistroCalificaciones.BackColor = System.Drawing.Color.Transparent;
-            this.btnRegistroCalificaciones.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegistroCalificaciones.FlatAppearance.BorderSize = 0;
-            this.btnRegistroCalificaciones.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.btnRegistroCalificaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegistroCalificaciones.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistroCalificaciones.ForeColor = System.Drawing.Color.White;
-            this.btnRegistroCalificaciones.Image = global::UNCSM.Properties.Resources.registro_en_linea;
-            this.btnRegistroCalificaciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegistroCalificaciones.Location = new System.Drawing.Point(20, 3);
-            this.btnRegistroCalificaciones.Name = "btnRegistroCalificaciones";
-            this.btnRegistroCalificaciones.Size = new System.Drawing.Size(153, 38);
-            this.btnRegistroCalificaciones.TabIndex = 23;
-            this.btnRegistroCalificaciones.Text = "Nuevo Ingreso";
-            this.btnRegistroCalificaciones.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnRegistroCalificaciones.UseVisualStyleBackColor = false;
-            this.btnRegistroCalificaciones.Click += new System.EventHandler(this.button2_Click_1);
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = global::UNCSM.Properties.Resources.informe_seo;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(21, 278);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(147, 70);
+            this.button2.TabIndex = 29;
+            this.button2.Text = "Matrícula Total Reingreso y Nuevo Ingreso";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_2);
+            // 
+            // btnMatriculaTurnoSexo
+            // 
+            this.btnMatriculaTurnoSexo.BackColor = System.Drawing.Color.Transparent;
+            this.btnMatriculaTurnoSexo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMatriculaTurnoSexo.FlatAppearance.BorderSize = 0;
+            this.btnMatriculaTurnoSexo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.btnMatriculaTurnoSexo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMatriculaTurnoSexo.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMatriculaTurnoSexo.ForeColor = System.Drawing.Color.White;
+            this.btnMatriculaTurnoSexo.Image = global::UNCSM.Properties.Resources.informe_seo;
+            this.btnMatriculaTurnoSexo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMatriculaTurnoSexo.Location = new System.Drawing.Point(21, 142);
+            this.btnMatriculaTurnoSexo.Name = "btnMatriculaTurnoSexo";
+            this.btnMatriculaTurnoSexo.Size = new System.Drawing.Size(147, 62);
+            this.btnMatriculaTurnoSexo.TabIndex = 27;
+            this.btnMatriculaTurnoSexo.Text = "Matrícula por Turno y Sexo Nuevo Ingreso";
+            this.btnMatriculaTurnoSexo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMatriculaTurnoSexo.UseVisualStyleBackColor = false;
+            this.btnMatriculaTurnoSexo.Click += new System.EventHandler(this.btnMatriculaTurnoSexo_Click);
+            // 
+            // btnMatriculaGrupo
+            // 
+            this.btnMatriculaGrupo.BackColor = System.Drawing.Color.Transparent;
+            this.btnMatriculaGrupo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMatriculaGrupo.FlatAppearance.BorderSize = 0;
+            this.btnMatriculaGrupo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.btnMatriculaGrupo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMatriculaGrupo.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMatriculaGrupo.ForeColor = System.Drawing.Color.White;
+            this.btnMatriculaGrupo.Image = global::UNCSM.Properties.Resources.informe_seo;
+            this.btnMatriculaGrupo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMatriculaGrupo.Location = new System.Drawing.Point(21, 72);
+            this.btnMatriculaGrupo.Name = "btnMatriculaGrupo";
+            this.btnMatriculaGrupo.Size = new System.Drawing.Size(147, 63);
+            this.btnMatriculaGrupo.TabIndex = 25;
+            this.btnMatriculaGrupo.Text = "Matrícula por Grupo Nuevo Ingreso";
+            this.btnMatriculaGrupo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMatriculaGrupo.UseVisualStyleBackColor = false;
+            this.btnMatriculaGrupo.Click += new System.EventHandler(this.btnMatriculaGrupo_Click);
+            // 
+            // panel21
+            // 
+            this.panel21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.panel21.Location = new System.Drawing.Point(6, 3);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(12, 63);
+            this.panel21.TabIndex = 24;
+            // 
+            // btnMatriculaGlobal
+            // 
+            this.btnMatriculaGlobal.BackColor = System.Drawing.Color.Transparent;
+            this.btnMatriculaGlobal.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMatriculaGlobal.FlatAppearance.BorderSize = 0;
+            this.btnMatriculaGlobal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
+            this.btnMatriculaGlobal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMatriculaGlobal.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMatriculaGlobal.ForeColor = System.Drawing.Color.White;
+            this.btnMatriculaGlobal.Image = global::UNCSM.Properties.Resources.informe_seo;
+            this.btnMatriculaGlobal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMatriculaGlobal.Location = new System.Drawing.Point(24, 3);
+            this.btnMatriculaGlobal.Name = "btnMatriculaGlobal";
+            this.btnMatriculaGlobal.Size = new System.Drawing.Size(144, 63);
+            this.btnMatriculaGlobal.TabIndex = 23;
+            this.btnMatriculaGlobal.Text = "Matrícula Global Nuevo Ingreso";
+            this.btnMatriculaGlobal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMatriculaGlobal.UseVisualStyleBackColor = false;
+            this.btnMatriculaGlobal.Click += new System.EventHandler(this.btnMatriculaGlobal_Click);
             // 
             // PanelReportes
             // 
@@ -653,164 +993,6 @@
             this.button19.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button19.UseVisualStyleBackColor = false;
             this.button19.Click += new System.EventHandler(this.button19_Click);
-            // 
-            // PanelRegistroVistas
-            // 
-            this.PanelRegistroVistas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(148)))), ((int)(((byte)(218)))));
-            this.PanelRegistroVistas.Controls.Add(this.panel26);
-            this.PanelRegistroVistas.Controls.Add(this.panel25);
-            this.PanelRegistroVistas.Controls.Add(this.panel9);
-            this.PanelRegistroVistas.Controls.Add(this.panel8);
-            this.PanelRegistroVistas.Controls.Add(this.button4);
-            this.PanelRegistroVistas.Controls.Add(this.button2);
-            this.PanelRegistroVistas.Controls.Add(this.btnMatriculaTurnoSexo);
-            this.PanelRegistroVistas.Controls.Add(this.btnMatriculaGrupo);
-            this.PanelRegistroVistas.Controls.Add(this.panel21);
-            this.PanelRegistroVistas.Controls.Add(this.btnMatriculaGlobal);
-            this.PanelRegistroVistas.ForeColor = System.Drawing.Color.Blue;
-            this.PanelRegistroVistas.Location = new System.Drawing.Point(8, 534);
-            this.PanelRegistroVistas.Name = "PanelRegistroVistas";
-            this.PanelRegistroVistas.Size = new System.Drawing.Size(161, 24);
-            this.PanelRegistroVistas.TabIndex = 27;
-            this.PanelRegistroVistas.Visible = false;
-            // 
-            // btnMatriculaTurnoSexo
-            // 
-            this.btnMatriculaTurnoSexo.BackColor = System.Drawing.Color.Transparent;
-            this.btnMatriculaTurnoSexo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMatriculaTurnoSexo.FlatAppearance.BorderSize = 0;
-            this.btnMatriculaTurnoSexo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.btnMatriculaTurnoSexo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMatriculaTurnoSexo.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMatriculaTurnoSexo.ForeColor = System.Drawing.Color.White;
-            this.btnMatriculaTurnoSexo.Image = global::UNCSM.Properties.Resources.informe_seo;
-            this.btnMatriculaTurnoSexo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMatriculaTurnoSexo.Location = new System.Drawing.Point(21, 142);
-            this.btnMatriculaTurnoSexo.Name = "btnMatriculaTurnoSexo";
-            this.btnMatriculaTurnoSexo.Size = new System.Drawing.Size(147, 62);
-            this.btnMatriculaTurnoSexo.TabIndex = 27;
-            this.btnMatriculaTurnoSexo.Text = "Matrícula por Turno y Sexo Nuevo Ingreso";
-            this.btnMatriculaTurnoSexo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnMatriculaTurnoSexo.UseVisualStyleBackColor = false;
-            this.btnMatriculaTurnoSexo.Click += new System.EventHandler(this.btnMatriculaTurnoSexo_Click);
-            // 
-            // btnMatriculaGrupo
-            // 
-            this.btnMatriculaGrupo.BackColor = System.Drawing.Color.Transparent;
-            this.btnMatriculaGrupo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMatriculaGrupo.FlatAppearance.BorderSize = 0;
-            this.btnMatriculaGrupo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.btnMatriculaGrupo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMatriculaGrupo.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMatriculaGrupo.ForeColor = System.Drawing.Color.White;
-            this.btnMatriculaGrupo.Image = global::UNCSM.Properties.Resources.informe_seo;
-            this.btnMatriculaGrupo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMatriculaGrupo.Location = new System.Drawing.Point(21, 72);
-            this.btnMatriculaGrupo.Name = "btnMatriculaGrupo";
-            this.btnMatriculaGrupo.Size = new System.Drawing.Size(147, 63);
-            this.btnMatriculaGrupo.TabIndex = 25;
-            this.btnMatriculaGrupo.Text = "Matrícula por Grupo Nuevo Ingreso";
-            this.btnMatriculaGrupo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnMatriculaGrupo.UseVisualStyleBackColor = false;
-            this.btnMatriculaGrupo.Click += new System.EventHandler(this.btnMatriculaGrupo_Click);
-            // 
-            // panel21
-            // 
-            this.panel21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.panel21.Location = new System.Drawing.Point(6, 3);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(12, 63);
-            this.panel21.TabIndex = 24;
-            // 
-            // btnMatriculaGlobal
-            // 
-            this.btnMatriculaGlobal.BackColor = System.Drawing.Color.Transparent;
-            this.btnMatriculaGlobal.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMatriculaGlobal.FlatAppearance.BorderSize = 0;
-            this.btnMatriculaGlobal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.btnMatriculaGlobal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMatriculaGlobal.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMatriculaGlobal.ForeColor = System.Drawing.Color.White;
-            this.btnMatriculaGlobal.Image = global::UNCSM.Properties.Resources.informe_seo;
-            this.btnMatriculaGlobal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMatriculaGlobal.Location = new System.Drawing.Point(24, 3);
-            this.btnMatriculaGlobal.Name = "btnMatriculaGlobal";
-            this.btnMatriculaGlobal.Size = new System.Drawing.Size(144, 63);
-            this.btnMatriculaGlobal.TabIndex = 23;
-            this.btnMatriculaGlobal.Text = "Matrícula Global Nuevo Ingreso";
-            this.btnMatriculaGlobal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnMatriculaGlobal.UseVisualStyleBackColor = false;
-            this.btnMatriculaGlobal.Click += new System.EventHandler(this.btnMatriculaGlobal_Click);
-            // 
-            // PanelRegistroGrupos
-            // 
-            this.PanelRegistroGrupos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(148)))), ((int)(((byte)(218)))));
-            this.PanelRegistroGrupos.Controls.Add(this.panel10);
-            this.PanelRegistroGrupos.Controls.Add(this.button9);
-            this.PanelRegistroGrupos.Controls.Add(this.panel13);
-            this.PanelRegistroGrupos.Controls.Add(this.button10);
-            this.PanelRegistroGrupos.ForeColor = System.Drawing.Color.Blue;
-            this.PanelRegistroGrupos.Location = new System.Drawing.Point(6, 512);
-            this.PanelRegistroGrupos.Name = "PanelRegistroGrupos";
-            this.PanelRegistroGrupos.Size = new System.Drawing.Size(171, 16);
-            this.PanelRegistroGrupos.TabIndex = 25;
-            this.PanelRegistroGrupos.Visible = false;
-            this.PanelRegistroGrupos.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.panel10.Location = new System.Drawing.Point(6, 47);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(12, 38);
-            this.panel10.TabIndex = 26;
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.Transparent;
-            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.White;
-            this.button9.Image = global::UNCSM.Properties.Resources._17_104874;
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.Location = new System.Drawing.Point(24, 47);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(147, 38);
-            this.button9.TabIndex = 25;
-            this.button9.Text = "Actualización";
-            this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button9.UseVisualStyleBackColor = false;
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.panel13.Location = new System.Drawing.Point(6, 3);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(12, 38);
-            this.panel13.TabIndex = 24;
-            // 
-            // button10
-            // 
-            this.button10.BackColor = System.Drawing.Color.Transparent;
-            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.Color.White;
-            this.button10.Image = global::UNCSM.Properties.Resources.registro_en_linea;
-            this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.Location = new System.Drawing.Point(24, 3);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(138, 38);
-            this.button10.TabIndex = 23;
-            this.button10.Text = "Registro";
-            this.button10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // PanelReporte
             // 
@@ -1144,93 +1326,22 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // Panel_Contenedor
+            // btnreingreso
             // 
-            this.Panel_Contenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(219)))), ((int)(((byte)(219)))));
-            this.Panel_Contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Panel_Contenedor.Location = new System.Drawing.Point(194, 28);
-            this.Panel_Contenedor.Name = "Panel_Contenedor";
-            this.Panel_Contenedor.Size = new System.Drawing.Size(1004, 641);
-            this.Panel_Contenedor.TabIndex = 5;
-            this.Panel_Contenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Contenedor_Paint);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = global::UNCSM.Properties.Resources.informe_seo;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(21, 278);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(147, 70);
-            this.button2.TabIndex = 29;
-            this.button2.Text = "Matrícula Total Reingreso y Nuevo Ingreso";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click_2);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = global::UNCSM.Properties.Resources.informe_seo;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(21, 210);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(147, 62);
-            this.button4.TabIndex = 30;
-            this.button4.Text = "Matrícula Global Reingreso";
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.panel8.Location = new System.Drawing.Point(6, 72);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(12, 63);
-            this.panel8.TabIndex = 25;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.panel9.Location = new System.Drawing.Point(6, 141);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(12, 63);
-            this.panel9.TabIndex = 26;
-            // 
-            // panel25
-            // 
-            this.panel25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.panel25.Location = new System.Drawing.Point(6, 210);
-            this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(12, 63);
-            this.panel25.TabIndex = 27;
-            // 
-            // panel26
-            // 
-            this.panel26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(141)))));
-            this.panel26.Location = new System.Drawing.Point(6, 279);
-            this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(12, 63);
-            this.panel26.TabIndex = 28;
+            this.btnreingreso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(219)))), ((int)(((byte)(219)))));
+            this.btnreingreso.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnreingreso.Location = new System.Drawing.Point(194, 28);
+            this.btnreingreso.Name = "btnreingreso";
+            this.btnreingreso.Size = new System.Drawing.Size(1004, 641);
+            this.btnreingreso.TabIndex = 5;
+            this.btnreingreso.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Contenedor_Paint);
             // 
             // Frm_Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1198, 669);
-            this.Controls.Add(this.Panel_Contenedor);
+            this.Controls.Add(this.btnreingreso);
             this.Controls.Add(this.Panel_Menu);
             this.Controls.Add(this.Panel_superior);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -1252,11 +1363,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_maximizar_todo)).EndInit();
             this.Panel_Menu.ResumeLayout(false);
             this.PanelRegistroOpciones.ResumeLayout(false);
-            this.PanelRegistroUsuario.ResumeLayout(false);
+            this.panel15.ResumeLayout(false);
             this.PanelRegistroCalificaciones.ResumeLayout(false);
-            this.PanelReportes.ResumeLayout(false);
-            this.PanelRegistroVistas.ResumeLayout(false);
             this.PanelRegistroGrupos.ResumeLayout(false);
+            this.PanelRegistroUsuario.ResumeLayout(false);
+            this.PanelRegistroVistas.ResumeLayout(false);
+            this.PanelReportes.ResumeLayout(false);
             this.PanelReporte.ResumeLayout(false);
             this.PanelVista.ResumeLayout(false);
             this.PanelGrupo.ResumeLayout(false);
@@ -1307,7 +1419,7 @@
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Panel PanelRegistroGrupos;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btnactualizar;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Panel PanelReporte;
@@ -1316,10 +1428,10 @@
         private System.Windows.Forms.Panel PanelVista;
         private System.Windows.Forms.Button btnVistas;
         private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.Panel Panel_Contenedor;
+        private System.Windows.Forms.Panel btnreingreso;
         private System.Windows.Forms.Panel PanelRegistroCalificaciones;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button btnCalificacionesActualizacion;
+        private System.Windows.Forms.Button btnactascalificaciones;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel PanelRegistroUsuario;
         private System.Windows.Forms.Panel panel14;
@@ -1346,14 +1458,21 @@
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Button btnBajaMatricula;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnReingresos;
         private System.Windows.Forms.Panel panel24;
-        private System.Windows.Forms.Button btnRegistroCalificaciones;
+        private System.Windows.Forms.Button btnNingreso;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel26;
         private System.Windows.Forms.Panel panel25;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel27;
+        private System.Windows.Forms.Button btngroupreingreso;
+        private System.Windows.Forms.Panel panel28;
+        private System.Windows.Forms.Button btn_extraordinario;
+        private System.Windows.Forms.Button btnrect;
+        private System.Windows.Forms.Panel panel30;
+        private System.Windows.Forms.Panel panel29;
     }
 }

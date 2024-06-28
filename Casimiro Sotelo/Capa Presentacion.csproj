@@ -7,14 +7,14 @@
     <ProjectGuid>{C9EA55A3-6B12-4F70-A9FF-99CF750792B2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>UNCSM</RootNamespace>
-    <AssemblyName>UNCSM</AssemblyName>
+    <AssemblyName>SISTEMA DE NOTAS</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <TargetFrameworkProfile />
-    <PublishUrl>C:\Users\UNCSM-SISTEMAS\Documents\Carpeta para Publicacion\</PublishUrl>
+    <PublishUrl>C:\Users\Mauricio Tunnermann\Documents\sistema notas\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -24,7 +24,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>44</ApplicationRevision>
+    <ApplicationRevision>76</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -62,7 +62,7 @@
     <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>icono_CSM.ico</ApplicationIcon>
+    <ApplicationIcon>calificaciones-de-los-estudiantes.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
@@ -246,6 +246,18 @@
     <Compile Include="FrmSalida.Designer.cs">
       <DependentUpon>FrmSalida.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmSecretariaAcademica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSecretariaAcademica.Designer.cs">
+      <DependentUpon>FrmSecretariaAcademica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmValidarAsignatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmValidarAsignatura.Designer.cs">
+      <DependentUpon>FrmValidarAsignatura.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Actualizar_Doc_Grupo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -288,11 +300,41 @@
     <Compile Include="Frm_Consulta.Designer.cs">
       <DependentUpon>Frm_Consulta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_Control_Calificaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Control_Calificaciones.Designer.cs">
+      <DependentUpon>Frm_Control_Calificaciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Docente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frm_Docente.Designer.cs">
       <DependentUpon>Frm_Docente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Equivalencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Equivalencias.Designer.cs">
+      <DependentUpon>Frm_Equivalencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Examen_Extraordinario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Examen_Extraordinario.Designer.cs">
+      <DependentUpon>Frm_Examen_Extraordinario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Exm_Extraordinario_Ningreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Exm_Extraordinario_Ningreso.Designer.cs">
+      <DependentUpon>Frm_Exm_Extraordinario_Ningreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Group_Reingreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Group_Reingreso.Designer.cs">
+      <DependentUpon>Frm_Group_Reingreso.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_GrupDoc.cs">
       <SubType>Form</SubType>
@@ -336,6 +378,18 @@
     <Compile Include="Frm_Mensaje_Carne.Designer.cs">
       <DependentUpon>Frm_Mensaje_Carne.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_Otras_Notas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Otras_Notas.Designer.cs">
+      <DependentUpon>Frm_Otras_Notas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Otras_Notas_Reingreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Otras_Notas_Reingreso.Designer.cs">
+      <DependentUpon>Frm_Otras_Notas_Reingreso.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_PlanAcademico.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -354,6 +408,18 @@
     <Compile Include="Frm_Reportes.Designer.cs">
       <DependentUpon>Frm_Reportes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_Ver_Acta_Calificaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Ver_Acta_Calificaciones.Designer.cs">
+      <DependentUpon>Frm_Ver_Acta_Calificaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Ver_Acta_NIngreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Ver_Acta_NIngreso.Designer.cs">
+      <DependentUpon>Frm_Ver_Acta_NIngreso.cs</DependentUpon>
+    </Compile>
     <Compile Include="Loader.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -366,11 +432,35 @@
     <Compile Include="Matricula.Designer.cs">
       <DependentUpon>Matricula.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mensaje_Advertencia2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mensaje_Advertencia2.Designer.cs">
+      <DependentUpon>Mensaje_Advertencia2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mensaje_Suscripcion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Mensaje_Suscripcion.Designer.cs">
       <DependentUpon>Mensaje_Suscripcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mensaje_Suscripcion2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mensaje_Suscripcion2.Designer.cs">
+      <DependentUpon>Mensaje_Suscripcion2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Extraordinario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Extraordinario.Designer.cs">
+      <DependentUpon>Menu_Extraordinario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Registro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Registro.Designer.cs">
+      <DependentUpon>Menu_Registro.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -397,6 +487,18 @@
     <Compile Include="Reportes\Frm_Acta_calificacion.Designer.cs">
       <DependentUpon>Frm_Acta_calificacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reportes\Frm_Acta_ExtraSuf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Acta_ExtraSuf.Designer.cs">
+      <DependentUpon>Frm_Acta_ExtraSuf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_Acta_Reingreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Acta_Reingreso.Designer.cs">
+      <DependentUpon>Frm_Acta_Reingreso.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reportes\Frm_Certificado_Notas_Driver.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -408,6 +510,24 @@
     </Compile>
     <Compile Include="Reportes\Frm_Certificado_Notas.Designer.cs">
       <DependentUpon>Frm_Certificado_Notas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_Otra_Acta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Otra_Acta.Designer.cs">
+      <DependentUpon>Frm_Otra_Acta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Frm_Otra_Acta_Reingreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Frm_Otra_Acta_Reingreso.Designer.cs">
+      <DependentUpon>Frm_Otra_Acta_Reingreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Rpt_Acta_Extraordinarios.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_Acta_Extraordinarios.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Reportes\Rpt_Boleta_Matricula.cs">
       <AutoGen>True</AutoGen>
@@ -431,6 +551,24 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Rpt_Certificado_Driver.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\Rpt_Acta_Calificacion_Reingreso.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_Acta_Calificacion_Reingreso.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\Rpt_Otra_ActaNingreso.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_Otra_ActaNingreso.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\Rpt_Otra_Acta_Reingreso.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_Otra_Acta_Reingreso.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Utilerias.cs" />
@@ -479,6 +617,12 @@
     <EmbeddedResource Include="FrmSalida.resx">
       <DependentUpon>FrmSalida.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmSecretariaAcademica.resx">
+      <DependentUpon>FrmSecretariaAcademica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmValidarAsignatura.resx">
+      <DependentUpon>FrmValidarAsignatura.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Actualizar_Doc_Grupo.resx">
       <DependentUpon>Frm_Actualizar_Doc_Grupo.cs</DependentUpon>
     </EmbeddedResource>
@@ -500,8 +644,23 @@
     <EmbeddedResource Include="Frm_Consulta.resx">
       <DependentUpon>Frm_Consulta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Control_Calificaciones.resx">
+      <DependentUpon>Frm_Control_Calificaciones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Docente.resx">
       <DependentUpon>Frm_Docente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Equivalencias.resx">
+      <DependentUpon>Frm_Equivalencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Examen_Extraordinario.resx">
+      <DependentUpon>Frm_Examen_Extraordinario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Exm_Extraordinario_Ningreso.resx">
+      <DependentUpon>Frm_Exm_Extraordinario_Ningreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Group_Reingreso.resx">
+      <DependentUpon>Frm_Group_Reingreso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_GrupDoc.resx">
       <DependentUpon>Frm_GrupDoc.cs</DependentUpon>
@@ -524,6 +683,12 @@
     <EmbeddedResource Include="Frm_Mensaje_Carne.resx">
       <DependentUpon>Frm_Mensaje_Carne.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Otras_Notas.resx">
+      <DependentUpon>Frm_Otras_Notas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Otras_Notas_Reingreso.resx">
+      <DependentUpon>Frm_Otras_Notas_Reingreso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_PlanAcademico.resx">
       <DependentUpon>Frm_PlanAcademico.cs</DependentUpon>
     </EmbeddedResource>
@@ -533,14 +698,32 @@
     <EmbeddedResource Include="Frm_Reportes.resx">
       <DependentUpon>Frm_Reportes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Ver_Acta_Calificaciones.resx">
+      <DependentUpon>Frm_Ver_Acta_Calificaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Ver_Acta_NIngreso.resx">
+      <DependentUpon>Frm_Ver_Acta_NIngreso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Loader.resx">
       <DependentUpon>Loader.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Matricula.resx">
       <DependentUpon>Matricula.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Mensaje_Advertencia2.resx">
+      <DependentUpon>Mensaje_Advertencia2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Mensaje_Suscripcion.resx">
       <DependentUpon>Mensaje_Suscripcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mensaje_Suscripcion2.resx">
+      <DependentUpon>Mensaje_Suscripcion2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Extraordinario.resx">
+      <DependentUpon>Menu_Extraordinario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Registro.resx">
+      <DependentUpon>Menu_Registro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -558,11 +741,27 @@
     <EmbeddedResource Include="Reportes\Frm_Acta_calificacion.resx">
       <DependentUpon>Frm_Acta_calificacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_Acta_ExtraSuf.resx">
+      <DependentUpon>Frm_Acta_ExtraSuf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_Acta_Reingreso.resx">
+      <DependentUpon>Frm_Acta_Reingreso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Frm_Certificado_Notas.resx">
       <DependentUpon>Frm_Certificado_Notas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Frm_Certificado_Notas_Driver.resx">
       <DependentUpon>Frm_Certificado_Notas_Driver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_Otra_Acta.resx">
+      <DependentUpon>Frm_Otra_Acta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Frm_Otra_Acta_Reingreso.resx">
+      <DependentUpon>Frm_Otra_Acta_Reingreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Rpt_Acta_Extraordinarios.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_Acta_Extraordinarios.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Rpt_Boleta_Matricula.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -578,6 +777,18 @@
     <EmbeddedResource Include="Reportes\Rpt_Certificado_Driver.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Rpt_Certificado_Driver.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Rpt_Acta_Calificacion_Reingreso.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_Acta_Calificacion_Reingreso.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Rpt_Otra_ActaNingreso.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_Otra_ActaNingreso.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Rpt_Otra_Acta_Reingreso.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_Otra_Acta_Reingreso.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -811,6 +1022,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="calificaciones-de-los-estudiantes.ico" />
     <Content Include="icono_CSM.ico" />
     <Content Include="Resources\acta.png" />
     <Content Include="Resources\actualiza.png" />
@@ -819,6 +1031,7 @@
     <None Include="Resources\vcsconflicting_934971.png" />
     <None Include="Resources\btnActualizarDatos.png" />
     <None Include="Resources\btnAgregarAsignatura.png" />
+    <None Include="Resources\base-de-datos.gif" />
     <Content Include="Resources\btnBajaMatriculaEstudiantes.png" />
     <Content Include="Resources\btnBajaMatriculaEstudiantes1.png" />
     <None Include="Resources\btnBuscarAsignatura.png" />
@@ -845,19 +1058,27 @@
     </None>
     <None Include="Resources\Done.gif" />
     <None Include="Resources\Completado.gif" />
+    <Content Include="Resources\digitador.png" />
+    <Content Include="Resources\docente.png" />
     <Content Include="Resources\gdatos1.png" />
     <Content Include="Resources\gdatos2.png" />
     <Content Include="Resources\grupos.png" />
+    <None Include="Resources\guardar.gif" />
     <Content Include="Resources\guardar.png" />
     <Content Include="Resources\lapiz.png" />
     <None Include="Resources\Loading1.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Resources\limpieza-de-datos.png" />
+    <None Include="Resources\LOGO UCM OFICIAL.png" />
     <Content Include="Resources\logo.ico" />
+    <None Include="Resources\LOGO_UCM_OFICIAL-removebg-preview.png" />
     <Content Include="Resources\MOSTRAR.png" />
     <None Include="Resources\Pregunta.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Resources\otro.png" />
+    <None Include="Resources\Nregistro.png" />
     <Content Include="Resources\Reportes Registro Academico.png" />
     <None Include="Resources\Reportes Registro Academico1.png" />
     <Content Include="Resources\Sonido_boton.wav" />

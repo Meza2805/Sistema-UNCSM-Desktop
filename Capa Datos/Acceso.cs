@@ -11,11 +11,11 @@ namespace Capa_Datos
     
      public class Acceso
     {
-        //private String Cadena = "Data Source=LEONELC\\SQLSERVER;Initial Catalog=campus; Integrated Security=True";
+        private String Cadena = "Data Source=LEONELC;Initial Catalog=campus; Integrated Security=True";
 
-        //private String Cadena = "Persist Security Info=False;User ID=sa;Password=R2d2sc3sc42016;Initial Catalog=campus;Server=172.16.4.101";
+        //private String Cadena = "Persist Security Info=False;User ID=sa;Password=R2d2sc3sc42016;Initial Catalog=campus;Server=172.16.3.38";
 
-        private String Cadena = "Persist Security Info=False;User ID=sa;Password=R2d2sc3sc42016;Initial Catalog=campus;Server=172.16.3.10";
+        //private String Cadena = "Persist Security Info=False;User ID=sa;Password=R2d2sc3sc42016;Initial Catalog=campus;Server=172.16.3.10";
 
         //private String Cadena = "Persist Security Info=False;User ID=sa;Password=meza93;Initial Catalog=campus;Server=DESKTOP-AE7Q4HD\\SQLSERVER_LOCAL";
         //private String Cadena = "Persist Security Info=False;User ID=sa;Password=meza93;Initial Catalog=campus;Server=DESKTOP-AE7Q4HD\\SQLSERVER_LOCAL";

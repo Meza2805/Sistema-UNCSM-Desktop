@@ -20,7 +20,7 @@ namespace UNCSM.Reportes
         
        
 
-        public Frm_Acta_calificacion(string año,string facultad, string carrera,string asignatura, string grupo, string docente)
+        public Frm_Acta_calificacion(string año,string areaConocimiento, string carrera,string asignatura, string grupo, string docente)
         {
             InitializeComponent();
 
@@ -29,8 +29,16 @@ namespace UNCSM.Reportes
             // Establecer el usuario y contraseña de la base de datos
             ConnectionInfo connectionInfo = new ConnectionInfo();
             connectionInfo.DatabaseName = "campus";
-            connectionInfo.IntegratedSecurity = true; // Utilizar autenticación de Windows
-            connectionInfo.ServerName = "LEONELC\\SQLSERVER"; // Cambiar por el nombre correcto de tu servidor SQ
+            //connectionInfo.IntegratedSecurity = true; // Utilizar autenticación de Windows
+            connectionInfo.ServerName = "172.16.3.10"; // Cambiar por el nombre correcto de tu servidor SQ
+            connectionInfo.UserID = "sa";
+            connectionInfo.Password = "R2d2sc3sc42016";
+
+
+            //ConnectionInfo connectionInfo = new ConnectionInfo();
+            //connectionInfo.DatabaseName = "campus";
+            //connectionInfo.ServerName = "LeonelC"; // Cambia por el nombre correcto de tu servidor SQL
+            //connectionInfo.IntegratedSecurity = true; // Utilizar seguridad integrada
 
             // Establecer información de conexión para cada tabla en el informe
             foreach (CrystalDecisions.CrystalReports.Engine.Table table in report.Database.Tables)
@@ -42,14 +50,34 @@ namespace UNCSM.Reportes
 
 
             report.SetParameterValue("@año", año); //ACA SE PASA EL O LOS PARAMETROS
-            report.SetParameterValue("@facultad", facultad);
+            report.SetParameterValue("@facultad", areaConocimiento);
             report.SetParameterValue("@carrera",carrera);
             report.SetParameterValue("@asignatura", asignatura);
             report.SetParameterValue("@grupo", grupo);
             report.SetParameterValue("@docente", docente);
-            Vw_calificaciones.ReportSource = report;
+            Vw_Calificaciones.ReportSource = report;
         }
-      
 
+        private void btnImprimir_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("¿Quieres exportar el Acta de Calificaciones?", "Consulta de Exportación", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                // Aquí pones el código que quieres ejecutar si el usuario elige "Sí"
+                //Console.WriteLine("La acción se ejecutará.");
+
+                Vw_Calificaciones.ExportReport();
+
+                Mensaje_Suscripcion mensaje = new Mensaje_Suscripcion();
+                mensaje.ShowDialog();
+                //RvCertificado.re;
+
+            }
+            else
+            {
+                // Aquí pones el código que quieres ejecutar si el usuario elige "No"
+                //Console.WriteLine("La acción no se ejecutará.");
+            }
+        }
     }
 }

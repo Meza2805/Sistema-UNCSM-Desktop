@@ -73,6 +73,8 @@ namespace Ginmasio
             if (ValidarCamposTab01() == true)
             {
                 btnguardar.Enabled=true;
+                mensaje01 = new Frm_Mensaje_Advertencia("Datos validados correctamente");
+                mensaje01.ShowDialog();
             }
             else
             {
@@ -153,19 +155,31 @@ namespace Ginmasio
            
             @BIRTH_DATE = Convert.ToDateTime(DtpFecha_Nac.Text);
             @INSS = txtinss.Text;
-            salida =  insertar.Insertar_Usuario(@GOVERMENT_ID, @PREFIX, @NAME01, @NAME02, @LASTNAME01, @LASTNAME02, @ID_ETNIA, @GENDER, @ID_MARITAL_STATUS, @ID_REGLIGION, @ADDRES_COMPLETE, @BIRTH_DATE, @ID_BIRTH_COUNTRY, @ID_COUNTRY_LIVE, @ID_DEPARTMENTO, @ID_MUNICIPIO, @ADDRES_MAIL, @PHONE01, @P_DESCRIPTION01, @PHONE02, @P_DESCRIPTION02, @PHONE03, @P_DESCRIPTION03, @PEOPLE_TYPE,@INSS);
-           
-            if (salida == 1)
+          
+
+            try
             {
-                mensaje.ShowDialog();
+                salida = insertar.Insertar_Usuario(@GOVERMENT_ID, @PREFIX, @NAME01, @NAME02, @LASTNAME01, @LASTNAME02, @ID_ETNIA, @GENDER, @ID_MARITAL_STATUS, @ID_REGLIGION, @ADDRES_COMPLETE, @BIRTH_DATE, @ID_BIRTH_COUNTRY, @ID_COUNTRY_LIVE, @ID_DEPARTMENTO, @ID_MUNICIPIO, @ADDRES_MAIL, @PHONE01, @P_DESCRIPTION01, @PHONE02, @P_DESCRIPTION02, @PHONE03, @P_DESCRIPTION03, @PEOPLE_TYPE, @INSS);
+
+                // Verificar el valor de salida y mostrar mensajes según corresponda
+                if (salida == 1)
+                {
+                    mensaje.ShowDialog(); // Mostrar mensaje de éxito
+                }
+                else
+                {
+                    mensaje_02.ShowDialog(); // Mostrar otro mensaje de error
+                }
             }
-            else
+            catch (Exception ex)
             {
-                mensaje_02.ShowDialog();
-            }
+                string mensajePersonalizado = "NO SE PUEDE REGISTRAR AL USUARIO, COMUNÍQUESE CON EL ÁREA DE SISTEMAS UNCSM";
+                MessageBox.Show(mensajePersonalizado);
          
+            }
+
             //MessageBox.Show("OPERACION FINALIZADA");
-         
+
             limpiar_texbox();
 
         }
@@ -254,7 +268,7 @@ namespace Ginmasio
             txtClaro.Clear();
             txtTigo.Clear();
             txtMail.Clear();
-           
+            txtinss.Clear();
 
             DtpFecha_Nac.Text = "";
             cbSexo.SelectedIndex = -1;

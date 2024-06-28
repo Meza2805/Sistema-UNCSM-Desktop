@@ -82,28 +82,75 @@ namespace Ginmasio
                     PanelVista.Enabled = true;
                     PanelReporte.Enabled = true;
                     break;
+                case 38: //Usuario docente
+                    panelCalificaciones.Enabled = true;
+                    PanelUsuario.Enabled = false;
+                    PanelOpciones.Enabled = false;
+                    PanelGrupo.Enabled = false;
+                    PanelVista.Enabled = false;
+                    PanelReporte.Enabled = false;
+                    btnNingreso.Enabled = true;
+                    btnReingresos.Enabled = false;
+                    btnactascalificaciones.Enabled = true;
+                    btn_extraordinario.Enabled = false;
+
+
+                    break;
+                case 1037: //Usuario Sec_Academicos
+                    panelCalificaciones.Enabled = true;
+                    PanelUsuario.Enabled = false;
+                    PanelOpciones.Enabled = false;
+                    PanelGrupo.Enabled = false;
+                    PanelVista.Enabled = false;
+                    PanelReporte.Enabled = false;
+                    btnCredencialesUsuario.Enabled = false;
+                    btnActualizarUsuario.Enabled = false;
+                    btnactualizar.Enabled = false;
+                    btnactascalificaciones.Enabled = true;
+                    btnNingreso.Enabled = true;
+                    btnReingresos.Enabled = false;
+                    btngroupreingreso.Enabled = false;
+                    btn_extraordinario.Enabled = true;
+
+                    break;
+                case 1038: //Usuario Estadigrafo
+                    panelCalificaciones.Enabled = false;
+                    PanelUsuario.Enabled = true;
+                    PanelOpciones.Enabled = false;
+                    PanelGrupo.Enabled = true;
+                    PanelVista.Enabled = false;
+                    PanelReporte.Enabled = false;
+                    btnCredencialesUsuario.Enabled = false;
+                    btnActualizarUsuario.Enabled = false;
+                    btnactualizar.Enabled = false;
+                    btnactascalificaciones.Enabled = false;
+                    btngroupreingreso.Enabled = true;
+                    break;
                 case 39: //Usuario Registro Academico
                     panelCalificaciones.Enabled = false;
                     PanelUsuario.Enabled = false;
-                    
+
                     if (codigo_user == "000043615") //Por Orientaciones de Secretaria Academica solo el Usuario de Bertha puede hacer baja de matricula
                     {
                         PanelOpciones.Enabled = true;
                         btnBajaMatricula.Enabled = true;
+
                     }
                     else
                     {
                         PanelOpciones.Enabled = false;
                         btnBajaMatricula.Enabled = false;
                     }
-                    
+
                     btnCambiarTurnoCarrera.Enabled = false;
+                    PanelRegistroOpciones.Enabled = true;
+                    PanelOpciones.Enabled = true;
                     PanelGrupo.Enabled = false;
                     PanelVista.Enabled = false;
                     PanelReporte.Enabled = true;
                     btnRectoria.Enabled = false;
                     btnSecretrariaAcademica.Enabled = false;
-
+                    btnrect.Enabled = true;
                     //.Enabled = false;
                     break;
                 
@@ -112,13 +159,13 @@ namespace Ginmasio
 
         private void abrirFormHijo(object frmhijo) //Metodo para cargar los formularios hijos dentro del panel contenedor
         {
-            if (this.Panel_Contenedor.Controls.Count > 0)
-                this.Panel_Contenedor.Controls.RemoveAt(0);
+            if (this.btnreingreso.Controls.Count > 0)
+                this.btnreingreso.Controls.RemoveAt(0);
             Form fh = frmhijo as Form;
             fh.TopLevel = false;
             fh.Dock = DockStyle.Fill;
-            this.Panel_Contenedor.Controls.Add(fh);
-            this.Panel_Contenedor.Tag = fh;
+            this.btnreingreso.Controls.Add(fh);
+            this.btnreingreso.Tag = fh;
             fh.Show();
         }
 
@@ -296,30 +343,30 @@ namespace Ginmasio
                 if (band_calificaciones == true)
                 {
                     PanelRegistroCalificaciones.Visible = true;
-                    PanelOpciones.Location = new Point(3, OpcionesPosicionY + 145);
-                    PanelUsuario.Location = new Point(3, UsuarioPosicionY + 145);
-                    PanelGrupo.Location = new Point(3, GrupoPosicionY + 145);
-                    PanelVista.Location = new Point(3, VistasPosicionY + 145);
-                    PanelReporte.Location = new Point(3, ReportesPosicionY + 145);
+                    PanelOpciones.Location = new Point(3, OpcionesPosicionY + 176);
+                    PanelUsuario.Location = new Point(3, UsuarioPosicionY + 176);
+                    PanelGrupo.Location = new Point(3, GrupoPosicionY + 176);
+                    PanelVista.Location = new Point(3, VistasPosicionY + 176);
+                    PanelReporte.Location = new Point(3, ReportesPosicionY + 176);
                 }
                 else
                 {
                     PanelRegistroCalificaciones.Visible = false;
-                    PanelOpciones.Location = new Point(3, OpcionesPosicionY - 145);
-                    PanelUsuario.Location = new Point(3, UsuarioPosicionY - 145);
-                    PanelGrupo.Location = new Point(3, GrupoPosicionY - 145);
-                    PanelVista.Location = new Point(3, VistasPosicionY - 145);
-                    PanelReporte.Location = new Point(3, ReportesPosicionY - 145);
+                    PanelOpciones.Location = new Point(3, OpcionesPosicionY - 176);
+                    PanelUsuario.Location = new Point(3, UsuarioPosicionY - 176);
+                    PanelGrupo.Location = new Point(3, GrupoPosicionY - 176);
+                    PanelVista.Location = new Point(3, VistasPosicionY - 176);
+                    PanelReporte.Location = new Point(3, ReportesPosicionY - 176);
                 }
             }
             else if (bandera == false && band_calificaciones == true)
             {
                 PanelRegistroCalificaciones.Visible = false;
-                PanelOpciones.Location = new Point(3, OpcionesPosicionY - 145);
-                PanelUsuario.Location = new Point(3, UsuarioPosicionY - 145);
-                PanelGrupo.Location = new Point(3, GrupoPosicionY - 145);
-                PanelVista.Location = new Point(3, VistasPosicionY - 145);
-                PanelReporte.Location = new Point(3, ReportesPosicionY - 145);
+                PanelOpciones.Location = new Point(3, OpcionesPosicionY - 176);
+                PanelUsuario.Location = new Point(3, UsuarioPosicionY - 176);
+                PanelGrupo.Location = new Point(3, GrupoPosicionY - 176);
+                PanelVista.Location = new Point(3, VistasPosicionY - 176);
+                PanelReporte.Location = new Point(3, ReportesPosicionY - 176);
                 band_calificaciones = CambiarBandera(band_calificaciones); //Funcion para cambiar el valor de la bandera
             }
 
@@ -379,27 +426,27 @@ namespace Ginmasio
                 if (band_Opciones == true)
                 {
                     PanelRegistroOpciones.Visible = true;
-                    PanelGrupo.Location = new Point(3, GrupoPosicionY + 100);
-                    PanelVista.Location = new Point(3, VistasPosicionY + 100);
-                    PanelReporte.Location = new Point(3, ReportesPosicionY + 100);
+                    PanelGrupo.Location = new Point(3, GrupoPosicionY + 141);
+                    PanelVista.Location = new Point(3, VistasPosicionY + 141);
+                    PanelReporte.Location = new Point(3, ReportesPosicionY + 141);
 
                 }
                 else
                 {
                     PanelRegistroOpciones.Visible = false;
                  
-                    PanelGrupo.Location = new Point(3, GrupoPosicionY - 100);
-                    PanelVista.Location = new Point(3, VistasPosicionY - 100);
-                    PanelReporte.Location = new Point(3, ReportesPosicionY - 100);
+                    PanelGrupo.Location = new Point(3, GrupoPosicionY - 141);
+                    PanelVista.Location = new Point(3, VistasPosicionY - 141);
+                    PanelReporte.Location = new Point(3, ReportesPosicionY - 141);
 
                 }
             }
             else if (bandera == false && band_Opciones == true)
             {
                 PanelRegistroOpciones.Visible = false;
-                PanelGrupo.Location = new Point(3, GrupoPosicionY - 100);
-                PanelVista.Location = new Point(3, VistasPosicionY - 100);
-                 PanelReporte.Location = new Point(3, ReportesPosicionY - 100);
+                PanelGrupo.Location = new Point(3, GrupoPosicionY - 141);
+                PanelVista.Location = new Point(3, VistasPosicionY - 141);
+                 PanelReporte.Location = new Point(3, ReportesPosicionY - 141);
 
                 band_Opciones = CambiarBandera(band_Opciones); //Funcion para cambiar el valor de la bandera
 
@@ -418,8 +465,8 @@ namespace Ginmasio
                 {
                     PanelRegistroGrupos.Visible = true;
                     //PanelGrupo.Location = new Point(3, GrupoPosicionY + 100);
-                    PanelVista.Location = new Point(3, VistasPosicionY + 100);
-                    PanelReporte.Location = new Point(3, ReportesPosicionY + 100);
+                    PanelVista.Location = new Point(3, VistasPosicionY + 140);
+                    PanelReporte.Location = new Point(3, ReportesPosicionY + 140);
 
                 }
                 else
@@ -427,8 +474,8 @@ namespace Ginmasio
                     PanelRegistroGrupos.Visible = false;
 
                     //PanelGrupo.Location = new Point(3, GrupoPosicionY - 100);
-                    PanelVista.Location = new Point(3, VistasPosicionY - 100);
-                    PanelReporte.Location = new Point(3, ReportesPosicionY - 100);
+                    PanelVista.Location = new Point(3, VistasPosicionY - 140);
+                    PanelReporte.Location = new Point(3, ReportesPosicionY - 140);
 
                 }
             }
@@ -437,8 +484,8 @@ namespace Ginmasio
                 PanelRegistroGrupos.Visible = false;
 
                 //PanelGrupo.Location = new Point(3, GrupoPosicionY - 100);
-                PanelVista.Location = new Point(3, VistasPosicionY - 100);
-                PanelReporte.Location = new Point(3, ReportesPosicionY - 100);
+                PanelVista.Location = new Point(3, VistasPosicionY - 140);
+                PanelReporte.Location = new Point(3, ReportesPosicionY - 140);
 
                 band_Grupos = CambiarBandera(band_Grupos); //Funcion para cambiar el valor de la bandera
 
@@ -593,7 +640,7 @@ namespace Ginmasio
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            abrirFormHijo(new Frm_Calificaciones());
+            abrirFormHijo(new Frm_Calificaciones(codigo_user));
         }
 
 
@@ -625,7 +672,7 @@ namespace Ginmasio
 
         private void button8_Click(object sender, EventArgs e)
         {
-           abrirFormHijo(new Frm_GrupDoc());
+           abrirFormHijo(new Frm_Docente());
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -641,16 +688,16 @@ namespace Ginmasio
         private void Frm_Inicio_Load(object sender, EventArgs e) //Constructor
         {
             PanelRegistroCalificaciones.Location = new Point(21, 157);
-            PanelRegistroCalificaciones.Size = new Size(191,143);
+            PanelRegistroCalificaciones.Size = new Size(191, 176);
 
             PanelRegistroUsuario.Location = new Point(21, 214);
             PanelRegistroUsuario.Size = new Size(166, 135);
 
             PanelRegistroOpciones.Location = new Point(21, 264);
-            PanelRegistroOpciones.Size = new Size(168, 100);
+            PanelRegistroOpciones.Size = new Size(168, 141);
 
             PanelRegistroGrupos.Location = new Point(21, 316);
-            PanelRegistroGrupos.Size = new Size(171, 96);
+            PanelRegistroGrupos.Size = new Size(171, 139);
 
 
             PanelRegistroVistas.Location = new Point(21, 367);
@@ -752,6 +799,36 @@ namespace Ginmasio
         {
 
         }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            abrirFormHijo(new Frm_Calificaciones_Reingreso(codigo_user));
+        }
+
+        private void button5_Click_2(object sender, EventArgs e)
+        {
+            abrirFormHijo(new Frm_Group_Reingreso());
+        }
+
+        private void btnCalificacionesActualizacion_Click(object sender, EventArgs e)
+        {
+            abrirFormHijo(new FrmSecretariaAcademica(codigo_user));
+        }
+
+        private void button1_Click_3(object sender, EventArgs e)
+        {
+            abrirFormHijo(new Menu_Extraordinario(codigo_user));
+        }
+
+        private void button1_Click_4(object sender, EventArgs e)
+        {
+            abrirFormHijo(new Menu_Registro(codigo_user));
+        }
+
+        //private void btn_otrasNotas_Click(object sender, EventArgs e)
+        //{
+        //    abrirFormHijo(new Frm_Otras_Notas());
+        //}
 
 
         //----------------COLOR Y GRIP DE RECTANGULO INFERIOR

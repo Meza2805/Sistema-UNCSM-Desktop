@@ -19,11 +19,11 @@ namespace Ginmasio
         CRUD_GCARRERA buscar_grupos = new CRUD_GCARRERA();
         campus buscar = new campus();
         campus insertar = new campus();
-        Mensaje_Suscripcion mensaje = new Mensaje_Suscripcion();
+        Mensaje_Suscripcion2 mensaje = new Mensaje_Suscripcion2();
         
         Frm_Alerta mensaje_02 = new Frm_Alerta();
         public static string @GOVERNMENT_ID, @FIRTSNAME, @MIDDLE_NAME, @LAST_NAME, @LAST_NAME02;
-        public static string @AREA_CONOCIMIENTO,@CARRERA,@TURNO,@COD_ASIG,@ASIGNATURA,@AÑO,@SEMESTRE,@GRUPO;
+        public static string @AREA_CONOCIMIENTO,@CODIGO_AREA,@CARRERA,@CODIGO_CARRERA,@TURNO,@COD_ASIG,@ASIGNATURA,@AÑO,@SEMESTRE,@GRUPO,@ACA_TERM,@SUBTYPE,@SECTION,@SECCION;
 
         public Frm_GrupDoc()
         {
@@ -44,15 +44,51 @@ namespace Ginmasio
             busqueda_insecto2();
         }
 
-        //private void btnBuscar_Click_1(object sender, EventArgs e)
-        //{
-            
-        //}
+        private void txttxtBusqueda_TextChanged(object sender, EventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
 
-        //private void btnbusgrupo_Click_1(object sender, EventArgs e)
-        //{
-        
-        //}
+            if (textBox != null)
+            {
+                // Convertir a mayúsculas sin mover el cursor
+                int selectionStart = textBox.SelectionStart;
+                textBox.Text = textBox.Text.ToUpper();
+                textBox.SelectionStart = selectionStart;
+
+                // Validar la longitud y el último carácter
+                if (textBox.Text.Length != 14)
+                {
+                    textBox.BackColor = Color.LightCoral; // Color rojo claro para indicar error
+                }
+                else
+                {
+                    char lastChar = textBox.Text[textBox.Text.Length - 1];
+                    if (char.IsLetter(lastChar))
+                    {
+                        textBox.BackColor = Color.LightGreen; // Color verde claro para indicar éxito
+                    }
+                    else
+                    {
+                        textBox.BackColor = Color.LightCoral; // Color rojo claro para indicar error
+                    }
+                }
+            }
+        }
+
+        private void txtcedula_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+
+            if (textBox != null)
+            {
+                // Verificar si el número de caracteres es igual o mayor a 14
+                if (textBox.Text.Length >= 14 && !char.IsControl(e.KeyChar))
+                {
+                    e.Handled = true; // Cancelar la tecla presionada
+                }
+            }
+        }
+
 
 
         private void txtBusqueda_KeyPress(object sender, KeyPressEventArgs e)
@@ -71,8 +107,6 @@ namespace Ginmasio
         public void llenar_cb()
         {
             cbTipo.Text = "SELECCIONE TIPO";
-            //cbSexo.Items.Add("--------------");
-            cbTipo.Items.Add("");
             cbTipo.Items.Add("NO. CEDULA");
             cbTipo.Items.Add("INSS");
             
@@ -81,7 +115,6 @@ namespace Ginmasio
 
 
 
-        /*----------- busqueda de docentes------------------- */
         void busqueda_insecto()
         {
             DataTable Respuesta = new DataTable();
@@ -92,12 +125,12 @@ namespace Ginmasio
             }
             else
             {
-                if (cbTipo.SelectedIndex == 1) // BÚSQUEDA POR cedula
+                if (cbTipo.SelectedIndex == 0) // BÚSQUEDA POR NO. CEDULA
                 {
                     Respuesta = buscar_docente.busqueda_docentes(txtBusqueda.Text, "", 1);
                     btnasignar.Enabled = true;
                 }
-                else if (cbTipo.SelectedIndex == 2) // BÚSQUEDA POR inss
+                else if (cbTipo.SelectedIndex == 1) // BÚSQUEDA POR INSS
                 {
                     Respuesta = buscar_docente.busqueda_docentes("", txtBusqueda.Text, 2);
                     btnasignar.Enabled = true;
@@ -122,9 +155,8 @@ namespace Ginmasio
                     Obtener_valores();
                 }
             }
-       
-
-
+        
+    
 
 
         void Obtener_valores()
@@ -150,44 +182,65 @@ namespace Ginmasio
             cbTipo.Enabled = false;
             txtBusqueda.Enabled = false;
             btnBuscar.Enabled = false;
+            
         }
-     
+
+        List<string> asignaturaunica = new List<string>();
+
         void busqueda_insecto2()
-                {
+        {
             DataTable Tabla_Grupos = new DataTable();
 
             if (txtbusgrupos.Text == "")
             {
-                MessageBox.Show("DEBE INGRESAR UN VALOR PARA INICAR BUSQUEDA");
+                MessageBox.Show("DEBE INGRESAR UN VALOR PARA INICIAR BUSQUEDA");
             }
             else
             {
-               
-                    Tabla_Grupos = buscar_grupos.Busqueda_Grupos_Carrera(txtbusgrupos.Text,1);
-                    if (Tabla_Grupos.Rows.Count == 0)
-                    {
-                        MessageBox.Show("NO SE ENCONTRARON REGISTROS");
-                        txtbusgrupos.Clear();
-                    }
-                    else
-                    {
-                        Obtener_valores2();
-                    }
-                
+                Tabla_Grupos = buscar_grupos.Busqueda_Grupos_Carrera(txtbusgrupos.Text);
+                if (Tabla_Grupos.Rows.Count == 0)
+                {
+                    MessageBox.Show("NO SE ENCONTRARON REGISTROS");
+                    txtbusgrupos.Clear();
+                }
+                else
+                {
+                    Obtener_valores2();
+                }
             }
 
             void Obtener_valores2()
             {
+                // Limpiar los datos existentes en el ComboBox cbasignatura
+                cbasignatura.Items.Clear();
+
+                // Limpiar la lista de asignaturas únicas para comenzar de nuevo
+                asignaturaunica.Clear();
+
                 foreach (DataRow row in Tabla_Grupos.Rows)
                 {
                     txtareaconocimiento.Text = Convert.ToString(row["AREA_CONOCIMIENTO"]);
+                    txt_codarea.Text = Convert.ToString(row["CODIGO_AREA"]);
                     txtcarrera.Text = Convert.ToString(row["CARRERA"]);
+                    txt_codcarrera.Text = Convert.ToString(row["CODIGO_CARRERA"]);
                     txtgrupo.Text = Convert.ToString(row["GRUPO"]);
                     txtturno.Text = Convert.ToString(row["TURNO"]);
                     txtaño.Text = Convert.ToString(row["AÑO"]);
                     txtsemes.Text = Convert.ToString(row["SEMESTRE"]);
-                    txtcodasig.Text= Convert.ToString(row["COD_ASIGNATURA"]);
-                    cbasignatura.Items.Add(Convert.ToString(row["ASIGNATURA"]));
+                    txtcodasig.Text = Convert.ToString(row["COD_ASIGNATURA"]);
+                    txtacaterm.Text = Convert.ToString(row["ATERM"]);
+                    txtseccion.Text = Convert.ToString(row["SECCION"]);
+                    txtsubtype.Text = Convert.ToString(row["SUBTYPE"]);
+                    txtsection.Text = Convert.ToString(row["SECTION"]);
+
+                    string nombreAsignatura = Convert.ToString(row["ASIGNATURA"]);
+
+                    // Verificar si la asignatura ya está en la lista antes de agregarla
+                    if (!asignaturaunica.Contains(nombreAsignatura))
+                    {
+                        asignaturaunica.Add(nombreAsignatura);
+                        cbasignatura.Items.Add(nombreAsignatura);
+                    }
                 }
 
                 cbasignatura.SelectedIndexChanged += (sender, e) =>
@@ -196,26 +249,38 @@ namespace Ginmasio
                     int selectedIndex = cbasignatura.SelectedIndex;
 
                     // Verificar si el índice es válido
-                    if (selectedIndex >= 0 && selectedIndex < Tabla_Grupos.Rows.Count)
+                    if (selectedIndex >= 0 && selectedIndex < cbasignatura.Items.Count)
                     {
-                        // Obtener el código de asignatura correspondiente al índice seleccionado
-                        string codigoAsignatura = Convert.ToString(Tabla_Grupos.Rows[selectedIndex]["COD_ASIGNATURA"]);
+                        // Obtener la asignatura seleccionada
+                        string asignaturaSeleccionada = cbasignatura.Items[selectedIndex].ToString();
 
-                        // Asignar el código de asignatura al TextBox
-                        txtcodasig.Text = codigoAsignatura;
+                        // Buscar el código de la asignatura correspondiente
+                        foreach (DataRow row in Tabla_Grupos.Rows)
+                        {
+                            if (Convert.ToString(row["ASIGNATURA"]) == asignaturaSeleccionada)
+                            {
+                                txtcodasig.Text = Convert.ToString(row["COD_ASIGNATURA"]);
+                                break;
+                            }
+                        }
                     }
                 };
             }
-
-
-
         }
+
         /*guarda los registro en docentes*/
         private void btnguardar2_Click(object sender, EventArgs e)
         {
             guardardocente();
             cbasignatura.Items.Clear();
+            cbasignatura.Text = ""; // Limpiar también el texto seleccionado
             txtcodasig.Clear();
+            cbTipo.Enabled = true;
+            txtBusqueda.Enabled = true;
+            btnBuscar.Enabled = true;
+            txtbusgrupos.Enabled = false;
+            btnbusgrupo.Enabled = false;
+            cbasignatura.Enabled = false;
         }
 
         private bool ValidarCampos()
@@ -248,12 +313,18 @@ namespace Ginmasio
             @LAST_NAME = txtPrimerApellido.Text;
             @LAST_NAME02 = txtSegundoApellido.Text;
             @AREA_CONOCIMIENTO = txtareaconocimiento.Text;
+            @CODIGO_AREA = txt_codarea.Text;
             @AÑO = txtaño.Text;
             @SEMESTRE = txtsemes.Text;
             @CARRERA = txtcarrera.Text;
+            @CODIGO_CARRERA = txt_codcarrera.Text;
             @TURNO = txtturno.Text;
             @COD_ASIG = txtcodasig.Text;
             @GRUPO = txtgrupo.Text;
+            @ACA_TERM = txtacaterm.Text;
+            @SUBTYPE = txtsubtype.Text;
+            @SECTION = txtseccion.Text;
+            @SECCION = txtsection.Text;
             if (cbasignatura.SelectedItem != null)
             {
                 @ASIGNATURA = cbasignatura.SelectedItem.ToString();
@@ -264,7 +335,7 @@ namespace Ginmasio
             }
 
 
-            salida = insertar.Insertar_Doc_Grupos(@GOVERNMENT_ID, @FIRTSNAME, @MIDDLE_NAME, @LAST_NAME, @LAST_NAME02, @AREA_CONOCIMIENTO, @AÑO, @SEMESTRE, @CARRERA,@TURNO,@COD_ASIG,@ASIGNATURA,@GRUPO);
+            salida = insertar.Insertar_Doc_Grupos(@GOVERNMENT_ID, @FIRTSNAME, @MIDDLE_NAME, @LAST_NAME, @LAST_NAME02, @AREA_CONOCIMIENTO,@CODIGO_AREA,@AÑO, @SEMESTRE, @CARRERA,@CODIGO_CARRERA,@TURNO,@COD_ASIG,@ASIGNATURA,@GRUPO,@ACA_TERM,@SUBTYPE,@SECTION,@SECCION);
 
             if (salida == 1)
             {
@@ -272,7 +343,7 @@ namespace Ginmasio
             }
             else
             {
-                Frm_Mensaje_Advertencia mensajeAdvertencia = new Frm_Mensaje_Advertencia("El docente ya se encuentra Asignado a ese Grupo");
+                Mensaje_Advertencia2 mensajeAdvertencia = new Mensaje_Advertencia2("El docente ya se encuentra Asignado a ese Grupo");
                 mensajeAdvertencia.ShowDialog();
             }
 
@@ -299,6 +370,9 @@ namespace Ginmasio
             txtgrupo.Clear();
             txtsemes.Clear();
             txtaño.Clear();
+            txtseccion.Clear();
+            txtacaterm.Clear();
+            txtsubtype.Clear();
             cbasignatura.Items.Clear();
         }
 

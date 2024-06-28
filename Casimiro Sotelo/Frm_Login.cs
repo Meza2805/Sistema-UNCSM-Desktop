@@ -67,6 +67,15 @@ namespace Ginmasio
                 case 37:
                    picUsuario.Image = UNCSM.Properties.Resources.Admin;
                     break;
+                case 38://Docentes
+                    picUsuario.Image = UNCSM.Properties.Resources.maestro;
+                    break;
+                case 1037://Sec_Academicos
+                    picUsuario.Image = UNCSM.Properties.Resources.trabajando;
+                    break;
+                case 1038://Estadrigrafos
+                    picUsuario.Image = UNCSM.Properties.Resources.sitio_web__2_;
+                    break;
                 case 1036:
                     picUsuario.Image = UNCSM.Properties.Resources.UNCSM__Logo_UNCSM__Version_Colores;
                     break;

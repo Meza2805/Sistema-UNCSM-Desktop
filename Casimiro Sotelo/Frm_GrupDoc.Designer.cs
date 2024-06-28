@@ -30,6 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_GrupDoc));
             this.txtsemestre = new System.Windows.Forms.GroupBox();
+            this.txtsection = new System.Windows.Forms.TextBox();
+            this.txt_codcarrera = new System.Windows.Forms.TextBox();
+            this.txtseccion = new System.Windows.Forms.TextBox();
+            this.txt_codarea = new System.Windows.Forms.TextBox();
+            this.txtsubtype = new System.Windows.Forms.TextBox();
+            this.txtacaterm = new System.Windows.Forms.TextBox();
             this.txtsemes = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.txtaño = new System.Windows.Forms.TextBox();
@@ -80,6 +86,12 @@
             this.txtsemestre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtsemestre.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtsemestre.Controls.Add(this.txtsection);
+            this.txtsemestre.Controls.Add(this.txt_codcarrera);
+            this.txtsemestre.Controls.Add(this.txtseccion);
+            this.txtsemestre.Controls.Add(this.txt_codarea);
+            this.txtsemestre.Controls.Add(this.txtsubtype);
+            this.txtsemestre.Controls.Add(this.txtacaterm);
             this.txtsemestre.Controls.Add(this.txtsemes);
             this.txtsemestre.Controls.Add(this.label16);
             this.txtsemestre.Controls.Add(this.txtaño);
@@ -107,6 +119,59 @@
             this.txtsemestre.TabIndex = 63;
             this.txtsemestre.TabStop = false;
             this.txtsemestre.Text = "ASIGNAR GRUPOS";
+            // 
+            // txtsection
+            // 
+            this.txtsection.Location = new System.Drawing.Point(799, 249);
+            this.txtsection.Name = "txtsection";
+            this.txtsection.Size = new System.Drawing.Size(100, 23);
+            this.txtsection.TabIndex = 93;
+            this.txtsection.Visible = false;
+            // 
+            // txt_codcarrera
+            // 
+            this.txt_codcarrera.Enabled = false;
+            this.txt_codcarrera.Location = new System.Drawing.Point(907, 249);
+            this.txt_codcarrera.Name = "txt_codcarrera";
+            this.txt_codcarrera.Size = new System.Drawing.Size(100, 23);
+            this.txt_codcarrera.TabIndex = 92;
+            this.txt_codcarrera.Visible = false;
+            // 
+            // txtseccion
+            // 
+            this.txtseccion.Enabled = false;
+            this.txtseccion.Location = new System.Drawing.Point(907, 191);
+            this.txtseccion.Name = "txtseccion";
+            this.txtseccion.Size = new System.Drawing.Size(100, 23);
+            this.txtseccion.TabIndex = 91;
+            this.txtseccion.Visible = false;
+            // 
+            // txt_codarea
+            // 
+            this.txt_codarea.Enabled = false;
+            this.txt_codarea.Location = new System.Drawing.Point(907, 220);
+            this.txt_codarea.Name = "txt_codarea";
+            this.txt_codarea.Size = new System.Drawing.Size(100, 23);
+            this.txt_codarea.TabIndex = 91;
+            this.txt_codarea.Visible = false;
+            // 
+            // txtsubtype
+            // 
+            this.txtsubtype.Enabled = false;
+            this.txtsubtype.Location = new System.Drawing.Point(907, 162);
+            this.txtsubtype.Name = "txtsubtype";
+            this.txtsubtype.Size = new System.Drawing.Size(100, 23);
+            this.txtsubtype.TabIndex = 90;
+            this.txtsubtype.Visible = false;
+            // 
+            // txtacaterm
+            // 
+            this.txtacaterm.Enabled = false;
+            this.txtacaterm.Location = new System.Drawing.Point(907, 131);
+            this.txtacaterm.Name = "txtacaterm";
+            this.txtacaterm.Size = new System.Drawing.Size(100, 23);
+            this.txtacaterm.TabIndex = 89;
+            this.txtacaterm.Visible = false;
             // 
             // txtsemes
             // 
@@ -294,7 +359,9 @@
             // 
             // btnbusgrupo
             // 
-            this.btnbusgrupo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
+            this.btnbusgrupo.BackColor = System.Drawing.Color.Transparent;
+            this.btnbusgrupo.BackgroundImage = global::UNCSM.Properties.Resources.buscar;
+            this.btnbusgrupo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnbusgrupo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnbusgrupo.Enabled = false;
             this.btnbusgrupo.FlatAppearance.BorderSize = 0;
@@ -302,11 +369,10 @@
             this.btnbusgrupo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnbusgrupo.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnbusgrupo.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnbusgrupo.Location = new System.Drawing.Point(436, 36);
+            this.btnbusgrupo.Location = new System.Drawing.Point(436, 26);
             this.btnbusgrupo.Name = "btnbusgrupo";
-            this.btnbusgrupo.Size = new System.Drawing.Size(94, 23);
+            this.btnbusgrupo.Size = new System.Drawing.Size(114, 42);
             this.btnbusgrupo.TabIndex = 64;
-            this.btnbusgrupo.Text = "BUSCAR";
             this.btnbusgrupo.UseVisualStyleBackColor = false;
             this.btnbusgrupo.Click += new System.EventHandler(this.btnbusgrupo_Click);
             // 
@@ -449,11 +515,14 @@
             // 
             // txtBusqueda
             // 
+            this.txtBusqueda.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBusqueda.Location = new System.Drawing.Point(496, 34);
             this.txtBusqueda.Multiline = true;
             this.txtBusqueda.Name = "txtBusqueda";
             this.txtBusqueda.Size = new System.Drawing.Size(162, 23);
             this.txtBusqueda.TabIndex = 56;
+            this.txtBusqueda.TextChanged += new System.EventHandler(this.txttxtBusqueda_TextChanged);
+            this.txtBusqueda.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcedula_KeyPress);
             // 
             // txtPrimerApellido
             // 
@@ -537,7 +606,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(380, 7);
+            this.pictureBox1.Location = new System.Drawing.Point(309, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(65, 58);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -551,11 +620,11 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold);
             this.label11.ForeColor = System.Drawing.Color.Blue;
-            this.label11.Location = new System.Drawing.Point(451, 31);
+            this.label11.Location = new System.Drawing.Point(380, 25);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(202, 18);
+            this.label11.Size = new System.Drawing.Size(356, 18);
             this.label11.TabIndex = 64;
-            this.label11.Text = "ASIGNACIÒN DE GRUPOS";
+            this.label11.Text = "ASIGNACIÒN DE GRUPOS NUEVOS INGRESOS";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Frm_GrupDoc
@@ -620,5 +689,11 @@
         private System.Windows.Forms.TextBox txtsemes;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button btnguardar2;
+        private System.Windows.Forms.TextBox txtseccion;
+        private System.Windows.Forms.TextBox txtsubtype;
+        private System.Windows.Forms.TextBox txtacaterm;
+        private System.Windows.Forms.TextBox txt_codcarrera;
+        private System.Windows.Forms.TextBox txt_codarea;
+        private System.Windows.Forms.TextBox txtsection;
     }
 }
